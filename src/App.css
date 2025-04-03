@@ -315,7 +315,7 @@ footer {
 
 .banner {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   width: 65%;
   max-width: 800px;
   height: 95vh;
