@@ -155,7 +155,7 @@ footer {
 
 .autoShow {
   animation: autoShowAnimation;
-  animation-timeline: view(70% 5%);
+  animation-timeline: view(100% 5%);
 }
 
 @media screen and (max-width: 600px) {
@@ -175,7 +175,7 @@ footer {
   }
   to {
     opacity: 1;
-    transform: translateY(80px) scale(1);
+    transform: translateY(0px) scale(1);
   }
 }
 
@@ -198,7 +198,7 @@ footer {
 .rightSlide {
   animation: rightSlideAnimation;
   animation-duration: 0.4s;
-  animation-timeline: view(90% 10%);
+  animation-timeline: view(90% 5%);
 }
 
 @keyframes rightSlideAnimation {
