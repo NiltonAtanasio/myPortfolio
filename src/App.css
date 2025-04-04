@@ -153,94 +153,6 @@ footer {
   font-weight: 500;
 }
 
-.autoShow {
-  animation: autoShowAnimation;
-  animation-timeline: view(100% 5%);
-}
-
-@keyframes autoShowAnimation {
-  from {
-    opacity: 0;
-    transform: translateY(200px) scale(0.3);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px) scale(1);
-  }
-}
-
-.leftSlide {
-  animation: leftSlideAnimation;
-  animation-duration: 0.5s;
-}
-
-@keyframes leftSlideAnimation {
-  from {
-    transform: translateX(-80%);
-    opacity: 0.5;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-.rightSlide {
-  animation: rightSlideAnimation;
-  animation-duration: 0.4s;
-  animation-timeline: view(90% 5%);
-}
-
-@keyframes rightSlideAnimation {
-  from {
-    transform: translateX(400px);
-    opacity: 0.5;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-.upSlide {
-  animation: upSlideAnimation;
-  animation-duration: 0.5s;
-}
-
-.upSlide .home__buttons {
-  animation-duration: 0.8s;
-  animation-timeline: view();
-}
-
-@keyframes upSlideAnimation {
-  from {
-    transform: translateY(200%);
-    opacity: 0.5;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.autoBlur {
-  animation: autoBlurAnimation linear both;
-  animation-timeline: view();
-}
-
-@keyframes autoBlurAnimation {
-  0% {
-    filter: blur(40px);
-  }
-  35%,
-  55% {
-    filter: blur(0px);
-  }
-  100% {
-    filter: blur(40px);
-  }
-}
-
 .home {
   display: flex;
   height: 95vh;
@@ -253,6 +165,7 @@ footer {
   justify-content: space-between;
   align-items: start;
   width: 100%;
+  gap: 20px;
   max-width: 1300px;
   padding: 15px 0 0 20px;
   margin-bottom: 20px;
@@ -281,7 +194,7 @@ footer {
 
 .home__title .title span:hover {
   color: var(--color-primary-5);
-  font-size: 2.4rem;
+  font-size: 1.9rem;
 }
 .home__title .description {
   font-size: 1.1rem;
@@ -334,40 +247,17 @@ footer {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 1170px) {
-  .home__title .title {
-    font-size: 1.5rem;
-  }
-
-  .home__title .title span:hover {
-    color: var(--color-primary-5);
-    font-size: 1.6rem;
-  }
-
-  .home__title .description {
-    font-size: 0.8rem;
-  }
-
-  .banner {
-    width: 70%;
-  }
-}
-
 .experience__section {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 48px;
-  padding: 10;
+  padding: 10px;
 }
 
 .experience__content {
   max-width: 700px;
   margin-bottom: 100px;
-}
-
-.experience__section .section-subtitle {
-  font-size: 2.45rem;
 }
 
 .card__content {
@@ -543,14 +433,115 @@ footer {
   height: 100%;
 }
 
+/* Keyframes */
+.upSlide {
+  animation: upSlideAnimation;
+  animation-duration: 0.5s;
+}
+
+.upSlide .home__buttons {
+  animation-duration: 0.8s;
+  animation-timeline: view();
+}
+
+@keyframes upSlideAnimation {
+  from {
+    transform: translateY(200%);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.autoBlur {
+  animation: autoBlurAnimation linear both;
+  animation-timeline: view();
+}
+
+@keyframes autoBlurAnimation {
+  0% {
+    filter: blur(40px);
+  }
+  35%,
+  55% {
+    filter: blur(0px);
+  }
+  100% {
+    filter: blur(40px);
+  }
+}
+
+.autoShow {
+  animation: autoShowAnimation;
+  animation-timeline: view(100% 5%);
+}
+
+@keyframes autoShowAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(200px) scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+.leftSlide {
+  animation: leftSlideAnimation;
+  animation-duration: 0.5s;
+}
+
+@keyframes leftSlideAnimation {
+  from {
+    transform: translateX(-80%);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.rightSlide {
+  animation: rightSlideAnimation;
+  animation-duration: 0.4s;
+  animation-timeline: view(90% 5%);
+}
+
+@keyframes rightSlideAnimation {
+  from {
+    transform: translateX(400px);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width: 1170px) {
-  .experience__section {
-    flex-direction: column;
+  .home__title .title {
+    font-size: 1.5rem;
+  }
+
+  .home__title .title span:hover {
+    color: var(--color-primary-5);
+    font-size: 1.4rem;
+  }
+
+  .home__title .description {
+    font-size: 0.8rem;
+  }
+
+  .banner {
+    width: 70%;
   }
 
   .experience__section .section-subtitle {
     text-align: center;
-    font-size: 2.5rem;
   }
 
   .experience__content {
@@ -578,28 +569,46 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  .footer__items {
-    flex-direction: column;
-    gap: 20px;
-  }
-
   .nav__list {
     display: none;
+  }
+
+  .home__content {
+    height: 80vh;
+    margin: 0;
   }
 
   .portfolio__section .section-subtitle {
     text-align: center;
   }
 
-  .experience__section .section-subtitle {
-    font-size: 2rem;
+  .experience__section {
+    margin-top: 150px;
   }
 
-  .experience__content {
-    width: 100%;
-  }
-
-  .experience__card {
+  .experience__card,
+  .about__content {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.8rem;
+  }
+
+  .rightSlide {
+    animation: rightSlideAnimation;
+    animation-duration: 0.4s;
+    animation-timeline: view(160% 5%);
+  }
+
+  .autoShow {
+    animation: autoShowAnimation;
+    animation-timeline: view(160% 6%);
+  }
+
+  .footer__items {
+    flex-direction: column;
+    gap: 20px;
   }
 }
