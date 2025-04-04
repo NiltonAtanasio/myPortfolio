@@ -14,13 +14,13 @@ export default function App() {
               </div>
               <ul className="nav__list">
                 <li className="nav-item active">
-                  <a href="#home">Início</a>
+                  <a href="#">Início</a>
                 </li>
                 <li className="nav-item">
-                  <a href="#menu">Portifólio</a>
+                  <a href="#">Portifólio</a>
                 </li>
                 <li className="nav-item">
-                  <a href="#testimonials">Sobre Mim</a>
+                  <a href="#">Sobre Mim</a>
                 </li>
               </ul>
               <button className="btn-default">Baixar CV</button>
@@ -191,12 +191,16 @@ export default function App() {
           <div className="footer__items">
             <span className="copyright">&copy 2025 Nilton Atanazzio</span>
 
-            <div className="social-media-buttons">
-              <a href="#" aria-label="Google"></a>
-
-              <a href="#" aria-label="Google"></a>
-
-              <a href="#" aria-label="Google"></a>
+            <div className="social__media__content">
+              <div className="social__media__buttons">
+                <a href="#" aria-label="Google"></a>
+              </div>
+              <div className="social__media__buttons">
+                <a href="#" aria-label="Google"></a>
+              </div>
+              <div className="social__media__buttons">
+                <a href="#" aria-label="Google"></a>
+              </div>
             </div>
           </div>
         </footer>

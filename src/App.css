@@ -146,11 +146,26 @@ footer {
   justify-content: space-between;
   padding: 0px 8% 24px 8%;
   align-items: center;
+  background-color: var(--color-primary-2);
 }
 
 .copyright {
   color: var(--color-neutral-1);
   font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.social__media__content {
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+}
+
+.social__media__buttons {
+  height: 30px;
+  width: 30px;
+  background-color: var(--color-primary-3);
+  border-radius: 20%;
 }
 
 .home {
@@ -244,7 +259,7 @@ footer {
   justify-content: space-between;
   padding: 0 10px;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 
 .experience__section {
@@ -306,12 +321,6 @@ footer {
   );
 }
 
-@keyframes scrollLeft {
-  to {
-    left: -200px;
-  }
-}
-
 .item {
   width: 40px;
   height: 40px;
@@ -362,8 +371,6 @@ footer {
 .box__area {
   width: 100%;
   padding: 10px 15px;
-  height: auto;
-  min-height: 500px;
 }
 
 .box__area {
@@ -375,12 +382,12 @@ footer {
 }
 
 .box {
-  height: 300px;
-  width: 250px;
+  height: 220px;
+  width: 180px;
   border-radius: 10px;
   position: relative;
   overflow: hidden;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 10px var(--color-primary-6);
   transition: 0.5s;
 }
 
@@ -394,7 +401,7 @@ footer {
 .overlay {
   height: 0;
   width: 100%;
-  background: linear-gradient(transparent, #242424 65%);
+  background: linear-gradient(transparent, var(--color-primary-2) 65%);
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -402,23 +409,23 @@ footer {
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
-  padding: 0 40px;
+  padding: 0 10px;
   text-align: center;
-  font-size: 14px;
+  font-size: 0.7rem;
   transition: height 0.3s;
-  color: #e9e0e0;
+  color: #292828;
 }
 
 .overlay h3 {
   font-weight: 500px;
   margin-bottom: 5px;
   margin-top: 80px;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
   letter-spacing: 2px;
-  color: var(--color-primary-5);
+  color: var(--color-neutral-1);
 }
 
 .box:hover {
@@ -442,6 +449,12 @@ footer {
 .upSlide .home__buttons {
   animation-duration: 0.8s;
   animation-timeline: view();
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
 }
 
 @keyframes upSlideAnimation {
@@ -508,7 +521,7 @@ footer {
 .rightSlide {
   animation: rightSlideAnimation;
   animation-duration: 0.4s;
-  animation-timeline: view(90% 5%);
+  animation-timeline: view(130% 4%);
 }
 
 @keyframes rightSlideAnimation {
@@ -565,6 +578,16 @@ footer {
 
   .home__title {
     width: 100%;
+  }
+
+  .portfolio__section {
+    margin-bottom: 200px;
+  }
+
+  .rightSlide {
+    animation: rightSlideAnimation;
+    animation-duration: 0.4s;
+    animation-timeline: view(130% 3%);
   }
 }
 
