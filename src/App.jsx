@@ -82,13 +82,10 @@ export default function App() {
                 <div className="box">
                   <img src="#" alt="" />
                   <div className="overlay">
-                    <h3>Teste</h3>
+                    <h3>Projeto</h3>
                     <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      A, necessitatibus? Exercitationem suscipit aliquid
-                      voluptatibus autem ratione asperiores harum saepe sit
-                      soluta ipsa quae molestias odit ab pariatur praesentium,
-                      nulla facilis.
+                      O projeto ainda está em desenvolvimento. Por favor,
+                      retorne em breve, pois em breve estará concluído.
                     </p>
                   </div>
                 </div>
@@ -96,13 +93,10 @@ export default function App() {
                 <div className="box">
                   <img src="#" alt="" />
                   <div className="overlay">
-                    <h3>Teste</h3>
+                    <h3>Projeto</h3>
                     <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      A, necessitatibus? Exercitationem suscipit aliquid
-                      voluptatibus autem ratione asperiores harum saepe sit
-                      soluta ipsa quae molestias odit ab pariatur praesentium,
-                      nulla facilis.
+                      O projeto ainda está em desenvolvimento. Por favor,
+                      retorne em breve, pois em breve estará concluído.
                     </p>
                   </div>
                 </div>
@@ -110,13 +104,10 @@ export default function App() {
                 <div className="box">
                   <img src="#" alt="" />
                   <div className="overlay">
-                    <h3>Teste</h3>
+                    <h3>Projeto</h3>
                     <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      A, necessitatibus? Exercitationem suscipit aliquid
-                      voluptatibus autem ratione asperiores harum saepe sit
-                      soluta ipsa quae molestias odit ab pariatur praesentium,
-                      nulla facilis.
+                      O projeto ainda está em desenvolvimento. Por favor,
+                      retorne em breve, pois em breve estará concluído.
                     </p>
                   </div>
                 </div>
