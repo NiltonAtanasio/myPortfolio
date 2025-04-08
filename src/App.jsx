@@ -75,7 +75,7 @@ export default function App() {
 
           <section className="portfolio__section autoShow">
             <h2 className="section-title ">Portifólio</h2>
-            <h3 className="section-subtitle ">Meu Projetos</h3>
+            <h3 className="section-subtitle ">Meus Projetos</h3>
 
             <div className="card__area">
               <div className="box__area">
