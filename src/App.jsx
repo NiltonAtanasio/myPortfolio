@@ -1,6 +1,9 @@
 import React from "react";
 import Spline from "@splinetool/react-spline";
 import "./App.css";
+import logoReact from "./assets/images/react-logo.jpg";
+import logoNodeJs from "./assets/images/Node.js-logo.png";
+import logoMongoDB from "./assets/images/MongoDb-logo.png";
 
 export default function App() {
   return (
@@ -120,58 +123,46 @@ export default function App() {
 
           <section className="experience__section">
             <div className="experience__content rightSlide">
-              <h2 className="section-title">Sobre Mim</h2>
-              <h3 className="section-subtitle">Minhas experiências e skills</h3>
+              <h2 className="section-title">Skills</h2>
+              <h3 className="section-subtitle">Men Stack</h3>
 
               <div className="card__content">
-                <div className="experience__card">
+                <div className="experience__card autoBlur">
                   <img
-                    src="src/images/avatar.png"
+                    src={logoReact}
                     className="experience__avatar"
-                    alt=""
+                    alt="Logo do React"
                   />
 
                   <div className="about__content autoBlur">
-                    <p>Fulana de Tal</p>
                     <p>
-                      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Repellat voluptatibus cumque dolor ea est quae alias
-                      necessitatibus"
+                      Ciclo de Vida de Componentes, Statefull x Stateless, Rotas
+                      para Páginas - SPA, Gerenciamento de Estado com Redux
                     </p>
                   </div>
                 </div>
 
-                <div className="experience__card">
-                  <img
-                    src="src/images/avatar.png"
-                    className="experience__avatar"
-                    alt=""
-                  />
+                <div className="experience__card autoBlur">
+                  <img src={logoNodeJs} className="experience__avatar" alt="" />
 
-                  <div className="about__content autoBlur">
-                    <p>Fulana de Tal</p>
+                  <div className="about__content">
                     <p>
-                      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Repellat voluptatibus cumque dolor ea est quae alias
-                      necessitatibus"
+                      Express.js, Rest, CRUD, Controller - Router, Ajax, Async e
+                      Await, Autenticação, sessão e criptografia, Encriptação de
+                      senha bcrypt
                     </p>
                   </div>
                 </div>
 
-                <div className="experience__card">
+                <div className="experience__card autoBlur">
                   <img
-                    src="src/images/avatar.png"
+                    src={logoMongoDB}
                     className="experience__avatar"
                     alt=""
                   />
 
-                  <div className="about__content autoBlur">
-                    <p>Fulana de Tal</p>
-                    <p>
-                      "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Repellat voluptatibus cumque dolor ea est quae alias
-                      necessitatibus"
-                    </p>
+                  <div className="about__content">
+                    <p>Banco de Dados orientado a documentos, ODM e Mongoose</p>
                   </div>
                 </div>
               </div>
