@@ -14,10 +14,10 @@ export default function App() {
               </div>
               <ul className="nav__list">
                 <li className="nav-item active">
-                  <a href="#">Início</a>
+                  <a href="#inicio">Início</a>
                 </li>
                 <li className="nav-item">
-                  <a href="#">Portifólio</a>
+                  <a href="#">Blog</a>
                 </li>
                 <li className="nav-item">
                   <a href="#">Sobre Mim</a>
@@ -29,7 +29,7 @@ export default function App() {
         </header>
 
         <main className="content">
-          <section className="home">
+          <section className="home" id="inicio">
             <div className="home__content">
               <div className="shape"></div>
               <div className="home__title">
@@ -84,8 +84,9 @@ export default function App() {
                   <div className="overlay">
                     <h3>Projeto</h3>
                     <p>
-                      O projeto ainda está em desenvolvimento. Por favor,
-                      retorne em breve, pois em breve estará concluído.
+                      O projeto ainda está em fase de desenvolvimento.
+                      Agradecemos sua paciência e pedimos que retorne em breve,
+                      pois a conclusão está prevista para os próximos dias.
                     </p>
                   </div>
                 </div>
@@ -95,8 +96,9 @@ export default function App() {
                   <div className="overlay">
                     <h3>Projeto</h3>
                     <p>
-                      O projeto ainda está em desenvolvimento. Por favor,
-                      retorne em breve, pois em breve estará concluído.
+                      O projeto ainda está em fase de desenvolvimento.
+                      Agradecemos sua paciência e pedimos que retorne em breve,
+                      pois a conclusão está prevista para os próximos dias.
                     </p>
                   </div>
                 </div>
@@ -106,8 +108,9 @@ export default function App() {
                   <div className="overlay">
                     <h3>Projeto</h3>
                     <p>
-                      O projeto ainda está em desenvolvimento. Por favor,
-                      retorne em breve, pois em breve estará concluído.
+                      O projeto ainda está em fase de desenvolvimento.
+                      Agradecemos sua paciência e pedimos que retorne em breve,
+                      pois a conclusão está prevista para os próximos dias.
                     </p>
                   </div>
                 </div>
