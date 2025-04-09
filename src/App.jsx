@@ -5,6 +5,8 @@ import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
 import "./App.css";
+
+import logoHome from "./assets/images/logoHome.png";
 import logoReact from "./assets/images/react-logo.jpg";
 import logoNodeJs from "./assets/images/Node.js-logo.png";
 import logoMongoDB from "./assets/images/MongoDb-logo.png";
@@ -38,7 +40,6 @@ export default function App() {
         <main className="content">
           <section className="home" id="inicio">
             <div className="home__content">
-              <div className="shape"></div>
               <div className="home__title">
                 <h1 className="title leftSlide">
                   Tudo o que você vê online, começa aqui, nos bastidores do
@@ -80,10 +81,10 @@ export default function App() {
               </div>
 
               <div className="banner">
-                <div className="spline__container">
-                  <Spline
-                    className="spline"
-                    scene="https://prod.spline.design/WHyFUU39XRwEpAC9/scene.splinecode"
+                <div className="img__container">
+                  <img
+                    src={logoHome}
+                    alt="um menino sentado em frente ao computador com elementos em volta dele demonstrando que ele é um desenvolvedor"
                   />
                 </div>
               </div>
