@@ -1,5 +1,9 @@
 import React from "react";
 import Spline from "@splinetool/react-spline";
+
+import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io";
 import "./App.css";
 import logoReact from "./assets/images/react-logo.jpg";
 import logoNodeJs from "./assets/images/Node.js-logo.png";
@@ -54,14 +58,24 @@ export default function App() {
                 </div>
 
                 <div className="scroller__div upSlide">
-                  <div className="item item1"></div>
-                  <div className="item item2"></div>
-                  <div className="item item3"></div>
-                  <div className="item item4"></div>
-                  <div className="item item5"></div>
-                  <div className="item item6"></div>
-                  <div className="item item7"></div>
-                  <div className="item item8"></div>
+                  <div className="item item1">
+                    <FaReact className="item__icon" />
+                  </div>
+                  <div className="item item2">
+                    <FaNodeJs className="item__icon" />
+                  </div>
+                  <div className="item item3">
+                    <SiMongodb className="item__icon" />
+                  </div>
+                  <div className="item item4">
+                    <FaHtml5 className="item__icon" />
+                  </div>
+                  <div className="item item5">
+                    <FaCss3Alt className="item__icon" />
+                  </div>
+                  <div className="item item6">
+                    <IoLogoJavascript className="item__icon" />
+                  </div>
                 </div>
               </div>
 
