@@ -120,10 +120,35 @@ header {
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: 0.3s ease;
-  font-size: 0.5rem;
+  font-size: 0.8rem;
+  min-width: 70px;
 }
 
 .btn-default:hover {
+  background-color: var(--color-primary-3);
+  padding: 9px 16px;
+}
+
+.btn-second {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 12px;
+  border: 2px solid var(--color-primary-6);
+  padding: 8px 15px;
+  font-weight: 600;
+  box-shadow: 0px 0px 10px 2px var(--color-primary-3);
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size: 0.8rem;
+  min-width: 70px;
+  color: var(--color-primary-6);
+  text-decoration: none;
+}
+
+.btn-second:hover {
   background-color: var(--color-primary-3);
   padding: 9px 16px;
 }
@@ -177,7 +202,7 @@ footer {
 
 .home__content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: start;
   width: 100%;
   gap: 20px;
@@ -188,12 +213,11 @@ footer {
 }
 
 .home__title {
-  width: 50%;
+  width: 36%;
   max-width: 550px;
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 15px;
   margin-top: 0;
   justify-content: center;
 }
@@ -203,32 +227,97 @@ footer {
   color: var(--color-neutral-1);
 }
 
-.home__title .title span {
-  color: var(--color-primary-6);
-  transition: 0.3s;
+.home__title h3 {
+  font-size: 1.5rem;
 }
 
-.home__title .title span:hover {
-  color: var(--color-primary-5);
-  font-size: 1.9rem;
-}
 .home__title .description {
   font-size: 1.1rem;
-  text-align: justify;
+  text-align: left;
+  font-weight: 400;
 }
 
+.text__animation span {
+  position: relative;
+}
+
+.text__animation span::before {
+  content: "Desenvolvedor";
+  color: var(--color-primary-6);
+  animation: words 20s infinite;
+}
+
+.text__animation span::after {
+  content: "";
+  background-color: var(--color-primary-1);
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 3px solid var(--color-primary-1);
+  right: -8px;
+  animation: cursor 0.6s infinite, typing 20s infinite;
+}
+
+@keyframes cursor {
+  to {
+    border-left: 2px solid var(--color-primary-6);
+  }
+}
+@keyframes words {
+  0%,
+  20% {
+    content: "Desenvolvedor Back-end";
+  }
+  21%,
+  40% {
+    content: "Analista de Sistemas";
+  }
+  41%,
+  60% {
+    content: "Desenvolvedor FullStack";
+  }
+  61%,
+  80% {
+    content: "Desenvolvedor Back-end";
+  }
+  81%,
+  100% {
+    content: "Analista de Sistemas";
+  }
+}
+
+@keyframes typing {
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
+  }
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px);
+  }
+}
 .home__buttons {
   display: flex;
   gap: 24px;
 }
 
-.home__buttons a {
-  text-decoration: none;
-  color: var(--color-neutral-1);
-}
-
 .banner {
-  width: 50%;
+  width: 40%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -315,8 +404,9 @@ footer {
 .scroller__div {
   width: 100%;
   margin-inline: auto;
+  margin: 20px 0;
   position: relative;
-  height: 40px;
+  height: 35px;
   overflow: hidden;
   mask-image: linear-gradient(
     to right,
@@ -328,8 +418,8 @@ footer {
 }
 
 .item {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border-radius: 6px;
   position: absolute;
   left: max(calc(10px * 6), 100%);
@@ -337,6 +427,7 @@ footer {
   animation-duration: 30s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  color: var(--color-primary-6);
 }
 
 .item1 {
@@ -540,21 +631,21 @@ footer {
     font-size: 1.5rem;
   }
 
-  .home__title .title span:hover {
-    color: var(--color-primary-5);
-    font-size: 1.4rem;
-  }
-
   .home__title .description {
     font-size: 0.8rem;
   }
 
-  .banner {
-    width: 70%;
+  .home__title h3 {
+    font-size: 1rem;
   }
 
   .experience__section .section-subtitle {
     text-align: center;
+  }
+
+  .img__container {
+    width: 250px;
+    height: 250px;
   }
 
   .experience__content {
@@ -566,8 +657,7 @@ footer {
 }
 
 @media screen and (max-width: 950px) {
-  .banner,
-  .shape {
+  .banner {
     display: none;
   }
 
@@ -580,6 +670,17 @@ footer {
     width: 100%;
   }
 
+  .home__title .title {
+    font-size: 2rem;
+  }
+
+  .home__title h3 {
+    font-size: 1.5rem;
+  }
+
+  .home__title .description {
+    font-size: 1.1rem;
+  }
   .portfolio__section {
     margin-bottom: 200px;
   }
@@ -599,6 +700,22 @@ footer {
   .home__content {
     height: 80vh;
     margin: 0;
+  }
+
+  .home__title {
+    padding: 0 10px;
+  }
+
+  .home__title .title {
+    font-size: 1.5rem;
+  }
+
+  .home__title .description {
+    font-size: 0.8rem;
+  }
+
+  .home__title h3 {
+    font-size: 1rem;
   }
 
   .portfolio__section .section-subtitle {

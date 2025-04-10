@@ -41,22 +41,15 @@ export default function App() {
           <section className="home" id="inicio">
             <div className="home__content">
               <div className="home__title">
-                <h1 className="title leftSlide">
-                  Tudo o que você vê online, começa aqui, nos bastidores do
-                  <span> back-end</span>
-                </h1>
+                <h1 className="title leftSlide">Olá, me chamo Atanazzio</h1>
+                <h3 className="text__animation">
+                  Eu sou <span></span>
+                </h3>
 
                 <p className="description upSlide">
-                  Sou desenvolvedor back-end com habilidades em front-end,
-                  unindo lógica e design para criar soluções completas. Formado
-                  em Análise e Desenvolvimento de Sistemas.
+                  Tudo o que você vê online, começa aqui, nos bastidores do
+                  back-end
                 </p>
-
-                <div className="home__buttons upSlide">
-                  <a href="#" className="btn-default">
-                    Play
-                  </a>
-                </div>
 
                 <div className="scroller__div upSlide">
                   <div className="item item1">
@@ -77,6 +70,12 @@ export default function App() {
                   <div className="item item6">
                     <IoLogoJavascript className="item__icon" />
                   </div>
+                </div>
+
+                <div className="home__buttons upSlide">
+                  <a href="#" className="btn-second">
+                    Play
+                  </a>
                 </div>
               </div>
 
