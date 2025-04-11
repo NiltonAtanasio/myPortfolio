@@ -108,6 +108,11 @@ header {
   font-size: 0.9rem;
 }
 
+/* Button */
+.home__buttons {
+  display: flex;
+}
+
 .btn-default {
   border: none;
   display: flex;
@@ -126,7 +131,7 @@ header {
 
 .btn-default:hover {
   background-color: var(--color-primary-3);
-  padding: 9px 16px;
+  transform: scale(1.04);
 }
 
 .btn-second {
@@ -150,7 +155,7 @@ header {
 
 .btn-second:hover {
   background-color: var(--color-primary-3);
-  padding: 9px 16px;
+  transform: scale(1.04);
 }
 
 .section-title {
@@ -310,10 +315,6 @@ footer {
   85% {
     width: calc(100% + 8px);
   }
-}
-.home__buttons {
-  display: flex;
-  gap: 24px;
 }
 
 .banner {
