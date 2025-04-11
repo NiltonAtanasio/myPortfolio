@@ -10,6 +10,9 @@ import logoHome from "./assets/images/logoHome.png";
 import logoReact from "./assets/images/react-logo.jpg";
 import logoNodeJs from "./assets/images/Node.js-logo.png";
 import logoMongoDB from "./assets/images/MongoDb-logo.png";
+import logoHtml from "./assets/images/logoHtml.jpg";
+import logoCss from "./assets/images/logoCss.jpg";
+import logoJs from "./assets/images/logoJS.png";
 
 export default function App() {
   return (
@@ -26,10 +29,10 @@ export default function App() {
                   <a href="#inicio">Início</a>
                 </li>
                 <li className="nav-item">
-                  <a href="#">Blog</a>
+                  <a href="#skills">Skills</a>
                 </li>
                 <li className="nav-item">
-                  <a href="#">Sobre Mim</a>
+                  <a href="#portfolio">Portfolio</a>
                 </li>
               </ul>
               <button className="btn-default">Baixar CV</button>
@@ -90,7 +93,82 @@ export default function App() {
             </div>
           </section>
 
-          <section className="portfolio__section autoShow">
+          <section className="experience__section" id="skills">
+            <div className="experience__content rightSlide">
+              <h2 className="section-title">Skills</h2>
+              <h3 className="section-subtitle">
+                Men Stack <span>- React, Node.JS, MongoDB</span>
+              </h3>
+
+              <div className="card__content">
+                <div className="experience__card">
+                  <img
+                    src={logoReact}
+                    className="experience__avatar"
+                    alt="Logo do React"
+                  />
+
+                  <div className="about__content">
+                    <p>
+                      Ciclo de Vida de Componentes, Statefull x Stateless, Rotas
+                      para Páginas - SPA, Gerenciamento de Estado com Redux
+                    </p>
+                  </div>
+                </div>
+
+                <div className="experience__card">
+                  <img src={logoNodeJs} className="experience__avatar" alt="" />
+
+                  <div className="about__content">
+                    <p>
+                      Express.js, Rest, CRUD, Controller - Router, Ajax, Async e
+                      Await, Autenticação, sessão e criptografia, Encriptação de
+                      senha bcrypt
+                    </p>
+                  </div>
+                </div>
+
+                <div className="experience__card">
+                  <img
+                    src={logoMongoDB}
+                    className="experience__avatar"
+                    alt=""
+                  />
+
+                  <div className="about__content">
+                    <p>Banco de Dados orientado a documentos, ODM e Mongoose</p>
+                  </div>
+                </div>
+              </div>
+
+              <h3 className="section-subtitle">
+                Tríade da Web <span>- HTML, CSS, JavaScript</span>
+              </h3>
+              <div className="card__content">
+                <div className="experience__card card__web">
+                  <img
+                    src={logoHtml}
+                    className="experience__avatar"
+                    alt="Logo do React"
+                  />
+
+                  <img
+                    src={logoCss}
+                    className="experience__avatar"
+                    alt="Logo do React"
+                  />
+
+                  <img
+                    src={logoJs}
+                    className="experience__avatar"
+                    alt="Logo do React"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="portfolio__section autoShow" id="portfolio">
             <h2 className="section-title ">Portifólio</h2>
             <h3 className="section-subtitle ">Meus Projetos</h3>
 
@@ -129,54 +207,6 @@ export default function App() {
                       Agradecemos sua paciência e pedimos que retorne em breve,
                       pois a conclusão está prevista para os próximos dias.
                     </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section className="experience__section">
-            <div className="experience__content rightSlide">
-              <h2 className="section-title">Skills</h2>
-              <h3 className="section-subtitle">Men Stack</h3>
-
-              <div className="card__content">
-                <div className="experience__card autoBlur">
-                  <img
-                    src={logoReact}
-                    className="experience__avatar"
-                    alt="Logo do React"
-                  />
-
-                  <div className="about__content autoBlur">
-                    <p>
-                      Ciclo de Vida de Componentes, Statefull x Stateless, Rotas
-                      para Páginas - SPA, Gerenciamento de Estado com Redux
-                    </p>
-                  </div>
-                </div>
-
-                <div className="experience__card autoBlur">
-                  <img src={logoNodeJs} className="experience__avatar" alt="" />
-
-                  <div className="about__content">
-                    <p>
-                      Express.js, Rest, CRUD, Controller - Router, Ajax, Async e
-                      Await, Autenticação, sessão e criptografia, Encriptação de
-                      senha bcrypt
-                    </p>
-                  </div>
-                </div>
-
-                <div className="experience__card autoBlur">
-                  <img
-                    src={logoMongoDB}
-                    className="experience__avatar"
-                    alt=""
-                  />
-
-                  <div className="about__content">
-                    <p>Banco de Dados orientado a documentos, ODM e Mongoose</p>
                   </div>
                 </div>
               </div>

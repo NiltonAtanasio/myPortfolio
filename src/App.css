@@ -160,11 +160,15 @@ header {
 
 .section-title {
   color: var(--color-primary-6);
-  font-size: 1.563rem;
+  font-size: 1.5rem;
 }
 
 .section-subtitle {
   font-size: 2rem;
+}
+
+.section-subtitle span {
+  font-size: 1.5rem;
 }
 
 footer {
@@ -364,6 +368,7 @@ footer {
   justify-content: center;
   gap: 48px;
   padding: 10px;
+  scroll-margin-top: 5.4vh;
 }
 
 .experience__content {
@@ -399,6 +404,11 @@ footer {
 .about__content p {
   display: flex;
   justify-content: space-between;
+}
+
+.card__web {
+  display: flex;
+  justify-content: center;
 }
 
 /* infinite horizon */
