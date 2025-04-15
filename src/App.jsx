@@ -1,9 +1,18 @@
-import React from "react";
-import Spline from "@splinetool/react-spline";
+import { useLayoutEffect } from "react";
 
-import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt } from "react-icons/fa";
+import {
+  FaReact,
+  FaNodeJs,
+  FaHtml5,
+  FaCss3Alt,
+  FaGithub,
+  FaLinkedin,
+  FaMousePointer,
+} from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./App.css";
 
 import logoHome from "./assets/images/logoHome.png";
@@ -15,6 +24,344 @@ import logoCss from "./assets/images/logoCss.jpg";
 import logoJs from "./assets/images/logoJS.png";
 
 export default function App() {
+  useLayoutEffect(() => {
+    const tl = gsap.timeline({
+      defaults: { duration: 0.5, opacity: 0, ease: "back.out(1.7)" },
+    });
+
+    tl.fromTo(
+      "#nav__title",
+      {
+        y: -50,
+      },
+      {
+        y: 0,
+        opacity: 1,
+      }
+    )
+      .fromTo(
+        "#nav__item1",
+        {
+          y: -50,
+        },
+        {
+          y: 0,
+          opacity: 1,
+        },
+        "-=0.45"
+      )
+      .fromTo(
+        "#nav__item2",
+        {
+          y: -50,
+        },
+        {
+          y: 0,
+          opacity: 1,
+        },
+        "-=0.45"
+      )
+      .fromTo(
+        "#nav__item3",
+        {
+          y: -50,
+        },
+        {
+          y: 0,
+          opacity: 1,
+        },
+        "-=0.45"
+      )
+      .fromTo(
+        "#nav__button",
+        {
+          y: -50,
+        },
+        {
+          y: 0,
+          opacity: 1,
+        },
+        "-=0.45"
+      )
+      .fromTo(
+        ".title",
+        {
+          x: -200,
+        },
+        {
+          x: 0,
+          opacity: 1,
+        }
+      )
+      .fromTo(
+        ".text__animation",
+        {
+          x: -200,
+        },
+        {
+          x: 0,
+          opacity: 1,
+        },
+        "-=0.45"
+      )
+      .fromTo(
+        ".description",
+        {
+          x: -200,
+        },
+        {
+          x: 0,
+          opacity: 1,
+        },
+        "-=0.45"
+      )
+      .fromTo(
+        ".scroller__div",
+        {
+          y: 70,
+        },
+        {
+          y: 0,
+          opacity: 1,
+        },
+        "-=0.45"
+      )
+      .fromTo(
+        ".home__buttons",
+        {
+          y: 70,
+        },
+        {
+          y: 0,
+          opacity: 1,
+        },
+        "-=0.45"
+      );
+
+    gsap.fromTo(
+      ".banner",
+      {
+        x: 200,
+        opacity: 0,
+      },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 0.7,
+        delay: 0.7,
+      }
+    );
+
+    return () => {
+      gsap.killTweensOf(
+        "#nav__title",
+        "#nav__item1",
+        "#nav__item2",
+        "#nav__item3",
+        "#nav__button",
+        ".title",
+        ".text__animation",
+        ".description",
+        ".home__title",
+        ".banner",
+        ".section-title",
+        ".scroller__div",
+        ".home__buttons"
+      );
+    };
+  }, []);
+
+  useLayoutEffect(() => {
+    const tl = gsap.timeline({
+      defaults: { duration: 0.7, opacity: 0, ease: "back.out(1.7)" },
+    });
+    gsap.registerPlugin(ScrollTrigger);
+
+    const ctx = gsap.context(() => {
+      tl.current = gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: ".experience__content",
+            scrub: true,
+            start: "top 450px",
+            end: "bottom 450px",
+          },
+        })
+        .fromTo(
+          ".section-title",
+          {
+            opacity: 0,
+            y: 150,
+          },
+          {
+            opacity: 1,
+            y: 0,
+          }
+        )
+        .fromTo(
+          "#subtitle1",
+          {
+            opacity: 0,
+            y: 150,
+          },
+          {
+            opacity: 1,
+            y: 0,
+          }
+        )
+        .fromTo(
+          "#card1",
+          {
+            opacity: 0,
+            y: 150,
+          },
+          {
+            opacity: 1,
+            y: 0,
+          }
+        )
+        .fromTo(
+          "#card2",
+          {
+            opacity: 0,
+            y: 150,
+          },
+          {
+            opacity: 1,
+            y: 0,
+          }
+        )
+        .fromTo(
+          "#card3",
+          {
+            opacity: 0,
+            y: 150,
+          },
+          {
+            opacity: 1,
+            y: 0,
+          }
+        )
+        .fromTo(
+          "#subtitle2",
+          {
+            opacity: 0,
+            x: -100,
+          },
+          {
+            opacity: 1,
+            x: 0,
+          }
+        )
+        .fromTo(
+          "#card4",
+          {
+            opacity: 0,
+            y: 150,
+          },
+          {
+            opacity: 1,
+            y: 0,
+          }
+        );
+
+      return () => {
+        gsap.killTweensOf(
+          ".experience__content",
+          ".section-title",
+          "#subtitle1",
+          "#card1",
+          "#card2",
+          "#card3",
+          "#subtitle2",
+          "#card4"
+        );
+      };
+    }, ".experience__section");
+  }, []);
+
+  useLayoutEffect(() => {
+    const tl = gsap.timeline({
+      defaults: {
+        duration: 1,
+        ease: "back.out(1.7)",
+        opacity: 0,
+      },
+      scrollTrigger: {
+        trigger: ".portfolio__section",
+        scrub: 2,
+        start: "top center",
+        end: "center bottom",
+        markers: true,
+      },
+    });
+    gsap.registerPlugin(ScrollTrigger);
+
+    tl.fromTo(
+      "#experience__title",
+      {
+        y: 150,
+      },
+      {
+        y: 0,
+        opacity: 1,
+      }
+    )
+      .fromTo(
+        "#experience__subtitle",
+        {
+          y: 100,
+        },
+        {
+          y: 0,
+          opacity: 1,
+        }
+      )
+      .fromTo(
+        "#card__box1",
+        {
+          opacity: 1,
+          xPercent: 130,
+          rotate: "-20deg",
+        },
+        {
+          delay: 1,
+          duration: 0.2,
+          opacity: 1,
+          rotate: "0deg",
+          xPercent: 0,
+        }
+      )
+      .fromTo(
+        "#card__box2",
+        {
+          x: 1,
+          opacity: 1,
+        },
+        {
+          x: 0,
+          duration: 0.2,
+          opacity: 1,
+        }
+      )
+      .fromTo(
+        "#card__box3",
+        {
+          xPercent: -130,
+          opacity: 1,
+          rotate: "20deg",
+        },
+        {
+          x: 0,
+          duration: 0.2,
+          opacity: 1,
+          rotate: "0deg",
+          xPercent: 0,
+        },
+        "-=0.7"
+      );
+  }, []);
+
   return (
     <div>
       <body>
@@ -22,20 +369,22 @@ export default function App() {
           <nav className="navbar">
             <div className="navbar__content">
               <div>
-                <h2>DEV</h2>
+                <h2 id="nav__title">DEV</h2>
               </div>
               <ul className="nav__list">
-                <li className="nav-item active">
+                <li className="nav-item" id="nav__item1">
                   <a href="#inicio">Início</a>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" id="nav__item2">
                   <a href="#skills">Skills</a>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item" id="nav__item3">
                   <a href="#portfolio">Portfolio</a>
                 </li>
               </ul>
-              <button className="btn-default">Baixar CV</button>
+              <button className="btn-default" id="nav__button">
+                Baixar CV
+              </button>
             </div>
           </nav>
         </header>
@@ -44,17 +393,17 @@ export default function App() {
           <section className="home" id="inicio">
             <div className="home__content">
               <div className="home__title">
-                <h1 className="title leftSlide">Olá, me chamo Atanazzio</h1>
+                <h1 className="title">Olá, me chamo Atanazzio</h1>
                 <h3 className="text__animation">
                   Eu sou <span></span>
                 </h3>
 
-                <p className="description upSlide">
+                <p className="description">
                   Tudo o que você vê online, começa aqui, nos bastidores do
                   back-end
                 </p>
 
-                <div className="scroller__div upSlide">
+                <div className="scroller__div">
                   <div className="item item1">
                     <FaReact className="item__icon" />
                   </div>
@@ -75,7 +424,7 @@ export default function App() {
                   </div>
                 </div>
 
-                <div className="home__buttons upSlide">
+                <div className="home__buttons">
                   <a href="#" className="btn-second">
                     Play
                   </a>
@@ -94,14 +443,14 @@ export default function App() {
           </section>
 
           <section className="experience__section" id="skills">
-            <div className="experience__content rightSlide">
+            <div className="experience__content">
               <h2 className="section-title">Skills</h2>
-              <h3 className="section-subtitle">
+              <h3 className="section-subtitle" id="subtitle1">
                 Men Stack <span>- React, Node.JS, MongoDB</span>
               </h3>
 
               <div className="card__content">
-                <div className="experience__card">
+                <div className="experience__card" id="card1">
                   <img
                     src={logoReact}
                     className="experience__avatar"
@@ -116,7 +465,7 @@ export default function App() {
                   </div>
                 </div>
 
-                <div className="experience__card">
+                <div className="experience__card" id="card2">
                   <img src={logoNodeJs} className="experience__avatar" alt="" />
 
                   <div className="about__content">
@@ -128,7 +477,7 @@ export default function App() {
                   </div>
                 </div>
 
-                <div className="experience__card">
+                <div className="experience__card" id="card3">
                   <img
                     src={logoMongoDB}
                     className="experience__avatar"
@@ -141,10 +490,10 @@ export default function App() {
                 </div>
               </div>
 
-              <h3 className="section-subtitle">
+              <h3 className="section-subtitle" id="subtitle2">
                 Tríade da Web <span>- HTML, CSS, JavaScript</span>
               </h3>
-              <div className="card__content">
+              <div className="card__content" id="card4">
                 <div className="experience__card card__web">
                   <img
                     src={logoHtml}
@@ -168,13 +517,17 @@ export default function App() {
             </div>
           </section>
 
-          <section className="portfolio__section autoShow" id="portfolio">
-            <h2 className="section-title ">Portifólio</h2>
-            <h3 className="section-subtitle ">Meus Projetos</h3>
+          <section className="portfolio__section" id="portfolio">
+            <h2 className="section-title " id="experience__title">
+              Portifólio
+            </h2>
+            <h3 className="section-subtitle" id="experience__subtitle">
+              Meus Projetos
+            </h3>
 
             <div className="card__area">
               <div className="box__area">
-                <div className="box">
+                <div className="box" id="card__box1">
                   <img src="#" alt="" />
                   <div className="overlay">
                     <h3>Projeto</h3>
@@ -186,7 +539,7 @@ export default function App() {
                   </div>
                 </div>
 
-                <div className="box">
+                <div className="box" id="card__box2">
                   <img src="#" alt="" />
                   <div className="overlay">
                     <h3>Projeto</h3>
@@ -198,7 +551,7 @@ export default function App() {
                   </div>
                 </div>
 
-                <div className="box">
+                <div className="box" id="card__box3">
                   <img src="#" alt="" />
                   <div className="overlay">
                     <h3>Projeto</h3>
@@ -222,13 +575,13 @@ export default function App() {
 
             <div className="social__media__content">
               <div className="social__media__buttons">
-                <a href="#" aria-label="Google"></a>
+                <FaGithub className="item__icon" />
               </div>
               <div className="social__media__buttons">
-                <a href="#" aria-label="Google"></a>
+                <FaLinkedin className="item__icon" />
               </div>
               <div className="social__media__buttons">
-                <a href="#" aria-label="Google"></a>
+                <FaMousePointer className="item__icon" />
               </div>
             </div>
           </div>
