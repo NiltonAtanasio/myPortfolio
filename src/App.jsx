@@ -172,194 +172,366 @@ export default function App() {
   }, []);
 
   useLayoutEffect(() => {
-    const tl = gsap.timeline({
-      defaults: { duration: 0.7, opacity: 0, ease: "back.out(1.7)" },
+    const mm = gsap.matchMedia();
+
+    mm.add("(min-width: 531px)", () => {
+      const tl = gsap.timeline({
+        defaults: { duration: 0.7, opacity: 0, ease: "back.out(1.7)" },
+      });
+      gsap.registerPlugin(ScrollTrigger);
+
+      const ctx = gsap.context(() => {
+        tl.current = gsap
+          .timeline({
+            scrollTrigger: {
+              trigger: ".experience__section",
+              scrub: true,
+              start: "top bottom",
+              end: "bottom bottom",
+            },
+          })
+          .fromTo(
+            ".section-title",
+            {
+              opacity: 0,
+              y: 150,
+            },
+            {
+              opacity: 1,
+              y: 0,
+            }
+          )
+          .fromTo(
+            "#subtitle1",
+            {
+              opacity: 0,
+              y: 150,
+            },
+            {
+              opacity: 1,
+              y: 0,
+            }
+          )
+          .fromTo(
+            "#card1",
+            {
+              opacity: 0,
+              y: 150,
+            },
+            {
+              opacity: 1,
+              y: 0,
+            }
+          )
+          .fromTo(
+            "#card2",
+            {
+              opacity: 0,
+              y: 150,
+            },
+            {
+              opacity: 1,
+              y: 0,
+            }
+          )
+          .fromTo(
+            "#card3",
+            {
+              opacity: 0,
+              y: 150,
+            },
+            {
+              opacity: 1,
+              y: 0,
+            }
+          )
+          .fromTo(
+            "#subtitle2",
+            {
+              opacity: 0,
+              x: -100,
+            },
+            {
+              opacity: 1,
+              x: 0,
+            }
+          )
+          .fromTo(
+            "#card4",
+            {
+              opacity: 0,
+              y: 150,
+            },
+            {
+              opacity: 1,
+              y: 0,
+            }
+          );
+
+        return () => {
+          gsap.killTweensOf(
+            ".experience__content",
+            ".section-title",
+            "#subtitle1",
+            "#card1",
+            "#card2",
+            "#card3",
+            "#subtitle2",
+            "#card4"
+          );
+        };
+      });
     });
-    gsap.registerPlugin(ScrollTrigger);
 
-    const ctx = gsap.context(() => {
-      tl.current = gsap
-        .timeline({
-          scrollTrigger: {
-            trigger: ".experience__content",
-            scrub: true,
-            start: "top 450px",
-            end: "bottom 450px",
-          },
-        })
-        .fromTo(
-          ".section-title",
-          {
-            opacity: 0,
-            y: 150,
-          },
-          {
-            opacity: 1,
-            y: 0,
-          }
-        )
-        .fromTo(
-          "#subtitle1",
-          {
-            opacity: 0,
-            y: 150,
-          },
-          {
-            opacity: 1,
-            y: 0,
-          }
-        )
-        .fromTo(
-          "#card1",
-          {
-            opacity: 0,
-            y: 150,
-          },
-          {
-            opacity: 1,
-            y: 0,
-          }
-        )
-        .fromTo(
-          "#card2",
-          {
-            opacity: 0,
-            y: 150,
-          },
-          {
-            opacity: 1,
-            y: 0,
-          }
-        )
-        .fromTo(
-          "#card3",
-          {
-            opacity: 0,
-            y: 150,
-          },
-          {
-            opacity: 1,
-            y: 0,
-          }
-        )
-        .fromTo(
-          "#subtitle2",
-          {
-            opacity: 0,
-            x: -100,
-          },
-          {
-            opacity: 1,
-            x: 0,
-          }
-        )
-        .fromTo(
-          "#card4",
-          {
-            opacity: 0,
-            y: 150,
-          },
-          {
-            opacity: 1,
-            y: 0,
-          }
-        );
+    mm.add("(max-width: 530px)", () => {
+      const tl = gsap.timeline({
+        defaults: { duration: 0.3, opacity: 0, ease: "back.out(1.7)" },
+      });
+      gsap.registerPlugin(ScrollTrigger);
 
-      return () => {
-        gsap.killTweensOf(
-          ".experience__content",
-          ".section-title",
-          "#subtitle1",
-          "#card1",
-          "#card2",
-          "#card3",
-          "#subtitle2",
-          "#card4"
-        );
-      };
-    }, ".experience__section");
+      const ctx = gsap.context(() => {
+        tl.current = gsap
+          .timeline({
+            scrollTrigger: {
+              trigger: ".experience__section",
+              scrub: true,
+              start: "top bottom",
+              end: "80% bottom ",
+              markers: true,
+            },
+          })
+          .fromTo(
+            ".section-title",
+            {
+              opacity: 0,
+              y: 150,
+            },
+            {
+              opacity: 1,
+              y: 0,
+            }
+          )
+          .fromTo(
+            "#subtitle1",
+            {
+              opacity: 0,
+              y: 150,
+            },
+            {
+              opacity: 1,
+              y: 0,
+            }
+          )
+          .fromTo(
+            "#card1",
+            {
+              opacity: 0,
+              y: 150,
+            },
+            {
+              opacity: 1,
+              y: 0,
+            }
+          )
+          .fromTo(
+            "#card2",
+            {
+              opacity: 0,
+              y: 150,
+            },
+            {
+              opacity: 1,
+              y: 0,
+            }
+          )
+          .fromTo(
+            "#card3",
+            {
+              opacity: 0,
+              y: 150,
+            },
+            {
+              opacity: 1,
+              y: 0,
+            }
+          )
+          .fromTo(
+            "#subtitle2",
+            {
+              opacity: 0,
+              x: -100,
+            },
+            {
+              opacity: 1,
+              x: 0,
+            }
+          )
+          .fromTo(
+            "#card4",
+            {
+              opacity: 0,
+              y: 150,
+            },
+            {
+              opacity: 1,
+              y: 0,
+            }
+          );
+
+        return () => {
+          gsap.killTweensOf(
+            ".experience__content",
+            ".section-title",
+            "#subtitle1",
+            "#card1",
+            "#card2",
+            "#card3",
+            "#subtitle2",
+            "#card4"
+          );
+        };
+      });
+    });
   }, []);
 
   useLayoutEffect(() => {
-    const tl = gsap.timeline({
-      defaults: {
-        duration: 1,
-        ease: "back.out(1.7)",
-        opacity: 0,
-      },
-      scrollTrigger: {
-        trigger: ".portfolio__section",
-        scrub: 2,
-        start: "top center",
-        end: "center bottom",
-        markers: true,
-      },
-    });
-    gsap.registerPlugin(ScrollTrigger);
+    const mm = gsap.matchMedia();
 
-    tl.fromTo(
-      "#experience__title",
-      {
-        y: 150,
-      },
-      {
-        y: 0,
-        opacity: 1,
-      }
-    )
-      .fromTo(
-        "#experience__subtitle",
+    mm.add("(min-width: 491px)", () => {
+      const tl = gsap.timeline({
+        defaults: {
+          duration: 1,
+          ease: "back.out(1.7)",
+          opacity: 0,
+        },
+        scrollTrigger: {
+          trigger: ".portfolio__section",
+          scrub: 2,
+          start: "top bottom",
+          end: "center bottom",
+        },
+      });
+      gsap.registerPlugin(ScrollTrigger);
+
+      tl.fromTo(
+        "#experience__title",
         {
-          y: 100,
+          y: 150,
         },
         {
           y: 0,
           opacity: 1,
         }
       )
-      .fromTo(
-        "#card__box1",
-        {
-          opacity: 1,
-          xPercent: 130,
-          rotate: "-20deg",
+        .fromTo(
+          "#experience__subtitle",
+          {
+            y: 100,
+          },
+          {
+            y: 0,
+            opacity: 1,
+          }
+        )
+        .fromTo(
+          "#card__box1",
+          {
+            opacity: 1,
+            xPercent: 130,
+            rotate: "-20deg",
+          },
+          {
+            delay: 1,
+            duration: 0.2,
+            opacity: 1,
+            rotate: "0deg",
+            xPercent: 0,
+          },
+          "-=1.5"
+        )
+        .fromTo(
+          "#card__box2",
+          {
+            x: 1,
+            opacity: 1,
+          },
+          {
+            x: 0,
+            duration: 0.2,
+            opacity: 1,
+          }
+        )
+        .fromTo(
+          "#card__box3",
+          {
+            xPercent: -130,
+            opacity: 1,
+            rotate: "20deg",
+          },
+          {
+            x: 0,
+            duration: 0.2,
+            opacity: 1,
+            rotate: "0deg",
+            xPercent: 0,
+          },
+          "-=0.7"
+        );
+    });
+
+    mm.add("(max-width: 490px)", () => {
+      const tl = gsap.timeline({
+        defaults: {
+          duration: 1,
+          ease: "back.out(1.7)",
+          opacity: 0,
         },
+        scrollTrigger: {
+          trigger: ".portfolio__section",
+          scrub: 2,
+          start: "top bottom",
+          end: "center bottom",
+        },
+      });
+      gsap.registerPlugin(ScrollTrigger);
+
+      tl.fromTo(
+        "#experience__title",
         {
-          delay: 1,
-          duration: 0.2,
-          opacity: 1,
-          rotate: "0deg",
-          xPercent: 0,
-        }
-      )
-      .fromTo(
-        "#card__box2",
-        {
-          x: 1,
-          opacity: 1,
+          x: 50,
         },
         {
           x: 0,
-          duration: 0.2,
           opacity: 1,
         }
       )
-      .fromTo(
-        "#card__box3",
-        {
-          xPercent: -130,
-          opacity: 1,
-          rotate: "20deg",
-        },
-        {
-          x: 0,
-          duration: 0.2,
-          opacity: 1,
-          rotate: "0deg",
-          xPercent: 0,
-        },
-        "-=0.7"
-      );
+        .fromTo(
+          "#experience__subtitle",
+          {
+            x: 100,
+          },
+          {
+            x: 0,
+            opacity: 1,
+          }
+        )
+        .fromTo(
+          "#card__box1",
+          {
+            opacity: 1,
+            yPercent: 100,
+            rotate: "-20deg",
+          },
+          {
+            delay: 1,
+            duration: 0.2,
+            opacity: 1,
+            rotate: "0deg",
+            yPercent: 0,
+          },
+          "-=1.5"
+        );
+    });
   }, []);
 
   return (
