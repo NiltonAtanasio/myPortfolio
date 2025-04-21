@@ -23,6 +23,8 @@ import logoHtml from "./assets/images/logoHtml.jpg";
 import logoCss from "./assets/images/logoCss.jpg";
 import logoJs from "./assets/images/logoJS.png";
 
+import cv from "./assets/pdf/Cv_2025.pdf";
+
 export default function App() {
   useLayoutEffect(() => {
     const tl = gsap.timeline({
@@ -153,21 +155,7 @@ export default function App() {
     );
 
     return () => {
-      gsap.killTweensOf(
-        "#nav__title",
-        "#nav__item1",
-        "#nav__item2",
-        "#nav__item3",
-        "#nav__button",
-        ".title",
-        ".text__animation",
-        ".description",
-        ".home__title",
-        ".banner",
-        ".section-title",
-        ".scroller__div",
-        ".home__buttons"
-      );
+      tl.kill();
     };
   }, []);
 
@@ -281,6 +269,10 @@ export default function App() {
           );
         };
       });
+
+      return () => {
+        tl.kill();
+      };
     });
 
     mm.add("(max-width: 530px)", () => {
@@ -297,7 +289,6 @@ export default function App() {
               scrub: true,
               start: "top bottom",
               end: "80% bottom ",
-              markers: true,
             },
           })
           .fromTo(
@@ -391,6 +382,10 @@ export default function App() {
           );
         };
       });
+
+      return () => {
+        tl.kill();
+      };
     });
   }, []);
 
@@ -477,6 +472,10 @@ export default function App() {
           },
           "-=0.7"
         );
+
+      return () => {
+        tl.kill();
+      };
     });
 
     mm.add("(max-width: 490px)", () => {
@@ -531,6 +530,10 @@ export default function App() {
           },
           "-=1.5"
         );
+
+      return () => {
+        tl.kill();
+      };
     });
   }, []);
 
@@ -554,9 +557,14 @@ export default function App() {
                   <a href="#portfolio">Portfolio</a>
                 </li>
               </ul>
-              <button className="btn-default" id="nav__button">
+              <a
+                href={cv}
+                download="cv_Nilton_Atanazzio"
+                className="btn-default"
+                id="nav__button"
+              >
                 Baixar CV
-              </button>
+              </a>
             </div>
           </nav>
         </header>
@@ -597,8 +605,13 @@ export default function App() {
                 </div>
 
                 <div className="home__buttons">
-                  <a href="#" className="btn-second">
-                    Play
+                  <a
+                    href="https://www.linkedin.com/in/niltonatanasio/"
+                    target="_blank"
+                    className="btn-second"
+                    rel="noreferrer"
+                  >
+                    Linkedin
                   </a>
                 </div>
               </div>
@@ -747,13 +760,22 @@ export default function App() {
 
             <div className="social__media__content">
               <div className="social__media__buttons">
-                <FaGithub className="item__icon" />
+                <a
+                  href="https://github.com/NiltonAtanasio"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaGithub className="item__icon" />
+                </a>
               </div>
               <div className="social__media__buttons">
-                <FaLinkedin className="item__icon" />
-              </div>
-              <div className="social__media__buttons">
-                <FaMousePointer className="item__icon" />
+                <a
+                  href="https://www.linkedin.com/in/niltonatanasio/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaLinkedin className="item__icon" />
+                </a>
               </div>
             </div>
           </div>
