@@ -216,7 +216,7 @@ footer {
 .home__content {
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   width: 100%;
   gap: 20px;
   max-width: 1300px;
@@ -228,7 +228,6 @@ footer {
 .home__title {
   width: 36%;
   max-width: 550px;
-  height: 100%;
   display: flex;
   flex-direction: column;
   margin-top: 0;
@@ -328,7 +327,7 @@ footer {
 
 .banner {
   width: 40%;
-  height: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -605,17 +604,16 @@ footer {
 }
 
 @media screen and (max-width: 950px) {
-  .banner {
-    display: none;
-  }
-
   .home__content {
-    justify-content: center;
-    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+    height: 90vh;
   }
 
   .home__title {
     width: 100%;
+    order: 2;
   }
 
   .home__title .title {
@@ -630,10 +628,23 @@ footer {
     font-size: 1.1rem;
   }
 
-  .rightSlide {
-    animation: rightSlideAnimation;
-    animation-duration: 0.4s;
-    animation-timeline: view(130% 3%);
+  .scroller__div {
+    margin: 5px 0 10px 0;
+  }
+
+  .banner {
+    width: 200px;
+    height: 200px;
+  }
+
+  .img__container {
+    width: 180px;
+    height: 180px;
+  }
+
+  .img__container img {
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -645,6 +656,7 @@ footer {
   .home__content {
     height: 80vh;
     margin: 0;
+    padding: 0 5px 0 10px;
   }
 
   .home__title {
@@ -652,15 +664,15 @@ footer {
   }
 
   .home__title .title {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .home__title .description {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .home__title h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .portfolio__section .section-subtitle {
