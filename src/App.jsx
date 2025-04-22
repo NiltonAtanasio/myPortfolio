@@ -23,7 +23,7 @@ import logoHtml from "./assets/images/logoHtml.jpg";
 import logoCss from "./assets/images/logoCss.jpg";
 import logoJs from "./assets/images/logoJS.png";
 
-import cv from "./assets/pdf/Cv_2025.pdf";
+import cv from "./assets/pdf/Cv_Nilton_2025.pdf";
 
 export default function App() {
   useLayoutEffect(() => {
