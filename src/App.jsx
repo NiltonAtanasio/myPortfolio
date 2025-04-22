@@ -39,6 +39,9 @@ export default function App() {
       {
         y: 0,
         opacity: 1,
+        onComplete: () => {
+          gsap.set("#nav__title", { clearProps: "transform" }); // remove o transform inline
+        },
       }
     )
       .fromTo(
@@ -82,6 +85,9 @@ export default function App() {
         {
           y: 0,
           opacity: 1,
+          onComplete: () => {
+            gsap.set("#nav__button", { clearProps: "transform" });
+          },
         },
         "-=0.45"
       )
@@ -441,6 +447,9 @@ export default function App() {
             opacity: 1,
             rotate: "0deg",
             xPercent: 0,
+            onComplete: () => {
+              gsap.set("#card__box1", { clearProps: "transform" });
+            },
           },
           "-=1.5"
         )
@@ -454,6 +463,9 @@ export default function App() {
             x: 0,
             duration: 0.2,
             opacity: 1,
+            onComplete: () => {
+              gsap.set("#card__box2", { clearProps: "transform" });
+            },
           }
         )
         .fromTo(
@@ -469,6 +481,9 @@ export default function App() {
             opacity: 1,
             rotate: "0deg",
             xPercent: 0,
+            onComplete: () => {
+              gsap.set("#card__box3", { clearProps: "transform" });
+            },
           },
           "-=0.7"
         );

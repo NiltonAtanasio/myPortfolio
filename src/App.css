@@ -46,7 +46,7 @@ header {
 
 .navbar__content {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1000px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -56,16 +56,16 @@ header {
   width: 5%;
 }
 
-.navbar__content h2 {
+#nav__title {
   color: var(--color-primary-6);
-  transition: 0.3s;
+  transition: transform 0.3s ease-in-out;
   cursor: default;
   font-size: 0.9rem;
 }
 
-.navbar__content h2:hover {
+#nav__title:hover {
   color: var(--color-primary-5);
-  font-size: 1rem;
+  transform: scale(1.1);
 }
 
 .nav_logo {
@@ -82,10 +82,12 @@ header {
 .nav-item a {
   text-decoration: none;
   position: relative;
+  display: inline-block;
   color: var(--color-neutral-1);
   font-weight: 600;
   transition: 0.3s;
   font-size: 0.8rem;
+  transition: transform 0.2s ease-in-out;
 }
 
 .nav-item a:after {
@@ -105,7 +107,7 @@ header {
 
 .nav-item a:hover {
   color: #111010;
-  font-size: 0.9rem;
+  transform: scale(1.07);
 }
 
 /* Button */
