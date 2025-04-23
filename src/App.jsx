@@ -7,7 +7,6 @@ import {
   FaCss3Alt,
   FaGithub,
   FaLinkedin,
-  FaMousePointer,
 } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
@@ -167,115 +166,96 @@ export default function App() {
 
   useLayoutEffect(() => {
     const mm = gsap.matchMedia();
+    gsap.registerPlugin(ScrollTrigger);
 
     mm.add("(min-width: 531px)", () => {
       const tl = gsap.timeline({
         defaults: { duration: 0.7, opacity: 0, ease: "back.out(1.7)" },
-      });
-      gsap.registerPlugin(ScrollTrigger);
-
-      const ctx = gsap.context(() => {
-        tl.current = gsap
-          .timeline({
-            scrollTrigger: {
-              trigger: ".experience__section",
-              scrub: true,
-              start: "top bottom",
-              end: "bottom bottom",
-            },
-          })
-          .fromTo(
-            ".section-title",
-            {
-              opacity: 0,
-              y: 150,
-            },
-            {
-              opacity: 1,
-              y: 0,
-            }
-          )
-          .fromTo(
-            "#subtitle1",
-            {
-              opacity: 0,
-              y: 150,
-            },
-            {
-              opacity: 1,
-              y: 0,
-            }
-          )
-          .fromTo(
-            "#card1",
-            {
-              opacity: 0,
-              y: 150,
-            },
-            {
-              opacity: 1,
-              y: 0,
-            }
-          )
-          .fromTo(
-            "#card2",
-            {
-              opacity: 0,
-              y: 150,
-            },
-            {
-              opacity: 1,
-              y: 0,
-            }
-          )
-          .fromTo(
-            "#card3",
-            {
-              opacity: 0,
-              y: 150,
-            },
-            {
-              opacity: 1,
-              y: 0,
-            }
-          )
-          .fromTo(
-            "#subtitle2",
-            {
-              opacity: 0,
-              x: -100,
-            },
-            {
-              opacity: 1,
-              x: 0,
-            }
-          )
-          .fromTo(
-            "#card4",
-            {
-              opacity: 0,
-              y: 150,
-            },
-            {
-              opacity: 1,
-              y: 0,
-            }
-          );
-
-        return () => {
-          gsap.killTweensOf(
-            ".experience__content",
-            ".section-title",
-            "#subtitle1",
-            "#card1",
-            "#card2",
-            "#card3",
-            "#subtitle2",
-            "#card4"
-          );
-        };
+        scrollTrigger: {
+          trigger: ".experience__section",
+          scrub: true,
+          start: "top bottom",
+          end: "bottom bottom",
+        },
       });
 
+      tl.fromTo(
+        ".section-title",
+        {
+          opacity: 0,
+          y: 150,
+        },
+        {
+          opacity: 1,
+          y: 0,
+        }
+      )
+        .fromTo(
+          "#subtitle1",
+          {
+            opacity: 0,
+            y: 150,
+          },
+          {
+            opacity: 1,
+            y: 0,
+          }
+        )
+        .fromTo(
+          "#card1",
+          {
+            opacity: 0,
+            y: 150,
+          },
+          {
+            opacity: 1,
+            y: 0,
+          }
+        )
+        .fromTo(
+          "#card2",
+          {
+            opacity: 0,
+            y: 150,
+          },
+          {
+            opacity: 1,
+            y: 0,
+          }
+        )
+        .fromTo(
+          "#card3",
+          {
+            opacity: 0,
+            y: 150,
+          },
+          {
+            opacity: 1,
+            y: 0,
+          }
+        )
+        .fromTo(
+          "#subtitle2",
+          {
+            opacity: 0,
+            x: -100,
+          },
+          {
+            opacity: 1,
+            x: 0,
+          }
+        )
+        .fromTo(
+          "#card4",
+          {
+            opacity: 0,
+            y: 150,
+          },
+          {
+            opacity: 1,
+            y: 0,
+          }
+        );
       return () => {
         tl.kill();
       };
@@ -284,110 +264,91 @@ export default function App() {
     mm.add("(max-width: 530px)", () => {
       const tl = gsap.timeline({
         defaults: { duration: 0.3, opacity: 0, ease: "back.out(1.7)" },
+        scrollTrigger: {
+          trigger: ".experience__section",
+          scrub: true,
+          start: "top bottom",
+          end: "80% bottom ",
+        },
       });
-      gsap.registerPlugin(ScrollTrigger);
 
-      const ctx = gsap.context(() => {
-        tl.current = gsap
-          .timeline({
-            scrollTrigger: {
-              trigger: ".experience__section",
-              scrub: true,
-              start: "top bottom",
-              end: "80% bottom ",
-            },
-          })
-          .fromTo(
-            ".section-title",
-            {
-              opacity: 0,
-              y: 150,
-            },
-            {
-              opacity: 1,
-              y: 0,
-            }
-          )
-          .fromTo(
-            "#subtitle1",
-            {
-              opacity: 0,
-              y: 150,
-            },
-            {
-              opacity: 1,
-              y: 0,
-            }
-          )
-          .fromTo(
-            "#card1",
-            {
-              opacity: 0,
-              y: 150,
-            },
-            {
-              opacity: 1,
-              y: 0,
-            }
-          )
-          .fromTo(
-            "#card2",
-            {
-              opacity: 0,
-              y: 150,
-            },
-            {
-              opacity: 1,
-              y: 0,
-            }
-          )
-          .fromTo(
-            "#card3",
-            {
-              opacity: 0,
-              y: 150,
-            },
-            {
-              opacity: 1,
-              y: 0,
-            }
-          )
-          .fromTo(
-            "#subtitle2",
-            {
-              opacity: 0,
-              x: -100,
-            },
-            {
-              opacity: 1,
-              x: 0,
-            }
-          )
-          .fromTo(
-            "#card4",
-            {
-              opacity: 0,
-              y: 150,
-            },
-            {
-              opacity: 1,
-              y: 0,
-            }
-          );
-
-        return () => {
-          gsap.killTweensOf(
-            ".experience__content",
-            ".section-title",
-            "#subtitle1",
-            "#card1",
-            "#card2",
-            "#card3",
-            "#subtitle2",
-            "#card4"
-          );
-        };
-      });
+      tl.fromTo(
+        ".section-title",
+        {
+          opacity: 0,
+          y: 150,
+        },
+        {
+          opacity: 1,
+          y: 0,
+        }
+      )
+        .fromTo(
+          "#subtitle1",
+          {
+            opacity: 0,
+            y: 150,
+          },
+          {
+            opacity: 1,
+            y: 0,
+          }
+        )
+        .fromTo(
+          "#card1",
+          {
+            opacity: 0,
+            y: 150,
+          },
+          {
+            opacity: 1,
+            y: 0,
+          }
+        )
+        .fromTo(
+          "#card2",
+          {
+            opacity: 0,
+            y: 150,
+          },
+          {
+            opacity: 1,
+            y: 0,
+          }
+        )
+        .fromTo(
+          "#card3",
+          {
+            opacity: 0,
+            y: 150,
+          },
+          {
+            opacity: 1,
+            y: 0,
+          }
+        )
+        .fromTo(
+          "#subtitle2",
+          {
+            opacity: 0,
+            x: -100,
+          },
+          {
+            opacity: 1,
+            x: 0,
+          }
+        )
+        .fromTo(
+          "#card4",
+          {
+            opacity: 0,
+            y: 150,
+          },
+          {
+            opacity: 1,
+            y: 0,
+          }
+        );
 
       return () => {
         tl.kill();
@@ -397,7 +358,7 @@ export default function App() {
 
   useLayoutEffect(() => {
     const mm = gsap.matchMedia();
-
+    gsap.registerPlugin(ScrollTrigger);
     mm.add("(min-width: 491px)", () => {
       const tl = gsap.timeline({
         defaults: {
@@ -412,7 +373,6 @@ export default function App() {
           end: "center bottom",
         },
       });
-      gsap.registerPlugin(ScrollTrigger);
 
       tl.fromTo(
         "#experience__title",
@@ -507,7 +467,6 @@ export default function App() {
           end: "center bottom",
         },
       });
-      gsap.registerPlugin(ScrollTrigger);
 
       tl.fromTo(
         "#experience__title",
