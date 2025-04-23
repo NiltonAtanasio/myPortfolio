@@ -14,8 +14,8 @@ Acesse a versão ao vivo do meu portfólio [aqui.](https://atanazzioportfolio.ne
     ├── src/
     │   ├── components/
     │   ├── assets/
-    │	│	└── images/
-    │	│	└── pdf/
+    │   │ 	├── images/
+    │   │	└── pdf/
     │   ├── App.js
     │   └── index.js
     ├── package.json
