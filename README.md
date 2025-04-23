@@ -2,9 +2,9 @@
 
 Bem-vindo ao meu portfólio! Aqui, você encontrará uma coleção dos meus projetos, habilidades e experiências para apresentar meus trabalhos.
 
-## 📸 Demonstração
+## 📸 Demonstração [![Netlify Status](https://api.netlify.com/api/v1/badges/94242bf1-f9f1-41dd-9080-e96e5b2cb314/deploy-status)](https://app.netlify.com/sites/atanazzioportfolio/deploys)
 
-Acesse a versão ao vivo do meu portfólio aqui.
+Acesse a versão ao vivo do meu portfólio [aqui.](https://atanazzioportfolio.netlify.app/)
 
 # 📂 Estrutura do Projeto
 
@@ -24,8 +24,8 @@ Acesse a versão ao vivo do meu portfólio aqui.
 ## 📬 Contato
 
 - **Email**: atanazzio.contato@gmail.com
-- **LinkedIn**: https://www.linkedin.com/in/niltonatanasio
-- **GitHub**: https://github.com/NiltonAtanasio
+- **LinkedIn**: [https://www.linkedin.com/in/niltonatanasio](https://www.linkedin.com/in/niltonatanasio)
+- **GitHub**: [https://github.com/NiltonAtanasio](https://github.com/NiltonAtanasio)
 
 ## 🧩 Como Executar o Projeto
 
