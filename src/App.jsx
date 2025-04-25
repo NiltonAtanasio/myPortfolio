@@ -21,6 +21,9 @@ import logoMongoDB from "./assets/images/MongoDb-logo.png";
 import logoHtml from "./assets/images/logoHtml.jpg";
 import logoCss from "./assets/images/logoCss.jpg";
 import logoJs from "./assets/images/logoJS.png";
+import logoCharityConnect from "./assets/images/logoCharityConnect.png";
+import logoCharityConnectSite from "./assets/images/LogoCharityConnectSite.png";
+import logoInsta from "./assets/images/logoInsta.png";
 
 import cv from "./assets/pdf/Cv_Nilton_2025.pdf";
 
@@ -687,39 +690,67 @@ export default function App() {
             <div className="card__area">
               <div className="box__area">
                 <div className="box" id="card__box1">
-                  <img src="#" alt="" />
-                  <div className="overlay">
-                    <h3>Projeto</h3>
-                    <p>
-                      O projeto ainda está em fase de desenvolvimento.
-                      Agradecemos sua paciência e pedimos que retorne em breve,
-                      pois a conclusão está prevista para os próximos dias.
-                    </p>
-                  </div>
+                  <a
+                    href="https://github.com/NiltonAtanasio/api_charity_connect"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={logoCharityConnect} alt="Logo de uma API" />
+
+                    <div className="overlay">
+                      <h3>Charity API</h3>
+                      <p>
+                        API desenvolvida para alimentar a rede social,
+                        conectando pessoas, ONGs e empresas em prol da caridade.
+                        Ela permite o gerenciamento de usuários, campanhas,
+                        doações e interações sociais de forma simples, segura e
+                        integrada.
+                      </p>
+                    </div>
+                  </a>
                 </div>
 
                 <div className="box" id="card__box2">
-                  <img src="#" alt="" />
-                  <div className="overlay">
-                    <h3>Projeto</h3>
-                    <p>
-                      O projeto ainda está em fase de desenvolvimento.
-                      Agradecemos sua paciência e pedimos que retorne em breve,
-                      pois a conclusão está prevista para os próximos dias.
-                    </p>
-                  </div>
+                  <a
+                    href="https://github.com/NiltonAtanasio/Charity_Connect"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src={logoCharityConnectSite}
+                      alt="Lodo do site CharityConnect"
+                    />
+                    <div className="overlay">
+                      <h3>CharityConnect</h3>
+                      <p>
+                        O site da CharityConnect é a interface principal da
+                        plataforma, onde usuários podem se cadastrar, explorar
+                        causas sociais, fazer doações e acompanhar campanhas
+                        solidárias.
+                      </p>
+                    </div>
+                  </a>
                 </div>
 
                 <div className="box" id="card__box3">
-                  <img src="#" alt="" />
-                  <div className="overlay">
-                    <h3>Projeto</h3>
-                    <p>
-                      O projeto ainda está em fase de desenvolvimento.
-                      Agradecemos sua paciência e pedimos que retorne em breve,
-                      pois a conclusão está prevista para os próximos dias.
-                    </p>
-                  </div>
+                  <a
+                    href="https://github.com/NiltonAtanasio/instagram"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src={logoInsta}
+                      alt="Uma réplica da interface do instagram"
+                    />
+                    <div className="overlay">
+                      <h3>Instagram</h3>
+                      <p>
+                        réplica do Instagram, com design inspirado na interface
+                        original da plataforma. A proposta é recriar visualmente
+                        a experiência do usuário.
+                      </p>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
