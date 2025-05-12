@@ -1,17 +1,10 @@
 import { useLayoutEffect } from "react";
 
-import {
-  FaReact,
-  FaNodeJs,
-  FaHtml5,
-  FaCss3Alt,
-  FaGithub,
-  FaLinkedin,
-} from "react-icons/fa";
-import { SiMongodb } from "react-icons/si";
-import { IoLogoJavascript } from "react-icons/io";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
 import "./App.css";
 
 import logoHome from "./assets/images/logoHome.png";
@@ -24,7 +17,9 @@ import logoJs from "./assets/images/logoJS.png";
 import logoCharityConnect from "./assets/images/logoCharityConnect.png";
 import logoCharityConnectSite from "./assets/images/LogoCharityConnectSite.png";
 import logoInsta from "./assets/images/logoInsta.png";
+
 import Navbar from "./components/navbar/Navbar.jsx";
+import SectionTitle from "./components/sectionTitle/SectionTitle.jsx";
 
 export default function App() {
   useLayoutEffect(() => {
@@ -33,61 +28,6 @@ export default function App() {
     });
 
     tl.fromTo(
-      ".title",
-      {
-        x: -200,
-      },
-      {
-        x: 0,
-        opacity: 1,
-      }
-    )
-      .fromTo(
-        ".text__animation",
-        {
-          x: -200,
-        },
-        {
-          x: 0,
-          opacity: 1,
-        },
-        "-=0.45"
-      )
-      .fromTo(
-        ".description",
-        {
-          x: -200,
-        },
-        {
-          x: 0,
-          opacity: 1,
-        },
-        "-=0.45"
-      )
-      .fromTo(
-        ".scroller__div",
-        {
-          y: 70,
-        },
-        {
-          y: 0,
-          opacity: 1,
-        },
-        "-=0.45"
-      )
-      .fromTo(
-        ".home__buttons",
-        {
-          y: 70,
-        },
-        {
-          y: 0,
-          opacity: 1,
-        },
-        "-=0.45"
-      );
-
-    gsap.fromTo(
       ".banner",
       {
         x: 200,
@@ -463,50 +403,7 @@ export default function App() {
         <main className="content">
           <section className="home" id="inicio">
             <div className="home__content">
-              <div className="home__title">
-                <h1 className="title">Olá, me chamo Atanazzio</h1>
-                <h3 className="text__animation">
-                  Eu sou <span></span>
-                </h3>
-
-                <p className="description">
-                  Tudo o que você vê online, começa aqui, nos bastidores do
-                  back-end
-                </p>
-
-                <div className="scroller__div">
-                  <div className="item item1">
-                    <FaReact className="item__icon" />
-                  </div>
-                  <div className="item item2">
-                    <FaNodeJs className="item__icon" />
-                  </div>
-                  <div className="item item3">
-                    <SiMongodb className="item__icon" />
-                  </div>
-                  <div className="item item4">
-                    <FaHtml5 className="item__icon" />
-                  </div>
-                  <div className="item item5">
-                    <FaCss3Alt className="item__icon" />
-                  </div>
-                  <div className="item item6">
-                    <IoLogoJavascript className="item__icon" />
-                  </div>
-                </div>
-
-                <div className="home__buttons">
-                  <a
-                    href="https://www.linkedin.com/in/niltonatanasio/"
-                    target="_blank"
-                    className="btn-second"
-                    rel="noreferrer"
-                  >
-                    Linkedin
-                  </a>
-                </div>
-              </div>
-
+              <SectionTitle />
               <div className="banner">
                 <div className="img__container">
                   <img
