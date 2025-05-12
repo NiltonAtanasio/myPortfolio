@@ -24,8 +24,7 @@ import logoJs from "./assets/images/logoJS.png";
 import logoCharityConnect from "./assets/images/logoCharityConnect.png";
 import logoCharityConnectSite from "./assets/images/LogoCharityConnectSite.png";
 import logoInsta from "./assets/images/logoInsta.png";
-
-import cv from "./assets/pdf/Cv_Nilton_2025.pdf";
+import Navbar from "./components/navbar/Navbar.jsx";
 
 export default function App() {
   useLayoutEffect(() => {
@@ -34,75 +33,15 @@ export default function App() {
     });
 
     tl.fromTo(
-      "#nav__title",
+      ".title",
       {
-        y: -50,
+        x: -200,
       },
       {
-        y: 0,
+        x: 0,
         opacity: 1,
-        onComplete: () => {
-          gsap.set("#nav__title", { clearProps: "transform" }); // remove o transform inline
-        },
       }
     )
-      .fromTo(
-        "#nav__item1",
-        {
-          y: -50,
-        },
-        {
-          y: 0,
-          opacity: 1,
-        },
-        "-=0.45"
-      )
-      .fromTo(
-        "#nav__item2",
-        {
-          y: -50,
-        },
-        {
-          y: 0,
-          opacity: 1,
-        },
-        "-=0.45"
-      )
-      .fromTo(
-        "#nav__item3",
-        {
-          y: -50,
-        },
-        {
-          y: 0,
-          opacity: 1,
-        },
-        "-=0.45"
-      )
-      .fromTo(
-        "#nav__button",
-        {
-          y: -50,
-        },
-        {
-          y: 0,
-          opacity: 1,
-          onComplete: () => {
-            gsap.set("#nav__button", { clearProps: "transform" });
-          },
-        },
-        "-=0.45"
-      )
-      .fromTo(
-        ".title",
-        {
-          x: -200,
-        },
-        {
-          x: 0,
-          opacity: 1,
-        }
-      )
       .fromTo(
         ".text__animation",
         {
@@ -518,32 +457,7 @@ export default function App() {
     <div>
       <body>
         <header>
-          <nav className="navbar">
-            <div className="navbar__content">
-              <div>
-                <h2 id="nav__title">DEV</h2>
-              </div>
-              <ul className="nav__list">
-                <li className="nav-item" id="nav__item1">
-                  <a href="#inicio">Início</a>
-                </li>
-                <li className="nav-item" id="nav__item2">
-                  <a href="#skills">Skills</a>
-                </li>
-                <li className="nav-item" id="nav__item3">
-                  <a href="#portfolio">Portfolio</a>
-                </li>
-              </ul>
-              <a
-                href={cv}
-                download="cv_Nilton_Atanazzio"
-                className="btn-default"
-                id="nav__button"
-              >
-                Baixar CV
-              </a>
-            </div>
-          </nav>
+          <Navbar />
         </header>
 
         <main className="content">
