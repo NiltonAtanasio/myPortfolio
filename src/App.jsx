@@ -7,7 +7,6 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import "./App.css";
 
-import logoHome from "./assets/images/logoHome.png";
 import logoReact from "./assets/images/react-logo.jpg";
 import logoNodeJs from "./assets/images/Node.js-logo.png";
 import logoMongoDB from "./assets/images/MongoDb-logo.png";
@@ -20,32 +19,9 @@ import logoInsta from "./assets/images/logoInsta.png";
 
 import Navbar from "./components/navbar/Navbar.jsx";
 import SectionTitle from "./components/sectionTitle/SectionTitle.jsx";
+import Banner from "./components/banner/Banner.jsx";
 
 export default function App() {
-  useLayoutEffect(() => {
-    const tl = gsap.timeline({
-      defaults: { duration: 0.5, opacity: 0, ease: "back.out(1.7)" },
-    });
-
-    tl.fromTo(
-      ".banner",
-      {
-        x: 200,
-        opacity: 0,
-      },
-      {
-        x: 0,
-        opacity: 1,
-        duration: 0.7,
-        delay: 0.7,
-      }
-    );
-
-    return () => {
-      tl.kill();
-    };
-  }, []);
-
   useLayoutEffect(() => {
     const mm = gsap.matchMedia();
     gsap.registerPlugin(ScrollTrigger);
@@ -404,14 +380,7 @@ export default function App() {
           <section className="home" id="inicio">
             <div className="home__content">
               <SectionTitle />
-              <div className="banner">
-                <div className="img__container">
-                  <img
-                    src={logoHome}
-                    alt="um menino sentado em frente ao computador com elementos em volta dele demonstrando que ele é um desenvolvedor"
-                  />
-                </div>
-              </div>
+              <Banner />
             </div>
           </section>
 
