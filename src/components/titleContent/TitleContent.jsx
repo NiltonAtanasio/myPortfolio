@@ -4,7 +4,7 @@ import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt } from "react-icons/fa";
 import { SiMongodb } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
 
-import { SectionTitleStyled } from "./SectionTitleStyled.jsx";
+import { TitleContentStyled } from "./TitleContentStyled.jsx";
 
 export default function SectionTitle() {
   useLayoutEffect(() => {
@@ -78,7 +78,7 @@ export default function SectionTitle() {
   }, []);
 
   return (
-    <SectionTitleStyled>
+    <TitleContentStyled>
       <h1 className="title">Olá, me chamo Atanazzio</h1>
       <h3 className="text__animation">
         Eu sou <span></span>
@@ -119,6 +119,6 @@ export default function SectionTitle() {
           Linkedin
         </a>
       </div>
-    </SectionTitleStyled>
+    </TitleContentStyled>
   );
 }

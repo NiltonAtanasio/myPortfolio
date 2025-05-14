@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SectionTitleStyled = styled.div`
+export const TitleContentStyled = styled.div`
   width: 36%;
   max-width: 550px;
   display: flex;
@@ -42,6 +42,76 @@ export const SectionTitleStyled = styled.div`
     border-left: 3px solid var(--color-primary-1);
     right: -8px;
     animation: cursor 0.6s infinite, typing 20s infinite;
+  }
+
+  // infinite horizon
+  .scroller__div {
+    width: 100%;
+    margin-inline: auto;
+    margin: 20px 0;
+    position: relative;
+    height: 35px;
+    overflow: hidden;
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0)
+    );
+  }
+
+  .item {
+    width: 35px;
+    height: 35px;
+    border-radius: 6px;
+    position: absolute;
+    left: max(calc(10px * 6), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    color: var(--color-primary-6);
+  }
+
+  .item1 {
+    animation-delay: calc(30s / 6 * (6 - 1) * -1);
+  }
+
+  .item2 {
+    animation-delay: calc(30s / 6 * (6 - 2) * -1);
+  }
+
+  .item3 {
+    animation-delay: calc(30s / 6 * (6 - 3) * -1);
+  }
+
+  .item4 {
+    animation-delay: calc(30s / 6 * (6 - 4) * -1);
+  }
+
+  .item5 {
+    animation-delay: calc(30s / 6 * (6 - 5) * -1);
+  }
+
+  .item6 {
+    animation-delay: calc(30s / 6 * (6 - 6) * -1);
+  }
+
+  .item__icon {
+    height: 100%;
+    width: 100%;
+  }
+
+  //animation to infinite horizon
+  @keyframes scrollLeft {
+    to {
+      left: -200px;
+    }
+  }
+
+  .home__buttons {
+    display: flex;
   }
 
   @keyframes cursor {

@@ -36,9 +36,6 @@ header {
 }
 
 /* Button */
-.home__buttons {
-  display: flex;
-}
 
 .btn-default {
   text-decoration: none;
@@ -95,108 +92,15 @@ header {
   scroll-margin-top: 5.5vh;
 }
 
-.home {
-  display: flex;
-  height: 95vh;
-  width: 100%;
-  justify-content: center;
-}
-
-.home__content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  gap: 20px;
-  max-width: 1300px;
-  padding: 0 20px;
-  margin-bottom: 20px;
-  height: 95vh;
-}
-
-/* infinite horizon */
-.scroller__div {
-  width: 100%;
-  margin-inline: auto;
-  margin: 20px 0;
-  position: relative;
-  height: 35px;
-  overflow: hidden;
-  mask-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 1) 20%,
-    rgba(0, 0, 0, 1) 80%,
-    rgba(0, 0, 0, 0)
-  );
-}
-
-.item {
-  width: 35px;
-  height: 35px;
-  border-radius: 6px;
-  position: absolute;
-  left: max(calc(10px * 6), 100%);
-  animation-name: scrollLeft;
-  animation-duration: 30s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  color: var(--color-primary-6);
-}
-
-.item1 {
-  animation-delay: calc(30s / 6 * (6 - 1) * -1);
-}
-
-.item2 {
-  animation-delay: calc(30s / 6 * (6 - 2) * -1);
-}
-
-.item3 {
-  animation-delay: calc(30s / 6 * (6 - 3) * -1);
-}
-
-.item4 {
-  animation-delay: calc(30s / 6 * (6 - 4) * -1);
-}
-
-.item5 {
-  animation-delay: calc(30s / 6 * (6 - 5) * -1);
-}
-
-.item6 {
-  animation-delay: calc(30s / 6 * (6 - 6) * -1);
-}
-
-.item__icon {
-  height: 100%;
-  width: 100%;
-}
-
 @media screen and (max-width: 1170px) {
   .experience__section {
     text-align: center;
   }
 }
 
-@media screen and (max-width: 950px) {
-  .home__content {
-    flex-direction: column;
-    align-items: center;
-    padding: 0 15px;
-    height: 90vh;
-  }
-}
-
 @media screen and (max-width: 600px) {
   .nav__list {
     display: none;
-  }
-
-  .home__content {
-    height: 80vh;
-    margin: 0;
-    padding: 0 5px 0 10px;
   }
 
   .experience__section {
