@@ -4,7 +4,7 @@ import Navbar from "./components/navbar/Navbar.jsx";
 import ExperienceContainer from "./components/experienceContainer/ExperienceContainer.jsx";
 import PortfolioSection from "./components/Sections/portfolioSection/PortfolioSection.jsx";
 import Footer from "./components/Sections/footer/Footer.jsx";
-import HomeSection from "./components/Sections/home/HomeSection.jsx";
+import HomeSection from "./components/Sections/homeSection/HomeSection.jsx";
 
 export default function App() {
   return (
