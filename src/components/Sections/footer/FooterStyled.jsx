@@ -2,12 +2,23 @@ import styled from "styled-components";
 
 export const FooterStyled = styled.footer`
   background-color: var(--color-primary-2);
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+
+  .footer__items,
+  .social__media__buttons a,
+  .item__icon {
+    width: 100%;
+    height: 100%;
+  }
 
   .footer__items {
+    max-width: 1000px;
     display: flex;
-    justify-content: space-between;
-    padding: 0px 8% 24px 8%;
     align-items: center;
+    justify-content: space-between;
     background-color: var(--color-primary-2);
   }
 
@@ -21,11 +32,12 @@ export const FooterStyled = styled.footer`
     display: flex;
     width: 100px;
     justify-content: space-evenly;
+    align-items: center;
   }
 
   .social__media__buttons {
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
     border-radius: 20%;
   }
 

@@ -5,11 +5,8 @@ import { FooterStyled } from "./FooterStyled.jsx";
 export default function Footer() {
   return (
     <FooterStyled>
-      <img src="src/images/wave.svg" alt="" />
-
       <div className="footer__items">
         <span className="copyright">&copy 2025 Nilton Atanazzio</span>
-
         <div className="social__media__content">
           <div className="social__media__buttons">
             <a
