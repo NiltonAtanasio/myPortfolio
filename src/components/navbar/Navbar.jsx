@@ -1,7 +1,7 @@
 import { useLayoutEffect } from "react";
-
 import { NavbarStyled } from "./NavbarStyled.jsx";
 import { gsap } from "gsap";
+import ButtonDownload from "../button/ButtonDownload.jsx";
 import cv from "../../assets/pdf/Cv_Nilton_2025.pdf";
 
 export default function Navbar() {
@@ -92,14 +92,12 @@ export default function Navbar() {
             <a href="#portfolio">Portfolio</a>
           </li>
         </ul>
-        <a
+        <ButtonDownload
           href={cv}
           download="cv_Nilton_Atanazzio"
-          className="btn-default"
+          text="Baixar CV"
           id="nav__button"
-        >
-          Baixar CV
-        </a>
+        />
       </div>
     </NavbarStyled>
   );

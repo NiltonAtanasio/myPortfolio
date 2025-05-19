@@ -164,7 +164,7 @@ export default function PortfolioSection() {
   }, []);
 
   return (
-    <PortfolioSectionStyled className="portfolio__section">
+    <PortfolioSectionStyled className="portfolio__section" id="portfolio">
       <h2 className="section-title " id="experience__title">
         Portifólio
       </h2>
