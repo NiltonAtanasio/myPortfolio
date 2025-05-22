@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { ExperienceContainerStyled } from "./ExperienceContainerStyled";
+import HorizontalCard from "../horizontalCard/HorizontalCard";
 
 import logoReact from "../../assets/images/react-logo.jpg";
 import logoNodeJs from "../../assets/images/Node.js-logo.png";
@@ -20,7 +21,7 @@ export default function ExperienceContainer() {
       const tl = gsap.timeline({
         defaults: { duration: 0.7, opacity: 0, ease: "back.out(1.7)" },
         scrollTrigger: {
-          trigger: ".experience__section",
+          trigger: ".experience__container",
           scrub: true,
           start: "top bottom",
           end: "bottom bottom",
@@ -113,7 +114,7 @@ export default function ExperienceContainer() {
       const tl = gsap.timeline({
         defaults: { duration: 0.3, opacity: 0, ease: "back.out(1.7)" },
         scrollTrigger: {
-          trigger: ".experience__section",
+          trigger: ".experience__container",
           scrub: true,
           start: "top bottom",
           end: "80% bottom ",
@@ -205,53 +206,42 @@ export default function ExperienceContainer() {
   }, []);
 
   return (
-    <ExperienceContainerStyled>
+    <ExperienceContainerStyled className="experience__container">
       <h2 className="section-title">Skills</h2>
       <h3 className="section-subtitle" id="subtitle1">
-        Men Stack <span>- React, Node.JS, MongoDB</span>
+        Mern Stack <span>- MongoDB, Express, React, Node.JS </span>
       </h3>
 
       <div className="card__content">
-        <div className="experience__card" id="card1">
-          <img
-            src={logoReact}
-            className="experience__avatar"
-            alt="Logo do React"
-          />
+        <HorizontalCard
+          cardId="card1"
+          logo={logoReact}
+          logoAlt="Logo do React"
+          text="Ciclo de Vida de Componentes, Statefull x Stateless, Rotas para
+              Páginas - SPA, Gerenciamento de Estado com Redux"
+        />
 
-          <div className="about__content">
-            <p>
-              Ciclo de Vida de Componentes, Statefull x Stateless, Rotas para
-              Páginas - SPA, Gerenciamento de Estado com Redux
-            </p>
-          </div>
-        </div>
+        <HorizontalCard
+          cardId="card2"
+          logo={logoNodeJs}
+          logoAlt="Logo do Node.js"
+          text="Express.js, Rest, CRUD, Controller - Router, Ajax, Async e Await,
+              Autenticação, sessão e criptografia, Encriptação de senha bcrypt"
+        />
 
-        <div className="experience__card" id="card2">
-          <img src={logoNodeJs} className="experience__avatar" alt="" />
-
-          <div className="about__content">
-            <p>
-              Express.js, Rest, CRUD, Controller - Router, Ajax, Async e Await,
-              Autenticação, sessão e criptografia, Encriptação de senha bcrypt
-            </p>
-          </div>
-        </div>
-
-        <div className="experience__card" id="card3">
-          <img src={logoMongoDB} className="experience__avatar" alt="" />
-
-          <div className="about__content">
-            <p>Banco de Dados orientado a documentos, ODM e Mongoose</p>
-          </div>
-        </div>
+        <HorizontalCard
+          cardId="card3"
+          logo={logoMongoDB}
+          logoAlt="Logo do MongoDB"
+          text="Banco de Dados orientado a documentos, ODM e Mongoose"
+        />
       </div>
 
       <h3 className="section-subtitle" id="subtitle2">
         Tríade da Web <span>- HTML, CSS, JavaScript</span>
       </h3>
       <div className="card__content" id="card4">
-        <div className="experience__card card__web">
+        <div className="card__web">
           <img
             src={logoHtml}
             className="experience__avatar"
