@@ -109,5 +109,13 @@ export const PortfolioSectionStyled = styled.section`
     .section-subtitle {
       text-align: center;
     }
+
+    img {
+      opacity: 0.2;
+    }
+
+    .overlay {
+      height: 100%;
+    }
   }
 `;
