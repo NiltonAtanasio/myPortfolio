@@ -23,6 +23,8 @@ export default function PortfolioSection() {
           scrub: 2,
           start: "top bottom",
           end: "center bottom",
+          invalidateOnRefresh: true,
+          once: true,
         },
       });
 
@@ -49,21 +51,20 @@ export default function PortfolioSection() {
         .fromTo(
           "#card__box1",
           {
-            opacity: 1,
             xPercent: 130,
             rotate: "-20deg",
+            opacity: 1,
           },
           {
-            delay: 1,
             duration: 0.2,
-            opacity: 1,
             rotate: "0deg",
             xPercent: 0,
+            opacity: 1,
             onComplete: () => {
               gsap.set("#card__box1", { clearProps: "transform" });
             },
           },
-          "-=1.5"
+          "-=0.5"
         )
         .fromTo(
           "#card__box2",
@@ -84,14 +85,14 @@ export default function PortfolioSection() {
           "#card__box3",
           {
             xPercent: -130,
-            opacity: 1,
             rotate: "20deg",
+            opacity: 1,
           },
           {
             x: 0,
             duration: 0.2,
-            opacity: 1,
             rotate: "0deg",
+            opacity: 1,
             xPercent: 0,
             onComplete: () => {
               gsap.set("#card__box3", { clearProps: "transform" });
@@ -117,6 +118,7 @@ export default function PortfolioSection() {
           scrub: 2,
           start: "top bottom",
           end: "center bottom",
+          once: true,
         },
       });
 
@@ -153,6 +155,9 @@ export default function PortfolioSection() {
             opacity: 1,
             rotate: "0deg",
             yPercent: 0,
+            onComplete: () => {
+              gsap.set("#card__box1", { clearProps: "transform" });
+            },
           },
           "-=1.5"
         );
@@ -161,6 +166,8 @@ export default function PortfolioSection() {
         tl.kill();
       };
     });
+
+    return () => mm.revert();
   }, []);
 
   return (
