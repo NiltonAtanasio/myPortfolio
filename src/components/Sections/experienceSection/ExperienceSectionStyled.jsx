@@ -15,4 +15,8 @@ export const ExperienceSectionStyled = styled.section`
   @media screen and (max-width: 600px) {
     margin-top: 150px;
   }
+
+  @media screen and (max-width: 500px) {
+    margin: 0;
+  }
 `;
