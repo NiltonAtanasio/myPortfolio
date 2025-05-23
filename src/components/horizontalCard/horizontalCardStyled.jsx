@@ -9,7 +9,7 @@ export const HorizontalCardStyled = styled.div`
   border-radius: 12px;
   box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
 
-  .experience__avatar {
+  img {
     width: 100px;
     height: 100px;
     border-radius: 100%;
@@ -30,6 +30,16 @@ export const HorizontalCardStyled = styled.div`
       text-align: center;
       padding: 20px 10px;
       font-size: 0.8rem;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    gap: 0;
+
+    img {
+      width: 80px;
+      height: 80px;
     }
   }
 `;
