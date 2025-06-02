@@ -9,17 +9,47 @@ Acesse a versão ao vivo do meu portfólio [aqui.](https://atanazzioportfolio.ne
 # 📂 Estrutura do Projeto
 
     myPortfolio/
-    ├── public/
-    │   └── index.html
-    ├── src/
-    │   ├── components/
-    │   ├── assets/
-    │   │ 	├── images/
-    │   │	└── pdf/
-    │   ├── App.js
-    │   └── index.js
-    ├── package.json
-    └── README.md
+    ├── 📂public/
+    │   └── 📃index.html
+    ├── 📂src/
+    │   ├── 📂assets/
+    │   │   ├── 📂images/
+    │   │   └── 📂pdf/
+    │   ├── 📂components/
+    │   │	├── 📂banner/
+    │   │   ├── 📂button/
+    │   │   ├── 📂experienceContainer/
+    │   │   ├── 📂horizontalCard/
+    │   │   ├── 📂navbar/
+    │   │   ├── 📂sections/
+    │   │   │    ├── 📂experienceSection/
+    │   │   │    ├── 📂footer/
+    │   │   │    ├── 📂homeSection/
+    │   │   │    └── 📂portfolioSection/
+    │   │   └── 📂titleContent/
+    │   ├── 📃App.css
+    │   ├── 📃App.js
+    │   └── 📃index.js
+    ├── 📃.gitignore
+    ├── 📃package.json
+    └── 📃README.md
+
+# 🚀 Padrão de Commits – Portfólio
+
+Este projeto segue a convenção de commits **Conventional Commits**, que ajuda a manter o histórico limpo, organizado e de fácil entendimento.
+
+## 🏷️ Tipos de Commits
+
+| Tipo         | Descrição                                              |
+| ------------ | ------------------------------------------------------ |
+| **feat**     | Nova funcionalidade, seção ou melhoria significativa   |
+| **fix**      | Correção de bugs                                       |
+| **docs**     | Alterações na documentação (README, comentários, etc)  |
+| **style**    | Ajustes de formatação, espaçamento, identação, CSS     |
+| **refactor** | Refatoração de código (sem alteração funcional)        |
+| **perf**     | Melhoria de performance                                |
+| **test**     | Criação ou ajuste de testes                            |
+| **chore**    | Tarefas gerais (configs, dependências, ajustes gerais) |
 
 ## 📬 Contato
 
