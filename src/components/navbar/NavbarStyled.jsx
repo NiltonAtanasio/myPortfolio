@@ -1,10 +1,14 @@
 import styled from "styled-components";
 
 export const NavbarStyled = styled.nav`
-  display: flex;
+  position: fixed;
+  top: 0;
   height: 5vh;
   width: 100%;
+  z-index: 9000;
+  display: flex;
   justify-content: center;
+  margin-bottom: 10px;
 
   .navbar__content {
     width: 100%;
