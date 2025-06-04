@@ -117,6 +117,7 @@ export const TitleContentStyled = styled.div`
   @keyframes cursor {
     to {
       border-left: 2px solid ${({ theme }) => theme.colors.primary[6]};
+
     }
   }
 

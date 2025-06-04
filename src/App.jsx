@@ -1,3 +1,4 @@
+
 import { ThemeProvider } from "styled-components";
 import { ControladorDeRotas } from "./routes/Routes";
 import { GlobalStyled } from "./globalStyles/GlobalStyled";

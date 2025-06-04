@@ -11,7 +11,9 @@ export default function Banner() {
     });
 
     tl.fromTo(
+
       ".img__container",
+
       {
         x: 200,
         opacity: 0,

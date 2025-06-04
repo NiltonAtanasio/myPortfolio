@@ -11,7 +11,9 @@ export const PortfolioSectionStyled = styled.section`
   scroll-margin-top: 15vh;
 
   .section-title {
+
     color: ${({ theme }) => theme.colors.primary[6]};
+
     font-size: 1.5rem;
   }
 
@@ -44,7 +46,9 @@ export const PortfolioSectionStyled = styled.section`
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+
     box-shadow: 1px 1px 10px ${({ theme }) => theme.colors.primary[6]};
+
     transition: 0.5s;
   }
 
@@ -59,10 +63,12 @@ export const PortfolioSectionStyled = styled.section`
   .overlay {
     height: 0;
     width: 100%;
+
     background: linear-gradient(
       transparent,
       ${({ theme }) => theme.colors.primary[2]} 65%
     );
+
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -85,12 +91,16 @@ export const PortfolioSectionStyled = styled.section`
     font-family: "Poppins", sans-serif;
     font-size: 0.9rem;
     letter-spacing: 2px;
+
     color: ${({ theme }) => theme.colors.neutral[1]};
+
   }
 
   .box:hover {
     transform: scale(1.05);
+
     box-shadow: 0 2px 25px ${({ theme }) => theme.colors.primary[6]};
+
   }
 
   .box:hover img {

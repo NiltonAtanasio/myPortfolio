@@ -5,6 +5,7 @@ import ButtonDownload from "../button/ButtonDownload.jsx";
 import cv from "../../assets/pdf/Cv_Nilton_2025.pdf";
 import { Link } from "react-router-dom";
 
+
 export default function Navbar() {
   useLayoutEffect(() => {
     const tl = gsap.timeline({
@@ -77,6 +78,7 @@ export default function Navbar() {
           </li>
           <li className="nav-item" id="nav__item2">
             <Link to="/blog">Blog</Link>
+
           </li>
         </ul>
         <ButtonDownload

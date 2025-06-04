@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 export const FooterStyled = styled.footer`
+
   background-color: ${({ theme }) => theme.colors.primary[2]};
   width: 100%;
   min-height: 7vh;
+
   display: flex;
   justify-content: center;
 
@@ -15,6 +17,7 @@ export const FooterStyled = styled.footer`
   }
 
   .footer__items {
+
     max-width: ${({ theme }) => theme.spacing.maxWidth};
     padding: ${({ theme }) => theme.spacing.md};
     display: flex;
@@ -25,6 +28,7 @@ export const FooterStyled = styled.footer`
 
   .copyright {
     color: ${({ theme }) => theme.colors.neutral[1]};
+
     font-weight: 500;
     font-size: 0.8rem;
   }
@@ -44,7 +48,9 @@ export const FooterStyled = styled.footer`
 
   .social__media__buttons a {
     text-decoration: none;
+
     color: ${({ theme }) => theme.colors.primary[6]};
+
   }
 
   @media screen and (max-width: 600px) {
