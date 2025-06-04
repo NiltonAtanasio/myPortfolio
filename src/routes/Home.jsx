@@ -1,8 +1,9 @@
 import "../App.css";
-
-import PortfolioSection from "../components/sections/portfolioSection/PortfolioSection.jsx";
-import HomeSection from "../components/sections/homeSection/HomeSection.jsx";
-import ExperienceSection from "../components/sections/experienceSection/ExperienceSection.jsx";
+import {
+  ExperienceSection,
+  HomeSection,
+  PortfolioSection,
+} from "../components";
 
 export default function Home() {
   return (

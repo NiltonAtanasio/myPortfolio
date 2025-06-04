@@ -10,7 +10,7 @@ export const TitleContentStyled = styled.div`
 
   .title {
     font-size: 2rem;
-    color: var(--color-neutral-1);
+    color: ${({ theme }) => theme.colors.neutral[1]};
   }
 
   h3 {
@@ -29,17 +29,17 @@ export const TitleContentStyled = styled.div`
 
   .text__animation span::before {
     content: "Desenvolvedor";
-    color: var(--color-primary-6);
+    color: ${({ theme }) => theme.colors.primary[6]};
     animation: words 20s infinite;
   }
 
   .text__animation span::after {
     content: "";
-    background-color: var(--color-primary-1);
+    background-color: ${({ theme }) => theme.colors.primary[1]};
     position: absolute;
     width: calc(100% + 8px);
     height: 100%;
-    border-left: 3px solid var(--color-primary-1);
+    border-left: 3px solid ${({ theme }) => theme.colors.primary[1]};
     right: -8px;
     animation: cursor 0.6s infinite, typing 20s infinite;
   }
@@ -71,7 +71,7 @@ export const TitleContentStyled = styled.div`
     animation-duration: 30s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    color: var(--color-primary-6);
+    color: ${({ theme }) => theme.colors.primary[6]};
   }
 
   .item1 {
@@ -116,7 +116,7 @@ export const TitleContentStyled = styled.div`
 
   @keyframes cursor {
     to {
-      border-left: 2px solid var(--color-primary-6);
+      border-left: 2px solid ${({ theme }) => theme.colors.primary[6]};
     }
   }
 
@@ -135,7 +135,7 @@ export const TitleContentStyled = styled.div`
     }
     61%,
     80% {
-      content: "Desenvolvedor Back-end";
+      content: "Desenvolvedor Node.js";
     }
     81%,
     100% {

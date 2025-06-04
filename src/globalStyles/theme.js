@@ -15,7 +15,14 @@ export const theme = {
   },
   spacing: {
     navbarHeight: '8vh',
-    pagePadding: '15px'
+    pagePadding: '15px',
+    maxWidth: '1100px',
+    xs: '4px',
+    sm: '8px',
+    md: '12px',
+    lg: '20px',
+    xl: '30px',
+    xxl: '50px'
   },
   fonts: {
     primary: '"Poppins", sans-serif'
