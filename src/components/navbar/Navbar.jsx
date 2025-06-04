@@ -3,6 +3,8 @@ import { NavbarStyled } from "./NavbarStyled.jsx";
 import { gsap } from "gsap";
 import ButtonDownload from "../button/ButtonDownload.jsx";
 import cv from "../../assets/pdf/Cv_Nilton_2025.pdf";
+import { Link } from "react-router-dom";
+
 
 export default function Navbar() {
   useLayoutEffect(() => {
@@ -46,17 +48,6 @@ export default function Navbar() {
         "-=0.45"
       )
       .fromTo(
-        "#nav__item3",
-        {
-          y: -50,
-        },
-        {
-          y: 0,
-          opacity: 1,
-        },
-        "-=0.45"
-      )
-      .fromTo(
         "#nav__button",
         {
           y: -50,
@@ -83,13 +74,11 @@ export default function Navbar() {
         </div>
         <ul className="nav__list">
           <li className="nav-item" id="nav__item1">
-            <a href="#inicio">Início</a>
+            <Link to="/">Home</Link>
           </li>
           <li className="nav-item" id="nav__item2">
-            <a href="#skills">Skills</a>
-          </li>
-          <li className="nav-item" id="nav__item3">
-            <a href="#portfolio">Portfolio</a>
+            <Link to="/blog">Blog</Link>
+
           </li>
         </ul>
         <ButtonDownload

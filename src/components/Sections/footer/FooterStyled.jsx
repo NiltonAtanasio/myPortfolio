@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 export const FooterStyled = styled.footer`
-  background-color: var(--color-primary-2);
+
+  background-color: ${({ theme }) => theme.colors.primary[2]};
   width: 100%;
-  height: 8vh;
+  min-height: 7vh;
+
   display: flex;
   justify-content: center;
 
@@ -15,15 +17,18 @@ export const FooterStyled = styled.footer`
   }
 
   .footer__items {
-    max-width: 1000px;
+
+    max-width: ${({ theme }) => theme.spacing.maxWidth};
+    padding: ${({ theme }) => theme.spacing.md};
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    background-color: var(--color-primary-2);
+    align-items: center;
+    min-height: 7vh;
   }
 
   .copyright {
-    color: var(--color-neutral-1);
+    color: ${({ theme }) => theme.colors.neutral[1]};
+
     font-weight: 500;
     font-size: 0.8rem;
   }
@@ -43,7 +48,9 @@ export const FooterStyled = styled.footer`
 
   .social__media__buttons a {
     text-decoration: none;
-    color: var(--color-primary-6);
+
+    color: ${({ theme }) => theme.colors.primary[6]};
+
   }
 
   @media screen and (max-width: 600px) {

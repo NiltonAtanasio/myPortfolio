@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const HorizontalCardStyled = styled.div`
   display: flex;
   align-items: center;
-  gap: 20px;
-  background-color: var(--color-neutral-0);
-  padding: 12px;
+  gap: ${({ theme }) => theme.spacing.lg || "20px"};
+  background-color: ${({ theme }) => theme.colors.neutral[0]};
+  padding: ${({ theme }) => theme.spacing.md || "12px"};
   border-radius: 12px;
   box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
 
