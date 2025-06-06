@@ -10,7 +10,8 @@ export const theme = {
     },
     neutral: {
       0: '#fff',
-      1: '#1d1d1d'
+      1: '#1d1d1d',
+      2: '#7f8c8d'
     }
   },
   spacing: {
