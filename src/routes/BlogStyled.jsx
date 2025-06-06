@@ -124,6 +124,8 @@ export const BlogStyled = styled.div`
 
   ul {
     margin: 15px 0 15px 20px;
+    list-style: none;
+
     li {
       margin-bottom: 8px;
       line-height: 1.4;
@@ -139,6 +141,16 @@ export const BlogStyled = styled.div`
     code {
       font-family: "Courier New", Courier, monospace;
       font-size: 0.9rem;
+    }
+  }
+  .Plink {
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.neutral[1]};
+    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    display: inline-block;
+
+    &:hover {
+      transform: scale(1.01);
     }
   }
 

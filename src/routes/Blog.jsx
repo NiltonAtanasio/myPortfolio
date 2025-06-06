@@ -1,107 +1,12 @@
 import React, { useState } from "react";
 import { BlogStyled } from "./BlogStyled.jsx";
+import { blogData } from "../data/blogData.js";
 
 export default function Blog() {
   // Estado para controlar qual tópico está expandido
   const [expandedTopic, setExpandedTopic] = useState(null);
   // Estado para controlar o tópico/subtópico selecionado
   const [selectedContent, setSelectedContent] = useState(null);
-
-  // Estrutura dos tópicos e subtópicos
-  const menuData = [
-    {
-      id: 1,
-      title: "Node.js",
-      subtopics: [
-        {
-          id: 1,
-          title: "Introdução ao Node.js",
-          content: [
-            {
-              type: "h2",
-              text: "O que é Node.js?",
-            },
-            {
-              type: "p",
-              text: "Node.js é um ambiente de execução JavaScript server-side que permite construir aplicações escaláveis usando JavaScript no lado do servidor.",
-            },
-            {
-              type: "h3",
-              text: "Principais características",
-            },
-            {
-              type: "ul",
-              items: [
-                "Assíncrono e orientado a eventos",
-                "Leve e eficiente",
-                "Ecossistema rico (npm)",
-              ],
-            },
-            {
-              type: "h2",
-              text: "Instalação",
-            },
-            {
-              type: "p",
-              text: "Para instalar o Node.js, visite o site oficial e baixe a versão LTS para seu sistema operacional.",
-            },
-          ],
-        },
-        {
-          id: 2,
-          title: "Criando seu primeiro servidor",
-          content: [
-            {
-              type: "h2",
-              text: "Hello World em Node.js",
-            },
-            {
-              type: "p",
-              text: "Vamos criar um servidor web simples que responde com 'Hello World' para todas as requisições.",
-            },
-            {
-              type: "code",
-              language: "javascript",
-              content:
-                "const http = require('http');\n\nconst server = http.createServer((req, res) => {\n  res.statusCode = 200;\n  res.setHeader('Content-Type', 'text/plain');\n  res.end('Hello World\\n');\n});\n\nserver.listen(3000, () => {\n  console.log('Server running at http://localhost:3000/');\n});",
-            },
-          ],
-        },
-      ],
-    },
-    {
-      id: 2,
-      title: "JavaScript",
-      subtopics: [
-        {
-          id: 1,
-          title: "ES6 Features",
-          content: [
-            {
-              type: "h2",
-              text: "Principais recursos do ES6",
-            },
-            {
-              type: "h3",
-              text: "Arrow Functions",
-            },
-            {
-              type: "p",
-              text: "As arrow functions proporcionam uma sintaxe mais concisa para escrever funções.",
-            },
-            {
-              type: "h3",
-              text: "Template Literals",
-            },
-            {
-              type: "p",
-              text: "Permitem interpolação de strings e strings multilinha.",
-            },
-          ],
-        },
-      ],
-    },
-  ];
 
   const toggleTopic = (topicId) => {
     setExpandedTopic(expandedTopic === topicId ? null : topicId);
@@ -120,7 +25,57 @@ export default function Blog() {
         case "h3":
           return <h3 key={index}>{item.text}</h3>;
         case "p":
-          return <p key={index}>{item.text}</p>;
+          // Se não tiver links, renderiza normalmente
+          if (!item.links) {
+            return (
+              <p key={index} className="mb-3 text-gray-300">
+                {item.text}
+              </p>
+            );
+          }
+
+          // Se tiver links, processa o texto
+          let processedText = item.text;
+          const elements = [];
+          let lastIndex = 0;
+
+          // Para cada link, divide o texto e adiciona o link no lugar
+          item.links.forEach((link, linkIndex) => {
+            const linkStart = processedText.indexOf(link.text);
+
+            if (linkStart !== -1) {
+              // Texto antes do link
+              if (linkStart > lastIndex) {
+                elements.push(processedText.substring(lastIndex, linkStart));
+              }
+
+              // O próprio link
+              elements.push(
+                <a
+                  key={`link-${linkIndex}`}
+                  href={link.url}
+                  className="Plink"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {link.text}
+                </a>
+              );
+
+              lastIndex = linkStart + link.text.length;
+            }
+          });
+
+          // Texto restante após o último link
+          if (lastIndex < processedText.length) {
+            elements.push(processedText.substring(lastIndex));
+          }
+
+          return (
+            <p key={index} className="mb-3 text-gray-300">
+              {elements}
+            </p>
+          );
         case "ul":
           return (
             <ul key={index}>
@@ -129,6 +84,7 @@ export default function Blog() {
               ))}
             </ul>
           );
+
         case "code":
           return (
             <pre key={index}>
@@ -159,7 +115,7 @@ export default function Blog() {
         <div className="sidebar">
           <h2 className="sidebar-title">Menu do Blog</h2>
           <ul className="topics-list">
-            {menuData.map((topic) => (
+            {blogData.map((topic) => (
               <li key={topic.id} className="topic-item">
                 <div
                   className="topic-header"
