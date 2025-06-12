@@ -11,6 +11,8 @@ export const NavbarStyled = styled.nav`
   margin-bottom: ${({ theme }) => theme.spacing.md};
   padding-left: ${({ theme }) => theme.spacing.md};
   padding-right: ${({ theme }) => theme.spacing.md};
+  background-color: rgba(255, 249, 234, 0.7);
+  backdrop-filter: blur(10px);
 
   .navbar__content {
     width: 100%;
