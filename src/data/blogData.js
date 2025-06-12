@@ -556,6 +556,207 @@ export const blogData = [
       },
       {
         id: 5,
+        title: "Single Thread, LibUV e I/O Não-Bloqueante",
+        content: [
+          {
+            type: "p",
+            text: "E aí, dev! 👋 Tá confuso com esse papo de 'Node.js é single-thread mas faz coisas em paralelo'? 🤯 Calma que hoje a gente vai desvendar toda a mágica por trás disso! Vamos falar de:"
+          },
+          {
+            type: "ul",
+            items: [
+              "✅ Single Thread (o que diabos isso significa?)",
+              "✅ LibUV (a biblioteca poderosa por trás do Node.js)",
+              "✅ I/O Não-Bloqueante (como o Node lida com milhares de conexões)"
+            ]
+          },
+          {
+            type: "p",
+            text: "Bora decifrar esse quebra-cabeça? 🔍"
+          },
+          {
+            type: "h2",
+            text: "🤔 O Que Significa 'Single Thread'?",
+          },
+          {
+            type: "p",
+            text: "Primeiro, vamos entender o básico:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Thread → 'Linha de execução' (um caminho que o processador segue para executar código).",
+              "Single Thread → O Node.js roda seu código JavaScript em apenas uma thread principal.",
+              "🔹 Mas Como Assim 'Single Thread'?"
+            ]
+          },
+          {
+            type: "p",
+            text: "Se você tem um código assim:"
+          },
+          {
+            type: "code",
+            language: "javascript",
+            content:
+              "console.log('Início');\nsetTimeout(() => console.log('Timeout'), 1000);\nconsole.log('Fim');",
+          },
+          {
+            type: "p",
+            text: "Tudo isso é executado na mesma thread."
+          },
+          {
+            type: "h3",
+            text: " E Isso Não é Ruim?",
+          },
+          {
+            type: "p",
+            text: "Não! Porque o Node.js não fica esperando operações lentas (como ler um arquivo ou fazer uma requisição HTTP). Ele delega essas tarefas e continua executando outras coisas."
+          },
+          {
+            type: "p",
+            text: "👉 Resumo: 'Single thread' significa que seu código JS roda em uma única thread, mas operações de I/O (entrada/saída) são tratadas em segundo plano."
+          },
+          {
+            type: "h2",
+            text: "⚡ LibUV: O Motor do Node.js",
+          },
+          {
+            type: "p",
+            text: "Aqui entra a LibUV (Unicorn Velociraptor... brincadeira, é Unicorn Velox 😆)."
+          },
+          {
+            type: "h3",
+            text: "🔹 O Que a LibUV Faz?",
+          },
+          {
+            type: "ul",
+            items: [
+              "Gerencia operações assíncronas (I/O de arquivos, redes, timers).",
+              "Implementa o Event Loop (aquele ciclo que fica verificando callbacks).",
+              "Usa uma thread pool (sim, o Node tem threads escondidas!)."
+            ]
+          },
+          {
+            type: "h3",
+            text: "🔹 Thread Pool? Mas Não Era Single Thread?",
+          },
+          {
+            type: "ul",
+            items: [
+              "Seu código JS roda em uma thread, mas:",
+              "Operações pesadas (como ler arquivos) são enviadas para 4 threads paralelas (default).",
+              "Isso evita que a thread principal trave."
+            ]
+          },
+          {
+            type: "p",
+            text: "👉 Exemplo:"
+          },
+          {
+            type: "code",
+            language: "javascript",
+            content:
+              "const fs = require('fs');\n\n// Isso vai para o Thread Pool!\nfs.readFile('arquivo.txt', (err, data) => {\n  console.log('Arquivo lido!');\n});",
+          },
+          {
+            type: "h2",
+            text: "🚀 I/O Não-Bloqueante: O Poder do Node.js",
+          },
+          {
+            type: "p",
+            text: "Agora a parte mais importante: como o Node.js lida com milhares de conexões sem travar?"
+          },
+          {
+            type: "h3",
+            text: "🔹 Bloqueante vs Não-Bloqueante",
+          },
+          {
+            type: "p",
+            text: "🐢Modelo Bloqueante: Espera cada operação terminar antes de continuar | Usado em PHP, Java (tradicional)"
+          },
+          {
+            type: "p",
+            text: "🚀Modelo Não-Bloqueante: Delega operações e segue executando código | Usado em Node.js, Go, Rust"
+          },
+          {
+            type: "h3",
+            text: "🔹 Exemplo Prático"
+          },
+          {
+            type: "code",
+            language: "javascript",
+            content:
+              "// Código NÃO-BLOQUEANTE\nconsole.log('Início');\n\nsetTimeout(() => console.log('Timeout'), 0); // I/O assíncrono\n\nconsole.log('Fim');",
+          },
+          {
+            type: "p",
+            text: "Saída:"
+          },
+          {
+            type: "code",
+            language: "bash",
+            content:
+              "Início\nFim\nTimeout",
+          },
+          {
+            type: "p",
+            text: "Por quê?"
+          },
+          {
+            type: "ul",
+            items: [
+              "setTimeout é não-bloqueante (vai para a LibUV).",
+              "O Node.js não espera e já executa o próximo console.log.",
+
+            ]
+          },
+          {
+            type: "h2",
+            text: "🎯 Como Tudo Isso Se Junta?"
+          },
+          {
+            type: "ul",
+            items: [
+              "Seu código roda na thread principal (single thread).",
+              "Operações de I/O (arquivos, rede, etc.) são delegadas para: LibUV (que usa thread pool ou sistemas operacionais)",
+              "Quando a operação termina, o callback vai para a fila de eventos.",
+              "O Event Loop pega o callback e executa na thread principal.",
+            ]
+          },
+          {
+            type: "p",
+            text: "👉 Resultado: Seu servidor Node.js consegue lidar com 10.000+ conexões sem travar!"
+          },
+          {
+            type: "h2",
+            text: "🚨 Cuidado com Código Bloqueante!"
+          },
+          {
+            type: "p",
+            text: "Se você fizer isso:"
+          },
+          {
+            type: "code",
+            language: "javascript",
+            content:
+              "// Código BLOQUEANTE (trava tudo!)\nfunction calcularPesado() {\n let soma = 0;\nfor (let i = 0; i < 1e10; i++) soma += i;\nreturn soma;\n}\n\nconsole.log('Início');\ncalcularPesado(); // TRAVA A THREAD PRINCIPAL! 😱\nconsole.log('Fim');",
+          },
+          {
+            type: "p",
+            text: "Solução:"
+          },
+          {
+            type: "ul",
+            items: [
+              "✅ Use Worker Threads para tarefas pesadas.",
+              "✅ Divida em callbacks assíncronos.",
+
+            ]
+          },
+        ],
+      },
+      {
+        id: 6,
         title: "Express.js",
         content: [
           {
