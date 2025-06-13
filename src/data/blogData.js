@@ -921,9 +921,74 @@ export const blogData = [
     subtopics: [
       {
         id: 1,
-        title: "🥸​ Em breve...",
+        title: "O Guia Descomplicado",
         content: [
-
+          {
+            type: "p",
+            text: "E aí, pessoal! Tudo bem com vocês? Hoje vamos mergulhar no mundo dos métodos ágeis—um tema que parece complexo, mas que, quando quebrado direitinho, fica superfácil de entender. 😎"
+          },
+          {
+            type: "p",
+            text: "Se você já ouviu falar em Scrum, Kanban, XP e ficou confuso, relaxa! Vamos explicar tudinho de um jeito leve e descontraído. Bora lá? 👇"
+          },
+          {
+            type: "h2",
+            text: "🔍 O Que São Métodos Ágeis?",
+          },
+          {
+            type: "p",
+            text: "Métodos ágeis são abordagens flexíveis para gerenciar projetos, especialmente no desenvolvimento de software. Ao invés de seguir um plano rígido e demorado (como no método tradicional cascata), os times ágeis trabalham em ciclos curtos, chamados de iterações ou sprints, entregando valor constantemente."
+          },
+          {
+            type: "p",
+            text: "💡 Resumindo: É como construir um carro peça por peça, testando e melhorando a cada etapa, em vez de montar tudo de uma vez só e só ver o resultado no final."
+          },
+          {
+            type: "h2",
+            text: "🤔 Por Que os Métodos Ágeis Surgiram?",
+          },
+          {
+            type: "p",
+            text: "Nos anos 90 e início dos 2000, o desenvolvimento de software era lento e burocrático. Os projetos demoravam anos para ficar prontos e, quando ficavam, muitas vezes já estavam ultrapassados ou não atendiam às necessidades reais dos clientes. 😫 Em 2001, um grupo de experts se reuniu e criou o 'Manifesto Ágil', um documento com 4 valores e 12 princípios que revolucionaram a forma de trabalhar. Os pilares principais são"
+          },
+          {
+            type: "ul",
+            items: [
+              "✅ Indivíduos e interações > Processos e ferramentas",
+              "✅ Software funcionando > Documentação extensiva",
+              "✅ Colaboração com o cliente > Negociação de contratos",
+              "✅ Responder a mudanças > Seguir um plano fixo"
+            ]
+          },
+          {
+            type: "p",
+            text: "Ou seja, adaptabilidade e pessoas em primeiro lugar! 🎯"
+          },
+          {
+            type: "h2",
+            text: "💥 Quais Problemas os Métodos Ágeis Resolvem?",
+          },
+          {
+            type: "p",
+            text: "Se antes os projetos eram lentos e cheios de falhas, os métodos ágeis vieram para acelerar entregas, reduzir riscos e aumentar a satisfação do cliente. Veja alguns problemas que eles ajudam a resolver:"
+          },
+          {
+            type: "ul",
+            items: [
+              "🔹 Mudanças de última hora → Com ciclos curtos, é mais fácil ajustar o rumo.",
+              "🔹 Falta de transparência → Reuniões diárias (como o Daily Scrum) mantêm todo mundo alinhado.",
+              "🔹 Entregas demoradas → Pequenas partes do projeto são concluídas e testadas rapidamente",
+              "🔹 Clientes insatisfeitos → O feedback constante garante que o produto atenda às reais necessidades."
+            ]
+          },
+          {
+            type: "h2",
+            text: "🎯 E aí, Bora Ser Ágil?",
+          },
+          {
+            type: "p",
+            text: "Se você quer trabalhar de forma mais inteligente, rápida e colaborativa, os métodos ágeis são o caminho! Nos próximos posts, vamos explorar Scrum, Kanban, Lean e outras metodologias incríveis. Fiquem ligados! 📢"
+          },
         ],
       },
     ],
