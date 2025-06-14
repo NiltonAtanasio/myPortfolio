@@ -1398,6 +1398,188 @@ export const blogData = [
           },
         ],
       },
+      {
+        id: 5,
+        title: "Do Backlog ao Incremento",
+        content: [
+          {
+            type: "p",
+            text: "Se você já se perguntou como times ágeis conseguem entregar produtos incríveis em prazos curtos, a resposta está no Scrum! Este framework revolucionário não é só uma metodologia, é uma forma de pensar, colaborar e evoluir constantemente."
+          },
+          {
+            type: "h2",
+            text: "🎯 Os Papéis Fundamentais: Quem Faz o Quê?",
+          },
+          {
+            type: "p",
+            text: "Imagine um time de futebol: cada jogador tem uma posição específica, mas todos trabalham juntos para marcar gols. No Scrum é a mesma coisa!"
+          },
+          {
+            type: "h3",
+            text: "O Trio Essencial"
+          },
+          {
+            type: "h3",
+            text: "1️⃣ Product Owner (PO) - O estrategista"
+          },
+          {
+            type: "p",
+            text: "É o 'dono do produto', responsável por maximizar seu valor. Ele prioriza funcionalidades, define a visão e garante que o time esteja sempre trabalhando no que realmente importa para os usuários e para o negócio."
+          },
+          {
+            type: "h3",
+            text: "2️⃣ Scrum Master (SM) - O facilitador"
+          },
+          {
+            type: "p",
+            text: "Pense nele como um técnico que remove obstáculos. Seu trabalho é garantir que o time entenda e siga os princípios do Scrum, além de proteger o time de interferências externas."
+          },
+          {
+            type: "h3",
+            text: "3️⃣ Equipe de Desenvolvimento - Os executores"
+          },
+          {
+            type: "p",
+            text: "São os profissionais multidisciplinares (desenvolvedores, testadores, designers) que transformam ideias em realidade. O diferencial? Eles se auto-organizam para cumprir as metas!"
+          },
+          {
+            type: "p",
+            text: "Mas não para por aí! O ecossistema do Scrum também envolve:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Stakeholders: Pessoas interessadas no produto (clientes, patrocinadores, outros departamentos)",
+              "Usuários finais: Quem realmente vai usar o que está sendo desenvolvido",
+            ]
+          },
+          {
+            type: "h2",
+            text: "📦 Os Artefatos: O Que Produzimos?",
+          },
+          {
+            type: "p",
+            text: "Assim como um pintor precisa de tintas e pincéis, o time Scrum trabalha com artefatos específicos que dão estrutura ao processo."
+          },
+          {
+            type: "h3",
+            text: "Product Backlog - A Fonte da Verdade",
+          },
+          {
+            type: "p",
+            text: "Esta lista dinâmica contém tudo o que o produto pode precisar: funcionalidades, melhorias, correções de bugs. O PO é como um chef, constantemente refinando e priorizando os ingredientes desse 'cardápio' de acordo com o valor que cada item traz."
+          },
+          {
+            type: "h3",
+            text: "Sprint Backlog - O Plano de Ação",
+          },
+          {
+            type: "p",
+            text: "Quando começa uma Sprint (nosso ciclo de trabalho), o time seleciona itens do Product Backlog para transformar em realidade. É como fazer a lista de compras para uma receita específica."
+          },
+          {
+            type: "h3",
+            text: "Incremento - O Resultado Tangível",
+          },
+          {
+            type: "p",
+            text: "No final de cada Sprint, temos algo concreto: uma versão nova e melhorada do produto, mesmo que pequena. A regra é clara: tem que funcionar!"
+          },
+          {
+            type: "h2",
+            text: "📝 User Stories: Falando a Língua do Usuário",
+          },
+          {
+            type: "p",
+            text: "'Como usuário, quero poder recuperar minha senha facilmente, para não ficar travado quando esquecê-la.'"
+          },
+          {
+            type: "p",
+            text: "Essa é uma user story típica - uma forma simples de capturar necessidades reais. A magia está na estrutura:"
+          },
+          {
+            type: "p",
+            text: "'Como [papel], quero [ação], para [benefício].'"
+          },
+          {
+            type: "p",
+            text: "Por que funciona?"
+          },
+          {
+            type: "ul",
+            items: [
+              "Mantém o foco no usuário",
+              "É específica o suficiente para desenvolver",
+              "Pequena o bastante para caber em uma Sprint",
+            ]
+          },
+          {
+            type: "h2",
+            text: "🗓️ Os Eventos: O Ritmo do Scrum",
+          },
+          {
+            type: "p",
+            text: "O Scrum é como uma dança bem coreografada, com eventos que criam um ritmo produtivo:"
+          },
+          {
+            type: "h3",
+            text: "Sprint Planning - O Pontapé Inicial",
+          },
+          {
+            type: "p",
+            text: "Aqui o time define o que será feito nas próximas 1-4 semanas. Não é só pegar tarefas - é estabelecer uma meta clara que todos entendem e abraçam."
+          },
+          {
+            type: "h3",
+            text: "Daily Scrum - O Check-in Diário",
+          },
+          {
+            type: "p",
+            text: "Só 15 minutos! A ideia não é resolver problemas, mas alinhar:"
+          },
+          {
+            type: "ul",
+            items: [
+              "O que fiz ontem?",
+              "O que farei hoje?",
+              "Há algum impedimento?",
+            ]
+          },
+          {
+            type: "h3",
+            text: "Sprint Review - Mostra e Conta",
+          },
+          {
+            type: "p",
+            text: "Momento de demonstrar o trabalho concluído e coletar feedbacks valiosos. Lembre-se: não é aprovação, é conversa!"
+          },
+          {
+            type: "h3",
+            text: "Retrospectiva - Melhorando o Processo",
+          },
+          {
+            type: "p",
+            text: "O time reflete: o que funcionou? O que pode melhorar? É aqui que a magia da melhoria contínua acontece."
+          },
+          {
+            type: "h2",
+            text: "💡 Por Que Tudo Isso Importa?",
+          },
+          {
+            type: "p",
+            text: "O Scrum não é só um conjunto de regras, é uma filosofia que:"
+          },
+          {
+            type: "ul",
+            items: [
+              "✅ Entrega valor mais rápido - Em vez de esperar meses ou anos, os usuários recebem melhorias constantes",
+              "✅ Reduz riscos - Se algo não está dando certo, você descobre cedo e pode ajustar",
+              "✅ Empodera times - As pessoas têm voz ativa no processo",
+              "✅ Cria transparência - Todos sabem o que está acontecendo e por quê",
+            ]
+          },
+        ],
+      },
     ],
   },
   {
