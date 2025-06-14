@@ -991,6 +991,120 @@ export const blogData = [
           },
         ],
       },
+      {
+        id: 2,
+        title: "Princípios, Estruturas e Kanban!",
+        content: [
+          {
+            type: "p",
+            text: "E aí, galera! No último post, demos uma introdução massa sobre o que são métodos ágeis e por que eles são tão importantes. Hoje, vamos mergulhar mais fundo nos 12 princípios do Manifesto Ágil, entender por que chamamos de 'estrutura' e não só 'método', e ainda explorar o Kanban—uma das abordagens mais flexíveis do mundo ágil."
+          },
+          {
+            type: "p",
+            text: "Bora descomplicar tudo? 👇"
+          },
+          {
+            type: "h2",
+            text: "📜 Os 12 Princípios do Manifesto Ágil ",
+          },
+          {
+            type: "p",
+            text: "O Manifesto Ágil não tem só 4 valores, mas também 12 princípios que guiam a mentalidade ágil. Vamos ver os mais importantes de um jeito fácil:"
+          },
+          {
+            type: "ul",
+            items: [
+              "1️⃣ Satisfação do cliente ➝ Entregar software funcional rápido e com frequência. 🏆",
+              "2️⃣ Aceitar mudanças ➝ Requisitos mudam, e tá tudo bem! 🔄",
+              "3️⃣ Entregas frequentes ➝ De semanas a meses, com preferência para prazos curtos. ⏳",
+              "4️⃣ Trabalho em conjunto ➝ Pessoas de negócio e devs colaborando todo dia. 🤝",
+              "3️⃣ Entregas frequentes ➝ De semanas a meses, com preferência para prazos curtos. ⏳",
+              "4️⃣ Trabalho em conjunto ➝ Pessoas de negócio e devs colaborando todo dia. 🤝",
+              "3️⃣ Entregas frequentes ➝ De semanas a meses, com preferência para prazos curtos. ⏳",
+              "4️⃣ Trabalho em conjunto ➝ Pessoas de negócio e devs colaborando todo dia. 🤝",
+              "5️⃣ Times motivados ➝ Dê autonomia e confiança para quem faz acontecer. 💪",
+              "6️⃣ Conversa cara a cara ➝ A melhor forma de comunicação é direta! 🗣️",
+              "7️⃣ Software funcionando = progresso ➝ Não adianta documentação sem resultado. ✅",
+              "8️⃣ Ritmo sustentável ➝ Trabalhar em um fluxo que não queime a equipe. ♻️",
+              "9️⃣ Excelência técnica ➝ Boa arquitetura e design para agilidade a longo prazo. 🛠️",
+              "🔟 Simplicidade ➝ Fazer só o necessário, sem complicação. ✨",
+              "1️⃣1️⃣ Times auto-organizáveis ➝ Decisões vêm de quem está na ação. 🧠",
+              "1️⃣2️⃣ Refletir e ajustar ➝ Melhoria contínua é a chave! 🔄",
+
+            ]
+          },
+          {
+            type: "p",
+            text: "💡 Resumo: O foco é valor, adaptação e pessoas, não burocracia!"
+          },
+          {
+            type: "h2",
+            text: "🤷 Por Que 'Estrutura' e Não 'Método'?",
+          },
+          {
+            type: "p",
+            text: "Você já deve ter ouvido 'metodologia ágil', mas o termo mais correto é 'estrutura ágil' ou 'framework ágil'. Mas por quê?"
+          },
+          {
+            type: "ul",
+            items: [
+              "🔹 Método ➝ Parece algo engessado, com regras fixas (e ágil é justamente o oposto!).",
+              "🔹 Estrutura/Framework ➝ São guias flexíveis, que se adaptam ao contexto do time.",
+
+            ]
+          },
+          {
+            type: "p",
+            text: "Ou seja, Scrum e Kanban não são receitas de bolo, mas sim modelos que você ajusta conforme sua necessidade. 🎯"
+          },
+          {
+            type: "h2",
+            text: "📌 Kanban: O Método Visual e Fluido",
+          },
+          {
+            type: "p",
+            text: "Se tem uma estrutura ágil que é simples e poderosa, é o Kanban! Ele veio do sistema Toyota de produção e foi adaptado para TI e outros setores."
+          },
+          {
+            type: "h3",
+            text: "🔹 Como Funciona?",
+          },
+          {
+            type: "ul",
+            items: [
+              "Tarefas são colocadas em um quadro visual (físico ou digital, como Trello/Jira).",
+              "Dividido em colunas, geralmente: 'Pendentes' | 'Em Processo' | 'Terminado' (mas pode customizar, como adicionar uma coluna de 'Prioridades').",
+              "Limite de trabalho em progresso (WIP) ➝ Evita sobrecarregar o time.",
+
+            ]
+          },
+          {
+            type: "h3",
+            text: "🔹 Benefícios do Kanban",
+          },
+          {
+            type: "ul",
+            items: [
+              "✅ Visualização clara do fluxo de trabalho.",
+              "✅ Flexibilidade total – sem sprints fixos como no Scrum.",
+              "✅ Melhoria contínua através da análise do fluxo.",
+
+            ]
+          },
+          {
+            type: "h3",
+            text: "🔹 Quando Usar?",
+          },
+          {
+            type: "ul",
+            items: [
+              "Times que precisam de mais liberdade sem cerimônias rígidas.",
+              "Suporte e manutenção (onde demandas chegam a todo momento).",
+              "Qualquer área! Desde TI até marketing e RH.",
+            ]
+          },
+        ],
+      },
     ],
   },
   {
