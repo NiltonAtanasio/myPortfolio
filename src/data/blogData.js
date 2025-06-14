@@ -921,9 +921,663 @@ export const blogData = [
     subtopics: [
       {
         id: 1,
-        title: "🥸​ Em breve...",
+        title: "O Guia Descomplicado",
         content: [
+          {
+            type: "p",
+            text: "E aí, pessoal! Tudo bem com vocês? Hoje vamos mergulhar no mundo dos métodos ágeis—um tema que parece complexo, mas que, quando quebrado direitinho, fica superfácil de entender. 😎"
+          },
+          {
+            type: "p",
+            text: "Se você já ouviu falar em Scrum, Kanban, XP e ficou confuso, relaxa! Vamos explicar tudinho de um jeito leve e descontraído. Bora lá? 👇"
+          },
+          {
+            type: "h2",
+            text: "🔍 O Que São Métodos Ágeis?",
+          },
+          {
+            type: "p",
+            text: "Métodos ágeis são abordagens flexíveis para gerenciar projetos, especialmente no desenvolvimento de software. Ao invés de seguir um plano rígido e demorado (como no método tradicional cascata), os times ágeis trabalham em ciclos curtos, chamados de iterações ou sprints, entregando valor constantemente."
+          },
+          {
+            type: "p",
+            text: "💡 Resumindo: É como construir um carro peça por peça, testando e melhorando a cada etapa, em vez de montar tudo de uma vez só e só ver o resultado no final."
+          },
+          {
+            type: "h2",
+            text: "🤔 Por Que os Métodos Ágeis Surgiram?",
+          },
+          {
+            type: "p",
+            text: "Nos anos 90 e início dos 2000, o desenvolvimento de software era lento e burocrático. Os projetos demoravam anos para ficar prontos e, quando ficavam, muitas vezes já estavam ultrapassados ou não atendiam às necessidades reais dos clientes. 😫 Em 2001, um grupo de experts se reuniu e criou o 'Manifesto Ágil', um documento com 4 valores e 12 princípios que revolucionaram a forma de trabalhar. Os pilares principais são"
+          },
+          {
+            type: "ul",
+            items: [
+              "✅ Indivíduos e interações > Processos e ferramentas",
+              "✅ Software funcionando > Documentação extensiva",
+              "✅ Colaboração com o cliente > Negociação de contratos",
+              "✅ Responder a mudanças > Seguir um plano fixo"
+            ]
+          },
+          {
+            type: "p",
+            text: "Ou seja, adaptabilidade e pessoas em primeiro lugar! 🎯"
+          },
+          {
+            type: "h2",
+            text: "💥 Quais Problemas os Métodos Ágeis Resolvem?",
+          },
+          {
+            type: "p",
+            text: "Se antes os projetos eram lentos e cheios de falhas, os métodos ágeis vieram para acelerar entregas, reduzir riscos e aumentar a satisfação do cliente. Veja alguns problemas que eles ajudam a resolver:"
+          },
+          {
+            type: "ul",
+            items: [
+              "🔹 Mudanças de última hora → Com ciclos curtos, é mais fácil ajustar o rumo.",
+              "🔹 Falta de transparência → Reuniões diárias (como o Daily Scrum) mantêm todo mundo alinhado.",
+              "🔹 Entregas demoradas → Pequenas partes do projeto são concluídas e testadas rapidamente",
+              "🔹 Clientes insatisfeitos → O feedback constante garante que o produto atenda às reais necessidades."
+            ]
+          },
+          {
+            type: "h2",
+            text: "🎯 E aí, Bora Ser Ágil?",
+          },
+          {
+            type: "p",
+            text: "Se você quer trabalhar de forma mais inteligente, rápida e colaborativa, os métodos ágeis são o caminho! Nos próximos posts, vamos explorar Scrum, Kanban, Lean e outras metodologias incríveis. Fiquem ligados! 📢"
+          },
+        ],
+      },
+      {
+        id: 2,
+        title: "Princípios, Estruturas e Kanban!",
+        content: [
+          {
+            type: "p",
+            text: "E aí, galera! No último post, demos uma introdução massa sobre o que são métodos ágeis e por que eles são tão importantes. Hoje, vamos mergulhar mais fundo nos 12 princípios do Manifesto Ágil, entender por que chamamos de 'estrutura' e não só 'método', e ainda explorar o Kanban—uma das abordagens mais flexíveis do mundo ágil."
+          },
+          {
+            type: "p",
+            text: "Bora descomplicar tudo? 👇"
+          },
+          {
+            type: "h2",
+            text: "📜 Os 12 Princípios do Manifesto Ágil ",
+          },
+          {
+            type: "p",
+            text: "O Manifesto Ágil não tem só 4 valores, mas também 12 princípios que guiam a mentalidade ágil. Vamos ver os mais importantes de um jeito fácil:"
+          },
+          {
+            type: "ul",
+            items: [
+              "1️⃣ Satisfação do cliente ➝ Entregar software funcional rápido e com frequência. 🏆",
+              "2️⃣ Aceitar mudanças ➝ Requisitos mudam, e tá tudo bem! 🔄",
+              "3️⃣ Entregas frequentes ➝ De semanas a meses, com preferência para prazos curtos. ⏳",
+              "4️⃣ Trabalho em conjunto ➝ Pessoas de negócio e devs colaborando todo dia. 🤝",
+              "3️⃣ Entregas frequentes ➝ De semanas a meses, com preferência para prazos curtos. ⏳",
+              "4️⃣ Trabalho em conjunto ➝ Pessoas de negócio e devs colaborando todo dia. 🤝",
+              "3️⃣ Entregas frequentes ➝ De semanas a meses, com preferência para prazos curtos. ⏳",
+              "4️⃣ Trabalho em conjunto ➝ Pessoas de negócio e devs colaborando todo dia. 🤝",
+              "5️⃣ Times motivados ➝ Dê autonomia e confiança para quem faz acontecer. 💪",
+              "6️⃣ Conversa cara a cara ➝ A melhor forma de comunicação é direta! 🗣️",
+              "7️⃣ Software funcionando = progresso ➝ Não adianta documentação sem resultado. ✅",
+              "8️⃣ Ritmo sustentável ➝ Trabalhar em um fluxo que não queime a equipe. ♻️",
+              "9️⃣ Excelência técnica ➝ Boa arquitetura e design para agilidade a longo prazo. 🛠️",
+              "🔟 Simplicidade ➝ Fazer só o necessário, sem complicação. ✨",
+              "1️⃣1️⃣ Times auto-organizáveis ➝ Decisões vêm de quem está na ação. 🧠",
+              "1️⃣2️⃣ Refletir e ajustar ➝ Melhoria contínua é a chave! 🔄",
 
+            ]
+          },
+          {
+            type: "p",
+            text: "💡 Resumo: O foco é valor, adaptação e pessoas, não burocracia!"
+          },
+          {
+            type: "h2",
+            text: "🤷 Por Que 'Estrutura' e Não 'Método'?",
+          },
+          {
+            type: "p",
+            text: "Você já deve ter ouvido 'metodologia ágil', mas o termo mais correto é 'estrutura ágil' ou 'framework ágil'. Mas por quê?"
+          },
+          {
+            type: "ul",
+            items: [
+              "🔹 Método ➝ Parece algo engessado, com regras fixas (e ágil é justamente o oposto!).",
+              "🔹 Estrutura/Framework ➝ São guias flexíveis, que se adaptam ao contexto do time.",
+
+            ]
+          },
+          {
+            type: "p",
+            text: "Ou seja, Scrum e Kanban não são receitas de bolo, mas sim modelos que você ajusta conforme sua necessidade. 🎯"
+          },
+          {
+            type: "h2",
+            text: "📌 Kanban: O Método Visual e Fluido",
+          },
+          {
+            type: "p",
+            text: "Se tem uma estrutura ágil que é simples e poderosa, é o Kanban! Ele veio do sistema Toyota de produção e foi adaptado para TI e outros setores."
+          },
+          {
+            type: "h3",
+            text: "🔹 Como Funciona?",
+          },
+          {
+            type: "ul",
+            items: [
+              "Tarefas são colocadas em um quadro visual (físico ou digital, como Trello/Jira).",
+              "Dividido em colunas, geralmente: 'Pendentes' | 'Em Processo' | 'Terminado' (mas pode customizar, como adicionar uma coluna de 'Prioridades').",
+              "Limite de trabalho em progresso (WIP) ➝ Evita sobrecarregar o time.",
+
+            ]
+          },
+          {
+            type: "h3",
+            text: "🔹 Benefícios do Kanban",
+          },
+          {
+            type: "ul",
+            items: [
+              "✅ Visualização clara do fluxo de trabalho.",
+              "✅ Flexibilidade total – sem sprints fixos como no Scrum.",
+              "✅ Melhoria contínua através da análise do fluxo.",
+
+            ]
+          },
+          {
+            type: "h3",
+            text: "🔹 Quando Usar?",
+          },
+          {
+            type: "ul",
+            items: [
+              "Times que precisam de mais liberdade sem cerimônias rígidas.",
+              "Suporte e manutenção (onde demandas chegam a todo momento).",
+              "Qualquer área! Desde TI até marketing e RH.",
+            ]
+          },
+        ],
+      },
+      {
+        id: 3,
+        title: "Scrum: A Metáfora do Rugby",
+        content: [
+          {
+            type: "p",
+            text: "E aí, time! No último post, falamos dos princípios ágeis e do Kanban, certo? Hoje, vamos mergulhar no Scrum,a metodologia mais famosa do mundo ágil!"
+          },
+          {
+            type: "p",
+            text: "Vamos entender:"
+          },
+          {
+            type: "ul",
+            items: [
+              "✅ O que significa o nome Scrum (e a metáfora do rugby!)",
+              "✅ De onde veio e como surgiu",
+              "✅ Por que times autogerenciados são tão importantes",
+            ]
+          },
+          {
+            type: "h2",
+            text: "🏉 Scrum: A Metáfora do Rugby ",
+          },
+          {
+            type: "p",
+            text: "Você sabia que o nome Scrum vem do rugby? Pois é! No jogo, o 'scrum' (ou 'scrúmage') é aquela formação em que os jogadores se encaixam em conjunto para avançar com a bola."
+          },
+          {
+            type: "ul",
+            items: [
+              "🔹 No desenvolvimento de software, a ideia é a mesma:",
+              "O time se alinha em um objetivo.",
+              "Trabalha junto em pequenos ciclos (sprints).",
+              "Avança de forma coordenada, mesmo com obstáculos.",
+            ]
+          },
+          {
+            type: "p",
+            text: "Ou seja, não é sobre individualidade, mas sobre colaboração! 🤝"
+          },
+          {
+            type: "h2",
+            text: "📜 A Origem do Scrum",
+          },
+          {
+            type: "p",
+            text: "O Scrum como metodologia surgiu nos anos 1980-1990, quando Jeff Sutherland e Ken Schwaber (inspirados por um artigo japonês sobre gestão de produtos) perceberam que os métodos tradicionais eram muito lentos para o mundo da tecnologia."
+          },
+          {
+            type: "p",
+            text: "Em 1995, eles formalizaram o Scrum como um framework ágil para desenvolvimento de software, baseado em:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Iterações curtas (sprints)",
+              "Papéis definidos (Product Owner, Scrum Master, Dev Team)",
+              "Cerimônias (Daily, Planning, Review, Retrospective)",
+            ]
+          },
+          {
+            type: "p",
+            text: "E em 2001, o Scrum se tornou um dos pilares do Manifesto Ágil."
+          },
+          {
+            type: "h2",
+            text: "🔄 Times Autogerenciados: O Coração do Scrum",
+          },
+          {
+            type: "p",
+            text: "Um dos princípios mais importantes do Scrum é que o time se auto-organiza. Mas o que isso significa?"
+          },
+          {
+            type: "ul",
+            items: [
+              "🔹 Não tem 'chefe' mandando ➝ O Scrum Master facilita, mas não decide pelo time.",
+              "🔹 Decisões são coletivas ➝ O time escolhe como fazer o trabalho.",
+              "🔹 Maior responsabilidade ➝ Todos são donos do resultado.",
+            ]
+          },
+          {
+            type: "h3",
+            text: "💡 Por que isso funciona?",
+          },
+          {
+            type: "ul",
+            items: [
+              "✅ Maior engajamento (quem decide se compromete mais).",
+              "✅ Melhor criatividade (ideias vêm de todos, não só de um líder).",
+              "✅ Adaptação rápida (o time pode ajustar o rumo sem burocracia).",
+
+            ]
+          },
+          {
+            type: "p",
+            text: "Exemplo: se um dev vê um problema técnico, ele não precisa pedir permissão para mudar a abordagem, conversa com o time e ajusta!"
+          },
+          {
+            type: "h2",
+            text: "🎯 Conclusão: Scrum é Sobre Time e Adaptação!",
+          },
+          {
+            type: "ul",
+            items: [
+              "Scrum vem do rugby → Trabalho em equipe e avanço conjunto.",
+              "Surgiu nos anos 90 → Para resolver problemas de métodos lentos.",
+              "Times autogerenciados → São mais ágeis, criativos e responsáveis.",
+            ]
+          },
+        ],
+      },
+      {
+        id: 4,
+        title: "Produto Funcional, MVP e Gestão de Riscos",
+        content: [
+          {
+            type: "p",
+            text: "E aí, pessoal! No último post, falamos sobre Scrum, times autogerenciados e sua origem. Hoje, vamos entrar em um dos pilares mais importantes do desenvolvimento ágil: entregar valor rápido com produtos funcionais, MVPs e gestão inteligente de riscos."
+          },
+          {
+            type: "p",
+            text: "Se você já ouviu falar em MVP mas não sabe bem como aplicar, ou se quer entender como evitar falhas em projetos, esse post é pra você! Bora lá? 👇"
+          },
+          {
+            type: "h2",
+            text: "🎯 O Que é um 'Produto Funcional' no Ágil?",
+          },
+          {
+            type: "p",
+            text: "No manifesto ágil, um dos princípios diz:"
+          },
+          {
+            type: "p",
+            text: "'Entregar software funcionando é a principal medida de progresso.'"
+          },
+          {
+            type: "p",
+            text: "Mas o que isso significa na prática?"
+          },
+          {
+            type: "ul",
+            items: [
+              "✅ Não é sobre documentação perfeita → É sobre ter algo usável nas mãos do cliente.",
+              "✅ Não é sobre features completas → Mas sim sobre valor entregue em pequenas partes.",
+              "✅ Não é protótipo ou mockup → É um produto realmente funcional, mesmo que mínimo.",
+            ]
+          },
+          {
+            type: "h3",
+            text: "Exemplo Prático:",
+          },
+          {
+            type: "p",
+            text: "Se você está desenvolvendo um app de delivery, um produto funcional pode ser:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Um cadastro de usuários + cardápio básico (sem carrinho ou pagamento ainda).",
+              "O cliente já pode testar o fluxo principal, mesmo que simples.",
+            ]
+          },
+          {
+            type: "h2",
+            text: "📦 MVP (Minimum Viable Product): A Arte do ' ínimo Necessário'",
+          },
+          {
+            type: "p",
+            text: "MVP significa Minimum Viable Product (Produto Mínimo Viável). A ideia é:"
+          },
+          {
+            type: "ul",
+            items: [
+              "🔹 Criar a versão mais simples possível do produto que resolva o problema do usuário.",
+              "🔹 Testar no mercado real para validar a ideia antes de investir tempo e dinheiro em algo que pode falhar.",
+            ]
+          },
+          {
+            type: "h3",
+            text: "📌 Como Definir um MVP?",
+          },
+          {
+            type: "ul",
+            items: [
+              "1️⃣ Qual problema você está resolvendo? (Ex.: 'Clientes demoram para escolher restaurantes.')",
+              "2️⃣ Qual a solução mais simples? (Ex.: Um app com lista de restaurantes próximos e preços médios.)",
+              "3️⃣ O que pode ser cortado? (Ex.: Não precisa de avaliações, cupons ou integração com pagamento ainda.)",
+            ]
+          },
+          {
+            type: "h3",
+            text: "🚨 Erros Comuns no MVP",
+          },
+          {
+            type: "ul",
+            items: [
+              "❌ Tentar fazer perfeito → MVP não é a versão final!",
+              "❌ Ignorar feedback → Se o mercado não gostar, pivotar é melhor que insistir.",
+              "❌ Achar que MVP é só um protótipo → Precisa ser usável, mesmo que básico.",
+            ]
+          },
+          {
+            type: "h2",
+            text: "📈 Maximizando o Ajuste do Produto ao Mercado (Product-Market Fit - PMF)",
+          },
+          {
+            type: "p",
+            text: "O grande objetivo de um MVP é chegar ao Product-Market Fit (PMF), ou seja, o momento em que:"
+          },
+          {
+            type: "p",
+            text: "'Seu produto resolve uma dor real, para um público real, que está disposto a pagar por isso.'"
+          },
+          {
+            type: "h3",
+            text: "🔍 Como Saber Se Você Tem PMF?",
+          },
+          {
+            type: "ul",
+            items: [
+              "Retenção de usuários → Eles voltam a usar o produto?",
+              "Crescimento orgânico → Pessoas indicam seu produto sem propaganda?",
+              "Feedback positivo → 'Como eu vivia sem isso antes? '",
+            ]
+          },
+          {
+            type: "h3",
+            text: "🛠️ Estratégias para Atingir PMF",
+          },
+          {
+            type: "ul",
+            items: [
+              "✔ Testar com usuários reais (entrevistas, beta-testers).",
+              "✔ Medir métricas (taxa de conversão, NPS, churn).",
+              "✔ Iterar rápido (se algo não funciona, mudar antes de gastar mais recursos).",
+
+            ]
+          },
+          {
+            type: "h2",
+            text: "⚠️ Gestão de Riscos no Desenvolvimento Ágil",
+          },
+          {
+            type: "p",
+            text: "Um dos maiores benefícios do ágil é reduzir riscos desde o início. Como?"
+          },
+          {
+            type: "h3",
+            text: "1️⃣ Riscos de Mercado (O produto vai vender?)",
+          },
+          {
+            type: "p",
+            text: "Solução: MVP + validação contínua."
+          },
+          {
+            type: "h3",
+            text: "2️⃣ Riscos Técnicos (Vai funcionar como planejado?)",
+          },
+          {
+            type: "p",
+            text: "Solução: Protótipos técnicos e spikes (testes rápidos de viabilidade)."
+          },
+          {
+            type: "h3",
+            text: "3️⃣ Riscos de Escopo (O projeto vai fugir do controle?)",
+          },
+          {
+            type: "p",
+            text: "Solução: Backlog priorizado e sprints curtos (para ajustes frequentes)."
+          },
+          {
+            type: "h3",
+            text: "4️⃣ Riscos Financeiros (Vai estourar o orçamento?)",
+          },
+          {
+            type: "p",
+            text: "Solução: Entregas incrementais (parar se o ROI não valer a pena)."
+          },
+          {
+            type: "h2",
+            text: "🎯 Conclusão: Menos Achismo, Mais Validação!",
+          },
+          {
+            type: "ul",
+            items: [
+              "✅ Produto funcional > documentação perfeita → Entregue valor real, mesmo que pequeno.",
+              "✅ MVP é sobre aprender, não sobre lançar → Use para testar hipóteses antes de escalar.",
+              "✅ Gestão de riscos no ágil é contínua → Identifique ameaças cedo e ajuste o rumo.",
+            ]
+          },
+        ],
+      },
+      {
+        id: 5,
+        title: "Do Backlog ao Incremento",
+        content: [
+          {
+            type: "p",
+            text: "Se você já se perguntou como times ágeis conseguem entregar produtos incríveis em prazos curtos, a resposta está no Scrum! Este framework revolucionário não é só uma metodologia, é uma forma de pensar, colaborar e evoluir constantemente."
+          },
+          {
+            type: "h2",
+            text: "🎯 Os Papéis Fundamentais: Quem Faz o Quê?",
+          },
+          {
+            type: "p",
+            text: "Imagine um time de futebol: cada jogador tem uma posição específica, mas todos trabalham juntos para marcar gols. No Scrum é a mesma coisa!"
+          },
+          {
+            type: "h3",
+            text: "O Trio Essencial"
+          },
+          {
+            type: "h3",
+            text: "1️⃣ Product Owner (PO) - O estrategista"
+          },
+          {
+            type: "p",
+            text: "É o 'dono do produto', responsável por maximizar seu valor. Ele prioriza funcionalidades, define a visão e garante que o time esteja sempre trabalhando no que realmente importa para os usuários e para o negócio."
+          },
+          {
+            type: "h3",
+            text: "2️⃣ Scrum Master (SM) - O facilitador"
+          },
+          {
+            type: "p",
+            text: "Pense nele como um técnico que remove obstáculos. Seu trabalho é garantir que o time entenda e siga os princípios do Scrum, além de proteger o time de interferências externas."
+          },
+          {
+            type: "h3",
+            text: "3️⃣ Equipe de Desenvolvimento - Os executores"
+          },
+          {
+            type: "p",
+            text: "São os profissionais multidisciplinares (desenvolvedores, testadores, designers) que transformam ideias em realidade. O diferencial? Eles se auto-organizam para cumprir as metas!"
+          },
+          {
+            type: "p",
+            text: "Mas não para por aí! O ecossistema do Scrum também envolve:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Stakeholders: Pessoas interessadas no produto (clientes, patrocinadores, outros departamentos)",
+              "Usuários finais: Quem realmente vai usar o que está sendo desenvolvido",
+            ]
+          },
+          {
+            type: "h2",
+            text: "📦 Os Artefatos: O Que Produzimos?",
+          },
+          {
+            type: "p",
+            text: "Assim como um pintor precisa de tintas e pincéis, o time Scrum trabalha com artefatos específicos que dão estrutura ao processo."
+          },
+          {
+            type: "h3",
+            text: "Product Backlog - A Fonte da Verdade",
+          },
+          {
+            type: "p",
+            text: "Esta lista dinâmica contém tudo o que o produto pode precisar: funcionalidades, melhorias, correções de bugs. O PO é como um chef, constantemente refinando e priorizando os ingredientes desse 'cardápio' de acordo com o valor que cada item traz."
+          },
+          {
+            type: "h3",
+            text: "Sprint Backlog - O Plano de Ação",
+          },
+          {
+            type: "p",
+            text: "Quando começa uma Sprint (nosso ciclo de trabalho), o time seleciona itens do Product Backlog para transformar em realidade. É como fazer a lista de compras para uma receita específica."
+          },
+          {
+            type: "h3",
+            text: "Incremento - O Resultado Tangível",
+          },
+          {
+            type: "p",
+            text: "No final de cada Sprint, temos algo concreto: uma versão nova e melhorada do produto, mesmo que pequena. A regra é clara: tem que funcionar!"
+          },
+          {
+            type: "h2",
+            text: "📝 User Stories: Falando a Língua do Usuário",
+          },
+          {
+            type: "p",
+            text: "'Como usuário, quero poder recuperar minha senha facilmente, para não ficar travado quando esquecê-la.'"
+          },
+          {
+            type: "p",
+            text: "Essa é uma user story típica - uma forma simples de capturar necessidades reais. A magia está na estrutura:"
+          },
+          {
+            type: "p",
+            text: "'Como [papel], quero [ação], para [benefício].'"
+          },
+          {
+            type: "p",
+            text: "Por que funciona?"
+          },
+          {
+            type: "ul",
+            items: [
+              "Mantém o foco no usuário",
+              "É específica o suficiente para desenvolver",
+              "Pequena o bastante para caber em uma Sprint",
+            ]
+          },
+          {
+            type: "h2",
+            text: "🗓️ Os Eventos: O Ritmo do Scrum",
+          },
+          {
+            type: "p",
+            text: "O Scrum é como uma dança bem coreografada, com eventos que criam um ritmo produtivo:"
+          },
+          {
+            type: "h3",
+            text: "Sprint Planning - O Pontapé Inicial",
+          },
+          {
+            type: "p",
+            text: "Aqui o time define o que será feito nas próximas 1-4 semanas. Não é só pegar tarefas - é estabelecer uma meta clara que todos entendem e abraçam."
+          },
+          {
+            type: "h3",
+            text: "Daily Scrum - O Check-in Diário",
+          },
+          {
+            type: "p",
+            text: "Só 15 minutos! A ideia não é resolver problemas, mas alinhar:"
+          },
+          {
+            type: "ul",
+            items: [
+              "O que fiz ontem?",
+              "O que farei hoje?",
+              "Há algum impedimento?",
+            ]
+          },
+          {
+            type: "h3",
+            text: "Sprint Review - Mostra e Conta",
+          },
+          {
+            type: "p",
+            text: "Momento de demonstrar o trabalho concluído e coletar feedbacks valiosos. Lembre-se: não é aprovação, é conversa!"
+          },
+          {
+            type: "h3",
+            text: "Retrospectiva - Melhorando o Processo",
+          },
+          {
+            type: "p",
+            text: "O time reflete: o que funcionou? O que pode melhorar? É aqui que a magia da melhoria contínua acontece."
+          },
+          {
+            type: "h2",
+            text: "💡 Por Que Tudo Isso Importa?",
+          },
+          {
+            type: "p",
+            text: "O Scrum não é só um conjunto de regras, é uma filosofia que:"
+          },
+          {
+            type: "ul",
+            items: [
+              "✅ Entrega valor mais rápido - Em vez de esperar meses ou anos, os usuários recebem melhorias constantes",
+              "✅ Reduz riscos - Se algo não está dando certo, você descobre cedo e pode ajustar",
+              "✅ Empodera times - As pessoas têm voz ativa no processo",
+              "✅ Cria transparência - Todos sabem o que está acontecendo e por quê",
+            ]
+          },
         ],
       },
     ],
