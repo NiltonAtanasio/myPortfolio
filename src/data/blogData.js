@@ -1105,6 +1105,118 @@ export const blogData = [
           },
         ],
       },
+      {
+        id: 3,
+        title: "Scrum: A Metáfora do Rugby",
+        content: [
+          {
+            type: "p",
+            text: "E aí, time! No último post, falamos dos princípios ágeis e do Kanban, certo? Hoje, vamos mergulhar no Scrum,a metodologia mais famosa do mundo ágil!"
+          },
+          {
+            type: "p",
+            text: "Vamos entender:"
+          },
+          {
+            type: "ul",
+            items: [
+              "✅ O que significa o nome Scrum (e a metáfora do rugby!)",
+              "✅ De onde veio e como surgiu",
+              "✅ Por que times autogerenciados são tão importantes",
+            ]
+          },
+          {
+            type: "h2",
+            text: "🏉 Scrum: A Metáfora do Rugby ",
+          },
+          {
+            type: "p",
+            text: "Você sabia que o nome Scrum vem do rugby? Pois é! No jogo, o 'scrum' (ou 'scrúmage') é aquela formação em que os jogadores se encaixam em conjunto para avançar com a bola."
+          },
+          {
+            type: "ul",
+            items: [
+              "🔹 No desenvolvimento de software, a ideia é a mesma:",
+              "O time se alinha em um objetivo.",
+              "Trabalha junto em pequenos ciclos (sprints).",
+              "Avança de forma coordenada, mesmo com obstáculos.",
+            ]
+          },
+          {
+            type: "p",
+            text: "Ou seja, não é sobre individualidade, mas sobre colaboração! 🤝"
+          },
+          {
+            type: "h2",
+            text: "📜 A Origem do Scrum",
+          },
+          {
+            type: "p",
+            text: "O Scrum como metodologia surgiu nos anos 1980-1990, quando Jeff Sutherland e Ken Schwaber (inspirados por um artigo japonês sobre gestão de produtos) perceberam que os métodos tradicionais eram muito lentos para o mundo da tecnologia."
+          },
+          {
+            type: "p",
+            text: "Em 1995, eles formalizaram o Scrum como um framework ágil para desenvolvimento de software, baseado em:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Iterações curtas (sprints)",
+              "Papéis definidos (Product Owner, Scrum Master, Dev Team)",
+              "Cerimônias (Daily, Planning, Review, Retrospective)",
+            ]
+          },
+          {
+            type: "p",
+            text: "E em 2001, o Scrum se tornou um dos pilares do Manifesto Ágil."
+          },
+          {
+            type: "h2",
+            text: "🔄 Times Autogerenciados: O Coração do Scrum",
+          },
+          {
+            type: "p",
+            text: "Um dos princípios mais importantes do Scrum é que o time se auto-organiza. Mas o que isso significa?"
+          },
+          {
+            type: "ul",
+            items: [
+              "🔹 Não tem 'chefe' mandando ➝ O Scrum Master facilita, mas não decide pelo time.",
+              "🔹 Decisões são coletivas ➝ O time escolhe como fazer o trabalho.",
+              "🔹 Maior responsabilidade ➝ Todos são donos do resultado.",
+            ]
+          },
+          {
+            type: "h3",
+            text: "💡 Por que isso funciona?",
+          },
+          {
+            type: "ul",
+            items: [
+              "✅ Maior engajamento (quem decide se compromete mais).",
+              "✅ Melhor criatividade (ideias vêm de todos, não só de um líder).",
+              "✅ Adaptação rápida (o time pode ajustar o rumo sem burocracia).",
+
+            ]
+          },
+          {
+            type: "p",
+            text: "Exemplo: se um dev vê um problema técnico, ele não precisa pedir permissão para mudar a abordagem, conversa com o time e ajusta!"
+          },
+          {
+            type: "h2",
+            text: "🎯 Conclusão: Scrum é Sobre Time e Adaptação!",
+          },
+          {
+            type: "ul",
+            items: [
+              "Scrum vem do rugby → Trabalho em equipe e avanço conjunto.",
+              "Surgiu nos anos 90 → Para resolver problemas de métodos lentos.",
+              "Times autogerenciados → São mais ágeis, criativos e responsáveis.",
+            ]
+          },
+        ],
+      },
     ],
   },
   {
