@@ -925,7 +925,7 @@ export const blogData = [
         content: [
           {
             type: "p",
-            text: "E aí, pessoal! Tudo bem com vocês? Hoje vamos mergulhar no mundo dos métodos ágeis—um tema que parece complexo, mas que, quando quebrado direitinho, fica superfácil de entender. 😎"
+            text: "E aí, pessoal! Tudo bem com vocês? Hoje vamos mergulhar no mundo dos métodos ágeis, um tema que parece complexo, mas que, quando quebrado direitinho, fica superfácil de entender. 😎"
           },
           {
             type: "p",
@@ -997,7 +997,7 @@ export const blogData = [
         content: [
           {
             type: "p",
-            text: "E aí, galera! No último post, demos uma introdução massa sobre o que são métodos ágeis e por que eles são tão importantes. Hoje, vamos mergulhar mais fundo nos 12 princípios do Manifesto Ágil, entender por que chamamos de 'estrutura' e não só 'método', e ainda explorar o Kanban—uma das abordagens mais flexíveis do mundo ágil."
+            text: "E aí, galera! No último post, demos uma introdução massa sobre o que são métodos ágeis e por que eles são tão importantes. Hoje, vamos mergulhar mais fundo nos 12 princípios do Manifesto Ágil, entender por que chamamos de 'estrutura' e não só 'método', e ainda explorar o Kanban, uma das abordagens mais flexíveis do mundo ágil."
           },
           {
             type: "p",
@@ -1015,21 +1015,17 @@ export const blogData = [
             type: "ul",
             items: [
               "1️⃣ Satisfação do cliente ➝ Entregar software funcional rápido e com frequência. 🏆",
-              "2️⃣ Aceitar mudanças ➝ Requisitos mudam, e tá tudo bem! 🔄",
-              "3️⃣ Entregas frequentes ➝ De semanas a meses, com preferência para prazos curtos. ⏳",
-              "4️⃣ Trabalho em conjunto ➝ Pessoas de negócio e devs colaborando todo dia. 🤝",
-              "3️⃣ Entregas frequentes ➝ De semanas a meses, com preferência para prazos curtos. ⏳",
-              "4️⃣ Trabalho em conjunto ➝ Pessoas de negócio e devs colaborando todo dia. 🤝",
-              "3️⃣ Entregas frequentes ➝ De semanas a meses, com preferência para prazos curtos. ⏳",
-              "4️⃣ Trabalho em conjunto ➝ Pessoas de negócio e devs colaborando todo dia. 🤝",
-              "5️⃣ Times motivados ➝ Dê autonomia e confiança para quem faz acontecer. 💪",
-              "6️⃣ Conversa cara a cara ➝ A melhor forma de comunicação é direta! 🗣️",
-              "7️⃣ Software funcionando = progresso ➝ Não adianta documentação sem resultado. ✅",
-              "8️⃣ Ritmo sustentável ➝ Trabalhar em um fluxo que não queime a equipe. ♻️",
-              "9️⃣ Excelência técnica ➝ Boa arquitetura e design para agilidade a longo prazo. 🛠️",
-              "🔟 Simplicidade ➝ Fazer só o necessário, sem complicação. ✨",
-              "1️⃣1️⃣ Times auto-organizáveis ➝ Decisões vêm de quem está na ação. 🧠",
-              "1️⃣2️⃣ Refletir e ajustar ➝ Melhoria contínua é a chave! 🔄",
+              "2️⃣ Alterações ➝ Aceitar mudanças nos requisitos, mesmo nos estágios finais de desenvolvimento.! 🔄",
+              "3️⃣ Entrega periódica ➝ Entrega periódica de software funcional, de preferência em ciclos curtos. ⏳",
+              "4️⃣ Colaboração ➝ Colaboração estreita e diária entre a equipe de desenvolvimento e os clientes. . 🤝",
+              "5️⃣ Projetos ➝ Projetos construídos em torno de indivíduos motivados, proporcionando o ambiente e o suporte necessários. 💪",
+              "6️⃣ Comunicação ➝ Comunicação direta por meio do método mais eficaz de transmissão de informações. 🗣️",
+              "7️⃣ Software ➝ O software funcional é o principal parâmetro de evolução.  ✅",
+              "8️⃣ Sustentabilidade ➝ Desenvolvimento sustentável, mantendo um ritmo constante. . ♻️",
+              "9️⃣ Atenção contínua ➝ Atenção à excelência técnica e ao bom projeto. 🛠️",
+              "🔟 Simplicidade ➝ Simplicidade como a arte de maximizar a quantidade de trabalho não realizado. ✨",
+              "1️⃣1️⃣ Equipes ➝ Equipes auto-organizadas para obter a melhor arquitetura, requisitos e projetos. 🧠",
+              "1️⃣2️⃣ Reflexão ➝ Reflexão regular sobre como ser mais eficaz, ajustando o comportamento conforme necessário. 🔄",
 
             ]
           },
@@ -1270,7 +1266,7 @@ export const blogData = [
           },
           {
             type: "h2",
-            text: "📦 MVP (Minimum Viable Product): A Arte do ' ínimo Necessário'",
+            text: "📦 MVP (Minimum Viable Product): A Arte do 'Mínimo Necessário'",
           },
           {
             type: "p",
