@@ -1576,6 +1576,148 @@ export const blogData = [
           },
         ],
       },
+      {
+        id: 6,
+        title: "Planejamento e Estimativa Ágil",
+        content: [
+          {
+            type: "p",
+            text: "Ei você aí, que já ficou perdido tentando planejar um projeto ágil! Sabia que você não está sozinho? Muita gente se enrola quando começa a trabalhar com Scrum e métodos ágeis. Mas calma, vem comigo que vou te explicar tudo de um jeito fácil de entender, cheio de exemplos práticos e sem aqueles termos complicados que só servem pra confundir. 😉"
+          },
+          {
+            type: "h2",
+            text: "Por Que o Planejamento Ágil é Diferente?",
+          },
+          {
+            type: "p",
+            text: "No mundo tradicional, a gente fazia aquele planejamento gigante antes mesmo de começar o projeto. Passava meses criando cronogramas detalhados, estimativas precisas (que nunca eram precisas), e no final... tudo mudava mesmo! No ágil, a gente entende que mudanças são inevitáveis, então nosso planejamento é muito mais flexível e inteligente. Imagine que você está construindo uma casa. No método tradicional, você faria plantas detalhadas de todos os cômodos antes mesmo de comprar o terreno. No ágil, você começa pela fundação, depois vai para as paredes, e vai ajustando os cômodos conforme descobre o que realmente precisa. Bem melhor, né?"
+          },
+          {
+            type: "h2",
+            text: "Estimativas Ágeis"
+          },
+          {
+            type: "p",
+            text: "Agora vamos falar da parte que todo mundo ama odiar: estimativas! No mundo ágil, a gente sabe que prever tempo exato é impossível, então usamos técnicas muito mais inteligentes."
+          },
+          {
+            type: "h3",
+            text: "Story Points - A Medida da Complexidade"
+          },
+          {
+            type: "p",
+            text: "Ao invés de estimar em horas (que todo mundo erra feio), usamos story points. Eles medem complexidade relativa, não tempo. Funciona assim: definimos uma história simples como baseline (por exemplo, 'adicionar um botão' = 1 ponto) e comparamos outras histórias com ela. A escala mais comum é a sequência de Fibonacci (1, 2, 3, 5, 8, 13). Por quê? Porque quanto maior a história, mais incerteza temos. A diferença entre algo de 8 e 13 pontos é bem subjetiva mesmo - e tá tudo bem!"
+          },
+          {
+            type: "h3",
+            text: "Planning Poker - Quando Todo Mundo Vota 🃏"
+          },
+          {
+            type: "p",
+            text: "Essa é a técnica mais divertida de estimativa! Cada membro do time recebe um baralho com os números da sequência. O PO explica a história, o time discute brevemente, e todos viram suas cartas ao mesmo tempo. Se tiver muita divergência (um votou 3, outro 8), os extremos explicam seu raciocínio, e a gente vota de novo. O legal é que elimina aquele viés de todo mundo concordar com quem falou primeiro ou com o chefe. Já usei muito e realmente funciona!"
+          },
+          {
+            type: "h2",
+            text: "O Backlog: Seu Melhor Amigo ou Pior Inimigo",
+          },
+          {
+            type: "p",
+            text: "Um backlog bem gerenciado é como uma geladeira organizada: você acha tudo que precisa rapidão. Um backlog bagunçado é aquela geladeira onde tudo está jogado e você nunca acha o que quer."
+          },
+          {
+            type: "h3",
+            text: "Priorização: A Arte de Dizer 'Não'",
+          },
+          {
+            type: "p",
+            text: "O segredo é priorizar com critério. Uma técnica que adoro é o MoSCoW:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Must have: Sem isso, não vale a pena entregar",
+              "Should have: Importante, mas pode esperar um pouco",
+              "Could have: Seria legal, mas não essencial",
+              "Won't have: Deixa pra depois (ou nunca)",
+            ]
+          },
+          {
+            type: "p",
+            text: "Outra dica é usar uma matriz Valor vs. Esforço. Coloque no eixo X o esforço estimado e no Y o valor para o usuário. As histórias no quadrante 'alto valor, baixo esforço' são suas prioridades máximas!"
+          },
+          {
+            type: "h3",
+            text: "Refinamento: A Reunião que Muita Pula, Mas é Essencial",
+          },
+          {
+            type: "p",
+            text: "APelo menos uma vez por sprint, reserve 1-2 horas para refinar o backlog. Nessa reunião:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Quebre histórias grandes em menores",
+              "Defina critérios de aceitação claros",
+              "Remova o que ficou obsoleto",
+              "Estime o que ainda não foi estimado",
+            ]
+          },
+          {
+            type: "p",
+            text: "Pode parecer perda de tempo, mas acredite: uma hora de refinamento economiza dez horas de confusão durante a sprint!"
+          },
+          {
+            type: "h2",
+            text: "Gerenciando Sprints: Do Planejado ao Real",
+          },
+          {
+            type: "p",
+            text: "Planejar é fácil, difícil é executar! Aqui vão algumas lições que aprendi na marra:"
+          },
+          {
+            type: "h3",
+            text: "O Daily que Realmente Funciona",
+          },
+          {
+            type: "p",
+            text: "O Daily Scrum não é relatório para o Scrum Master! É um alinhamento rápido (15 minutos no máximo) onde cada um fala:"
+          },
+          {
+            type: "ul",
+            items: [
+              "✅ O que fez ontem para atingir a Sprint Goal",
+              "✅ O que fará hoje",
+              "✅ Quais impedimentos estão atrapalhando",
+
+            ]
+          },
+          {
+            type: "p",
+            text: "Se surgir algum problema complexo, marque uma discussão separada com quem precisa estar envolvido. Daily não é reunião de solução de problemas!"
+          },
+          {
+            type: "h3",
+            text: "Quando as Coisas Saem dos Trilhos",
+          },
+          {
+            type: "p",
+            text: "Mesmo com o melhor planejamento, coisas dão errado. E agora?"
+          },
+          {
+            type: "ul",
+            items: [
+              "Time atrasado? Remova escopo, não estique a sprint! É melhor entregar menos coisas bem feitas.",
+              "Requisito mudou? O PO decide se cancela a sprint ou ajusta a meta.",
+              "Tarefa mais fácil que o esperado? Pegue mais itens do backlog!",
+
+            ]
+          },
+          {
+            type: "p",
+            text: "Lembre-se: transparência é tudo. Se algo está errado, fale logo para poder ajustar."
+          },
+        ],
+      },
     ],
   },
   {
