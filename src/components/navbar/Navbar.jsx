@@ -1,10 +1,8 @@
 import { useLayoutEffect } from "react";
 import { NavbarStyled } from "./NavbarStyled.jsx";
 import { gsap } from "gsap";
-import ButtonDownload from "../button/ButtonDownload.jsx";
-import cv from "../../assets/pdf/Cv_Nilton_2025.pdf";
+import Button from "../button/Button.jsx";
 import { Link } from "react-router-dom";
-
 
 export default function Navbar() {
   useLayoutEffect(() => {
@@ -78,14 +76,11 @@ export default function Navbar() {
           </li>
           <li className="nav-item" id="nav__item2">
             <Link to="/blog">Blog</Link>
-
           </li>
         </ul>
-        <ButtonDownload
-          href={cv}
-          download="cv_Nilton_Atanazzio"
-          text="Baixar CV"
-          id="nav__button"
+        <Button
+          link="https://www.linkedin.com/in/niltonatanasio/"
+          text="Linkedin"
         />
       </div>
     </NavbarStyled>
