@@ -1718,6 +1718,190 @@ export const blogData = [
           },
         ],
       },
+      {
+        id: 7,
+        title: "Design Thinking na Prática",
+        content: [
+          {
+            type: "p",
+            text: "Ei, você aí! Já teve aquela ideia genial pra um produto novo, mas não sabia por onde começar? Ou pior: criou algo que achava incrível, mas ninguém usou? 😬 Pois é, isso acontece mais do que você imagina! Mas calma, o Design Thinking tá aqui pra te salvar e vou te explicar tudo num papo reto, cheio de dicas práticas e exemplos reais. Bora? 👇"
+          },
+          {
+            type: "h2",
+            text: "O Que é Design Thinking? (E Por Que Você Deveria Se Importar)",
+          },
+          {
+            type: "p",
+            text: "Design Thinking não é só um método bonitinho que as startups adoram, é uma forma diferente de resolver problemas, colocando as pessoas no centro de tudo. 🤝"
+          },
+          {
+            type: "p",
+            text: "Imagine que você quer criar um app de fitness. No método tradicional, você faria uma pesquisa rápida, desenvolveria o app e torceria pra dar certo. Com Design Thinking, você primeiro entende profundamente as dores reais das pessoas, testa ideias antes de gastar rios de dinheiro, e só então desenvolve a solução certa. Bem melhor, né?"
+          },
+          {
+            type: "h3",
+            text: "As 5 Fases do Design Thinking (O Ciclo da Inovação)"
+          },
+          {
+            type: "ul",
+            items: [
+              "Empatia ❤️ - Entender as pessoas como Sherlock Holmes",
+              "Definição 🎯 - Focar no problema certo",
+              "Ideação 💡 - Soltar a criatividade sem freio",
+              "Prototipagem ✂️ - Fazer ideias virarem algo tangível",
+              "Teste 🧪 - Validar com usuários reais",
+            ]
+          },
+          {
+            type: "h2",
+            text: "Mão na Massa: Como Aplicar Design Thinking"
+          },
+          {
+            type: "h3",
+            text: "Fase da Empatia - Virando um Detetive de Necessidades 🔍"
+          },
+          {
+            type: "p",
+            text: "Aqui é onde a mágica começa! Você precisa mergulhar na vida das pessoas que vai ajudar. Não adianta só mandar um formulário no Google Forms, tem que observar, ouvir e sentir as dores reais."
+          },
+          {
+            type: "p",
+            text: "Técnicas de Pesquisa TOP (Que Realmente Funcionam)"
+          },
+          {
+            type: "p",
+            text: "Shadowing 👥: Seguir o usuário no dia a dia (tipo um stalker profissional) Exemplo: Ver como idosos realmente usam apps de banco"
+          },
+          {
+            type: "p",
+            text: "Entrevistas Emocionais 🎤: Perguntas que vão além do óbvio 'Me conta sobre a última vez que você ficou frustrado tentando se exercitar em casa'"
+          },
+          {
+            type: "p",
+            text: "Diários de Uso 📔: Pedir pras pessoas registrarem experiências 'Anote toda vez que pensar em pedir comida por delivery esta semana'"
+          },
+          {
+            type: "h3",
+            text: "Pesquisa Secundária: O Atalho dos Espertos 🕵️♂️",
+          },
+          {
+            type: "p",
+            text: "Antes de sair entrevistando todo mundo, use o que já existe! Pesquisa secundária é pegar dados que outros já coletaram:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Relatórios de mercado",
+              "Estudos acadêmicos",
+              "Dados governamentais",
+              "Análises de concorrentes",
+            ]
+          },
+          {
+            type: "p",
+            text: "👉 Dica de Ouro: Crie um 'board de inspiração' com tudo que encontrar (fotos, artigos, estatísticas). Isso ajuda a ver padrões!"
+          },
+          {
+            type: "h3",
+            text: "Definição - O Pulo do Gato 🐱💥",
+          },
+          {
+            type: "p",
+            text: "Depois de coletar um monte de informações, é hora de sintetizar e encontrar o problema raiz. Uma técnica poderosa é o 'Point of View' (POV): '[Persona] precisa de [necessidade] porque [insight surpreendente'"
+          },
+          {
+            type: "p",
+            text: "Exemplo Ruim: 'As pessoas querem um app de exercícios'"
+          },
+          {
+            type: "p",
+            text: "Exemplo Bom: Maria, 35 anos, precisa se exercitar em casa em 20 minutos porque se sente culpada quando falta tempo pra família'"
+          },
+          {
+            type: "h3",
+            text: "3. Ideação - Tempestade de Ideias Que Vale a Pena ⚡",
+          },
+          {
+            type: "p",
+            text: "Hora de soltar a criatividade! Mas não vale ficar só no 'vamos fazer um app'. Algumas técnicas matadoras:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Brainwriting ✍️: Todo mundo escreve ideias em silêncio antes de discutir",
+              "'E Se...' 🤔: Forçar conexões inusitadas ('E se fitness fosse um jogo de RPG?')",
+              "Pior Ideia Possível 😈: Inventar soluções horríveis pra depois inverter",
+            ]
+          },
+          {
+            type: "h3",
+            text: "Prototipagem - Feio Mas Funcional 🛠️",
+          },
+          {
+            type: "p",
+            text: "Aqui a regra é: gaste o mínimo possível pra testar sua ideia! Pode ser:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Storyboard (quadrinhos da experiência)",
+              "Protótipo de papel",
+              "Landing page fake",
+              "Vídeo conceito",
+            ]
+          },
+          {
+            type: "p",
+            text: "Case Real: A Airbnb testou a ideia inicial fotografando casas dos fundadores e colocando no site. Custo: $0!"
+          },
+          {
+            type: "h3",
+            text: "Teste - A Hora da Verdade 🧪",
+          },
+          {
+            type: "p",
+            text: "Leve seu protótipo pra pessoas reais e OBSERVE (não só pergunte!). Anote:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Onde eles travam",
+              "O que amam",
+              "O que não entendem",
+            ]
+          },
+          {
+            type: "p",
+            text: "Dica Pro: Grave as sessões (com permissão) - expressões faciais falam muito!"
+          },
+          {
+            type: "h2",
+            text: "Erros Que Você Vai Querer Evitar ❌",
+          },
+          {
+            type: "ul",
+            items: [
+              "Pular a empatia (90% dos fracassos começam aqui)",
+              "Apegar-se à primeira ideia (o segredo é pivotar!)",
+              "Prototipar perfeito (quanto mais feio, melhor no início)",
+              "Ignorar dados contraditórios (viés de confirmação é traiçoeiro)",
+            ]
+          },
+          {
+            type: "h2",
+            text: "Ferramentas Que Vale a Pena Conhecer 🧰",
+          },
+          {
+            type: "ul",
+            items: [
+              "Miro 👩💻: Para mapas mentais e colaboração remota",
+              "Figma 🎨: Prototipagem digital fácil",
+              "Hotjar 🔥: Ver como usuários navegam seu site",
+              "Typeform 📝: Criar pesquisas bonitas",
+            ]
+          },
+        ],
+      },
     ],
   },
   {
