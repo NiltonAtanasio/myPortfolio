@@ -5,7 +5,8 @@ import { SiMongodb } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
 
 import { TitleContentStyled } from "./TitleContentStyled.jsx";
-import Button from "../button/Button.jsx";
+import cv from "../../assets/pdf/Cv_Nilton_2025.pdf";
+import ButtonDownload from "../button/ButtonDownload.jsx";
 
 export default function SectionTitle() {
   useLayoutEffect(() => {
@@ -111,9 +112,11 @@ export default function SectionTitle() {
       </div>
 
       <div className="home__buttons">
-        <Button
-          link="https://www.linkedin.com/in/niltonatanasio/"
-          text="Linkedin"
+        <ButtonDownload
+          href={cv}
+          download="cv_Nilton_Atanazzio"
+          text="Baixar CV"
+          id="nav__button"
         />
       </div>
     </TitleContentStyled>

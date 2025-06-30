@@ -925,7 +925,7 @@ export const blogData = [
         content: [
           {
             type: "p",
-            text: "E aí, pessoal! Tudo bem com vocês? Hoje vamos mergulhar no mundo dos métodos ágeis—um tema que parece complexo, mas que, quando quebrado direitinho, fica superfácil de entender. 😎"
+            text: "E aí, pessoal! Tudo bem com vocês? Hoje vamos mergulhar no mundo dos métodos ágeis, um tema que parece complexo, mas que, quando quebrado direitinho, fica superfácil de entender. 😎"
           },
           {
             type: "p",
@@ -997,7 +997,7 @@ export const blogData = [
         content: [
           {
             type: "p",
-            text: "E aí, galera! No último post, demos uma introdução massa sobre o que são métodos ágeis e por que eles são tão importantes. Hoje, vamos mergulhar mais fundo nos 12 princípios do Manifesto Ágil, entender por que chamamos de 'estrutura' e não só 'método', e ainda explorar o Kanban—uma das abordagens mais flexíveis do mundo ágil."
+            text: "E aí, galera! No último post, demos uma introdução massa sobre o que são métodos ágeis e por que eles são tão importantes. Hoje, vamos mergulhar mais fundo nos 12 princípios do Manifesto Ágil, entender por que chamamos de 'estrutura' e não só 'método', e ainda explorar o Kanban, uma das abordagens mais flexíveis do mundo ágil."
           },
           {
             type: "p",
@@ -1015,21 +1015,17 @@ export const blogData = [
             type: "ul",
             items: [
               "1️⃣ Satisfação do cliente ➝ Entregar software funcional rápido e com frequência. 🏆",
-              "2️⃣ Aceitar mudanças ➝ Requisitos mudam, e tá tudo bem! 🔄",
-              "3️⃣ Entregas frequentes ➝ De semanas a meses, com preferência para prazos curtos. ⏳",
-              "4️⃣ Trabalho em conjunto ➝ Pessoas de negócio e devs colaborando todo dia. 🤝",
-              "3️⃣ Entregas frequentes ➝ De semanas a meses, com preferência para prazos curtos. ⏳",
-              "4️⃣ Trabalho em conjunto ➝ Pessoas de negócio e devs colaborando todo dia. 🤝",
-              "3️⃣ Entregas frequentes ➝ De semanas a meses, com preferência para prazos curtos. ⏳",
-              "4️⃣ Trabalho em conjunto ➝ Pessoas de negócio e devs colaborando todo dia. 🤝",
-              "5️⃣ Times motivados ➝ Dê autonomia e confiança para quem faz acontecer. 💪",
-              "6️⃣ Conversa cara a cara ➝ A melhor forma de comunicação é direta! 🗣️",
-              "7️⃣ Software funcionando = progresso ➝ Não adianta documentação sem resultado. ✅",
-              "8️⃣ Ritmo sustentável ➝ Trabalhar em um fluxo que não queime a equipe. ♻️",
-              "9️⃣ Excelência técnica ➝ Boa arquitetura e design para agilidade a longo prazo. 🛠️",
-              "🔟 Simplicidade ➝ Fazer só o necessário, sem complicação. ✨",
-              "1️⃣1️⃣ Times auto-organizáveis ➝ Decisões vêm de quem está na ação. 🧠",
-              "1️⃣2️⃣ Refletir e ajustar ➝ Melhoria contínua é a chave! 🔄",
+              "2️⃣ Alterações ➝ Aceitar mudanças nos requisitos, mesmo nos estágios finais de desenvolvimento.! 🔄",
+              "3️⃣ Entrega periódica ➝ Entrega periódica de software funcional, de preferência em ciclos curtos. ⏳",
+              "4️⃣ Colaboração ➝ Colaboração estreita e diária entre a equipe de desenvolvimento e os clientes. . 🤝",
+              "5️⃣ Projetos ➝ Projetos construídos em torno de indivíduos motivados, proporcionando o ambiente e o suporte necessários. 💪",
+              "6️⃣ Comunicação ➝ Comunicação direta por meio do método mais eficaz de transmissão de informações. 🗣️",
+              "7️⃣ Software ➝ O software funcional é o principal parâmetro de evolução.  ✅",
+              "8️⃣ Sustentabilidade ➝ Desenvolvimento sustentável, mantendo um ritmo constante. . ♻️",
+              "9️⃣ Atenção contínua ➝ Atenção à excelência técnica e ao bom projeto. 🛠️",
+              "🔟 Simplicidade ➝ Simplicidade como a arte de maximizar a quantidade de trabalho não realizado. ✨",
+              "1️⃣1️⃣ Equipes ➝ Equipes auto-organizadas para obter a melhor arquitetura, requisitos e projetos. 🧠",
+              "1️⃣2️⃣ Reflexão ➝ Reflexão regular sobre como ser mais eficaz, ajustando o comportamento conforme necessário. 🔄",
 
             ]
           },
@@ -1270,7 +1266,7 @@ export const blogData = [
           },
           {
             type: "h2",
-            text: "📦 MVP (Minimum Viable Product): A Arte do ' ínimo Necessário'",
+            text: "📦 MVP (Minimum Viable Product): A Arte do 'Mínimo Necessário'",
           },
           {
             type: "p",
@@ -1577,6 +1573,945 @@ export const blogData = [
               "✅ Empodera times - As pessoas têm voz ativa no processo",
               "✅ Cria transparência - Todos sabem o que está acontecendo e por quê",
             ]
+          },
+        ],
+      },
+      {
+        id: 6,
+        title: "Planejamento e Estimativa Ágil",
+        content: [
+          {
+            type: "p",
+            text: "Ei você aí, que já ficou perdido tentando planejar um projeto ágil! Sabia que você não está sozinho? Muita gente se enrola quando começa a trabalhar com Scrum e métodos ágeis. Mas calma, vem comigo que vou te explicar tudo de um jeito fácil de entender, cheio de exemplos práticos e sem aqueles termos complicados que só servem pra confundir. 😉"
+          },
+          {
+            type: "h2",
+            text: "Por Que o Planejamento Ágil é Diferente?",
+          },
+          {
+            type: "p",
+            text: "No mundo tradicional, a gente fazia aquele planejamento gigante antes mesmo de começar o projeto. Passava meses criando cronogramas detalhados, estimativas precisas (que nunca eram precisas), e no final... tudo mudava mesmo! No ágil, a gente entende que mudanças são inevitáveis, então nosso planejamento é muito mais flexível e inteligente. Imagine que você está construindo uma casa. No método tradicional, você faria plantas detalhadas de todos os cômodos antes mesmo de comprar o terreno. No ágil, você começa pela fundação, depois vai para as paredes, e vai ajustando os cômodos conforme descobre o que realmente precisa. Bem melhor, né?"
+          },
+          {
+            type: "h2",
+            text: "Estimativas Ágeis"
+          },
+          {
+            type: "p",
+            text: "Agora vamos falar da parte que todo mundo ama odiar: estimativas! No mundo ágil, a gente sabe que prever tempo exato é impossível, então usamos técnicas muito mais inteligentes."
+          },
+          {
+            type: "h3",
+            text: "Story Points - A Medida da Complexidade"
+          },
+          {
+            type: "p",
+            text: "Ao invés de estimar em horas (que todo mundo erra feio), usamos story points. Eles medem complexidade relativa, não tempo. Funciona assim: definimos uma história simples como baseline (por exemplo, 'adicionar um botão' = 1 ponto) e comparamos outras histórias com ela. A escala mais comum é a sequência de Fibonacci (1, 2, 3, 5, 8, 13). Por quê? Porque quanto maior a história, mais incerteza temos. A diferença entre algo de 8 e 13 pontos é bem subjetiva mesmo - e tá tudo bem!"
+          },
+          {
+            type: "h3",
+            text: "Planning Poker - Quando Todo Mundo Vota 🃏"
+          },
+          {
+            type: "p",
+            text: "Essa é a técnica mais divertida de estimativa! Cada membro do time recebe um baralho com os números da sequência. O PO explica a história, o time discute brevemente, e todos viram suas cartas ao mesmo tempo. Se tiver muita divergência (um votou 3, outro 8), os extremos explicam seu raciocínio, e a gente vota de novo. O legal é que elimina aquele viés de todo mundo concordar com quem falou primeiro ou com o chefe. Já usei muito e realmente funciona!"
+          },
+          {
+            type: "h2",
+            text: "O Backlog: Seu Melhor Amigo ou Pior Inimigo",
+          },
+          {
+            type: "p",
+            text: "Um backlog bem gerenciado é como uma geladeira organizada: você acha tudo que precisa rapidão. Um backlog bagunçado é aquela geladeira onde tudo está jogado e você nunca acha o que quer."
+          },
+          {
+            type: "h3",
+            text: "Priorização: A Arte de Dizer 'Não'",
+          },
+          {
+            type: "p",
+            text: "O segredo é priorizar com critério. Uma técnica que adoro é o MoSCoW:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Must have: Sem isso, não vale a pena entregar",
+              "Should have: Importante, mas pode esperar um pouco",
+              "Could have: Seria legal, mas não essencial",
+              "Won't have: Deixa pra depois (ou nunca)",
+            ]
+          },
+          {
+            type: "p",
+            text: "Outra dica é usar uma matriz Valor vs. Esforço. Coloque no eixo X o esforço estimado e no Y o valor para o usuário. As histórias no quadrante 'alto valor, baixo esforço' são suas prioridades máximas!"
+          },
+          {
+            type: "h3",
+            text: "Refinamento: A Reunião que Muita Pula, Mas é Essencial",
+          },
+          {
+            type: "p",
+            text: "APelo menos uma vez por sprint, reserve 1-2 horas para refinar o backlog. Nessa reunião:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Quebre histórias grandes em menores",
+              "Defina critérios de aceitação claros",
+              "Remova o que ficou obsoleto",
+              "Estime o que ainda não foi estimado",
+            ]
+          },
+          {
+            type: "p",
+            text: "Pode parecer perda de tempo, mas acredite: uma hora de refinamento economiza dez horas de confusão durante a sprint!"
+          },
+          {
+            type: "h2",
+            text: "Gerenciando Sprints: Do Planejado ao Real",
+          },
+          {
+            type: "p",
+            text: "Planejar é fácil, difícil é executar! Aqui vão algumas lições que aprendi na marra:"
+          },
+          {
+            type: "h3",
+            text: "O Daily que Realmente Funciona",
+          },
+          {
+            type: "p",
+            text: "O Daily Scrum não é relatório para o Scrum Master! É um alinhamento rápido (15 minutos no máximo) onde cada um fala:"
+          },
+          {
+            type: "ul",
+            items: [
+              "✅ O que fez ontem para atingir a Sprint Goal",
+              "✅ O que fará hoje",
+              "✅ Quais impedimentos estão atrapalhando",
+
+            ]
+          },
+          {
+            type: "p",
+            text: "Se surgir algum problema complexo, marque uma discussão separada com quem precisa estar envolvido. Daily não é reunião de solução de problemas!"
+          },
+          {
+            type: "h3",
+            text: "Quando as Coisas Saem dos Trilhos",
+          },
+          {
+            type: "p",
+            text: "Mesmo com o melhor planejamento, coisas dão errado. E agora?"
+          },
+          {
+            type: "ul",
+            items: [
+              "Time atrasado? Remova escopo, não estique a sprint! É melhor entregar menos coisas bem feitas.",
+              "Requisito mudou? O PO decide se cancela a sprint ou ajusta a meta.",
+              "Tarefa mais fácil que o esperado? Pegue mais itens do backlog!",
+
+            ]
+          },
+          {
+            type: "p",
+            text: "Lembre-se: transparência é tudo. Se algo está errado, fale logo para poder ajustar."
+          },
+        ],
+      },
+      {
+        id: 7,
+        title: "Design Thinking na Prática",
+        content: [
+          {
+            type: "p",
+            text: "Ei, você aí! Já teve aquela ideia genial pra um produto novo, mas não sabia por onde começar? Ou pior: criou algo que achava incrível, mas ninguém usou? 😬 Pois é, isso acontece mais do que você imagina! Mas calma, o Design Thinking tá aqui pra te salvar e vou te explicar tudo num papo reto, cheio de dicas práticas e exemplos reais. Bora? 👇"
+          },
+          {
+            type: "h2",
+            text: "O Que é Design Thinking? (E Por Que Você Deveria Se Importar)",
+          },
+          {
+            type: "p",
+            text: "Design Thinking não é só um método bonitinho que as startups adoram, é uma forma diferente de resolver problemas, colocando as pessoas no centro de tudo. 🤝"
+          },
+          {
+            type: "p",
+            text: "Imagine que você quer criar um app de fitness. No método tradicional, você faria uma pesquisa rápida, desenvolveria o app e torceria pra dar certo. Com Design Thinking, você primeiro entende profundamente as dores reais das pessoas, testa ideias antes de gastar rios de dinheiro, e só então desenvolve a solução certa. Bem melhor, né?"
+          },
+          {
+            type: "h3",
+            text: "As 5 Fases do Design Thinking (O Ciclo da Inovação)"
+          },
+          {
+            type: "ul",
+            items: [
+              "Empatia ❤️ - Entender as pessoas como Sherlock Holmes",
+              "Definição 🎯 - Focar no problema certo",
+              "Ideação 💡 - Soltar a criatividade sem freio",
+              "Prototipagem ✂️ - Fazer ideias virarem algo tangível",
+              "Teste 🧪 - Validar com usuários reais",
+            ]
+          },
+          {
+            type: "h2",
+            text: "Mão na Massa: Como Aplicar Design Thinking"
+          },
+          {
+            type: "h3",
+            text: "Fase da Empatia - Virando um Detetive de Necessidades 🔍"
+          },
+          {
+            type: "p",
+            text: "Aqui é onde a mágica começa! Você precisa mergulhar na vida das pessoas que vai ajudar. Não adianta só mandar um formulário no Google Forms, tem que observar, ouvir e sentir as dores reais."
+          },
+          {
+            type: "p",
+            text: "Técnicas de Pesquisa TOP (Que Realmente Funcionam)"
+          },
+          {
+            type: "p",
+            text: "Shadowing 👥: Seguir o usuário no dia a dia (tipo um stalker profissional) Exemplo: Ver como idosos realmente usam apps de banco"
+          },
+          {
+            type: "p",
+            text: "Entrevistas Emocionais 🎤: Perguntas que vão além do óbvio 'Me conta sobre a última vez que você ficou frustrado tentando se exercitar em casa'"
+          },
+          {
+            type: "p",
+            text: "Diários de Uso 📔: Pedir pras pessoas registrarem experiências 'Anote toda vez que pensar em pedir comida por delivery esta semana'"
+          },
+          {
+            type: "h3",
+            text: "Pesquisa Secundária: O Atalho dos Espertos 🕵️♂️",
+          },
+          {
+            type: "p",
+            text: "Antes de sair entrevistando todo mundo, use o que já existe! Pesquisa secundária é pegar dados que outros já coletaram:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Relatórios de mercado",
+              "Estudos acadêmicos",
+              "Dados governamentais",
+              "Análises de concorrentes",
+            ]
+          },
+          {
+            type: "p",
+            text: "👉 Dica de Ouro: Crie um 'board de inspiração' com tudo que encontrar (fotos, artigos, estatísticas). Isso ajuda a ver padrões!"
+          },
+          {
+            type: "h3",
+            text: "Definição - O Pulo do Gato 🐱💥",
+          },
+          {
+            type: "p",
+            text: "Depois de coletar um monte de informações, é hora de sintetizar e encontrar o problema raiz. Uma técnica poderosa é o 'Point of View' (POV): '[Persona] precisa de [necessidade] porque [insight surpreendente]'"
+          },
+          {
+            type: "p",
+            text: "Exemplo Ruim: As pessoas querem um app de exercícios"
+          },
+          {
+            type: "p",
+            text: "Exemplo Bom: Maria, 35 anos, precisa se exercitar em casa em 20 minutos porque se sente culpada quando falta tempo pra família"
+          },
+          {
+            type: "h3",
+            text: "3. Ideação - Tempestade de Ideias Que Vale a Pena ⚡",
+          },
+          {
+            type: "p",
+            text: "Hora de soltar a criatividade! Mas não vale ficar só no 'vamos fazer um app'. Algumas técnicas matadoras:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Brainwriting ✍️: Todo mundo escreve ideias em silêncio antes de discutir",
+              "'E Se...' 🤔: Forçar conexões inusitadas ('E se fitness fosse um jogo de RPG?')",
+              "Pior Ideia Possível 😈: Inventar soluções horríveis pra depois inverter",
+            ]
+          },
+          {
+            type: "h3",
+            text: "Prototipagem - Feio Mas Funcional 🛠️",
+          },
+          {
+            type: "p",
+            text: "Aqui a regra é: gaste o mínimo possível pra testar sua ideia! Pode ser:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Storyboard (quadrinhos da experiência)",
+              "Protótipo de papel",
+              "Landing page fake",
+              "Vídeo conceito",
+            ]
+          },
+          {
+            type: "p",
+            text: "Case Real: A Airbnb testou a ideia inicial fotografando casas dos fundadores e colocando no site. Custo: $0!"
+          },
+          {
+            type: "h3",
+            text: "Teste - A Hora da Verdade 🧪",
+          },
+          {
+            type: "p",
+            text: "Leve seu protótipo pra pessoas reais e OBSERVE (não só pergunte!). Anote:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Onde eles travam",
+              "O que amam",
+              "O que não entendem",
+            ]
+          },
+          {
+            type: "p",
+            text: "Dica Pro: Grave as sessões (com permissão) - expressões faciais falam muito!"
+          },
+          {
+            type: "h2",
+            text: "Erros Que Você Vai Querer Evitar ❌",
+          },
+          {
+            type: "ul",
+            items: [
+              "Pular a empatia (90% dos fracassos começam aqui)",
+              "Apegar-se à primeira ideia (o segredo é pivotar!)",
+              "Prototipar perfeito (quanto mais feio, melhor no início)",
+              "Ignorar dados contraditórios (viés de confirmação é traiçoeiro)",
+            ]
+          },
+          {
+            type: "h2",
+            text: "Ferramentas Que Vale a Pena Conhecer 🧰",
+          },
+          {
+            type: "ul",
+            items: [
+              "Miro 👩💻: Para mapas mentais e colaboração remota",
+              "Figma 🎨: Prototipagem digital fácil",
+              "Hotjar 🔥: Ver como usuários navegam seu site",
+              "Typeform 📝: Criar pesquisas bonitas",
+            ]
+          },
+        ],
+      },
+      {
+        id: 8,
+        title: "Design Thinking: Do Benchmarking à Estratégia",
+        content: [
+          {
+            type: "p",
+            text: "E aí, inovador de plantão! 👋 Vamos falar sobre como transformar insights em estratégias matadoras usando Design Thinking? Hoje vou te mostrar como analisar a concorrência, mapear o ambiente e escolher as melhores ferramentas para criar soluções que realmente se conectam com as pessoas. Bora decolar nessa jornada? 🛠️🧠"
+          },
+          {
+            type: "h2",
+            text: "Espionagem Ética: Aprendendo Com a Concorrência 🕵️♂️",
+          },
+          {
+            type: "p",
+            text: "Todo mundo fala pra pensar fora da caixa, mas antes disso você precisa saber como é a caixa dos outros! Fazer benchmarking competitivo é como ser um detetive do mercado. Já percebeu como a Apple não inventou o smartphone, mas transformou completamente a forma como usamos? Eles estudaram a fundo os concorrentes antes de criar o iPhone."
+          },
+          {
+            type: "p",
+            text: "Aqui na prática: se você tem um e-commerce de moda, não adianta só copiar a Zara. Tem que entender POR QUE eles renovam o estoque a cada 15 dias, COMO conseguem preços baixos, e QUAL a dor que resolvem pra quem não quer pagar caro mas deseja estar na moda. O segredo? Fazer perguntas certas enquanto analisa:"
+          },
+
+
+          {
+            type: "ul",
+            items: [
+              "Que problema do cliente meu concorrente resolve melhor que eu?",
+              "Onde eles estão falhando que poderia ser minha oportunidade?",
+              "Que tecnologias estão usando que eu poderia adaptar?",
+
+            ]
+          },
+
+          {
+            type: "p",
+            text: "Uma história real: quando a Netflix começou, eles não ficaram só assistindo filmes. Estudaram a Blockbuster por meses, viram que as pessoas odiavam multas por atraso, então criaram o sistema de assinatura sem prazo fixo. Resultado? Você conhece a Blockbuster hoje?"
+          },
+
+          {
+            type: "h3",
+            text: "O Mundo Fora da Sua Bolha: Análise Ambiental 🌍",
+          },
+          {
+            type: "p",
+            text: "Lembra quando as locadoras sumiram quase da noite pro dia? Quem fez análise ambiental viu a tempestade chegando. O mundo muda rápido, e sua estratégia precisa acompanhar. Vamos pegar o exemplo de uma padaria artesanal:"
+          },
+
+          {
+            type: "p",
+            text: "Na parte política, o dono precisa ficar de olho em novas leis trabalhistas que afetam seus funcionários. Economicamente, a inflação dos ingredientes pode inviabilizar aquele pão de fermentação linda. Socialmente, a onda de healthy eating é uma oportunidade pra criar pães integrais. Tecnologicamente, um app de entregas pode expandir as vendas. Ambientalmente, embalagens sustentáveis podem ser um diferencial. E legalmente, as novas regras da vigilância sanitária precisam ser acompanhadas."
+          },
+          {
+            type: "p",
+            text: "O pulo do gato? Não basta listar esses fatores, tem que conectar os pontos. Se a economia está ruim E há uma tendência social de comer em casa, talvez seja hora de criar kits faça seu próprio pão em casa. Viu como uma coisa puxa a outra?"
+          },
+          {
+            type: "h2",
+            text: "O Superpoder da Empatia Real ❤️",
+          },
+          {
+            type: "p",
+            text: "Acha que empatia é só fazer uma pesquisa de satisfação. Grande erro! Vou te contar como a Samsung descobriu que idosos tinham dificuldade com smartphones:"
+          },
+          {
+            type: "p",
+            text: "Eles não mandaram um questionário. Colocaram engenheiros para passar um dia com idosos, vendo como seguravam os aparelhos, que letras não enxergavam, em que momentos desistiam de usar. Resultado? Criaram um modo sênior com ícones gigantes e funções simplificadas que aumentou as vendas nesse público em 40%"
+          },
+          {
+            type: "p",
+            text: "Quer fazer igual? Esqueça as perguntas óbvias. Em vez de 'você gostou do nosso app?', observe como as pessoas realmente usam. Veja onde elas travam, que expressões fazem quando frustradas, que atalhos criam sem querer. Uma dica de ouro: peça pra mostrar como fazem uma tarefa no seu produto, você vai se surpreender com as gambiarras que inventam!"
+          },
+
+          {
+            type: "h2",
+            text: "Do Insight à Estratégia: O Caminho das Pedras 🏗️",
+          },
+          {
+            type: "p",
+            text: "Agora vem a parte que separa os amadores dos profissionais, transformar tudo isso em plano concreto. Vou te contar como o Nubank fez:"
+          },
+
+          {
+            type: "p",
+            text: "Eles viram que os bancos tradicionais tinham taxas abusivas (benchmarking), perceberam a revolução digital no Brasil (análise ambiental), entenderem que as pessoas odiavam filas em agência (empatia). Aí veio a jogada de mestre: usaram o Business Model Canvas pra conectar tudo."
+          },
+          {
+            type: "p",
+            text: "No bloco 'Proposta de Valor', colocaram: 'Cartão sem tarifa e 100% digital'. Em 'Canais': apenas app (cortando custos de agências). Em 'Relacionamento com cliente': atendimento por chat 24/7. O resto é história, hoje são o maior banco digital da América Latina."
+          },
+          {
+            type: "p",
+            text: "Seu turno! Pega tudo que descobriu até agora e pergunta:",
+          },
+          {
+            type: "ul",
+            items: [
+              "Que valor único posso oferecer que ninguém mais tem?",
+              "Que custos posso cortar sem afetar a experiência?",
+              "Como posso entregar isso do jeito mais simples possível?",
+
+            ]
+          },
+          {
+            type: "h2",
+            text: "O Erro Que 90% Cometem (E Como Evitar) ⚠️",
+          },
+          {
+            type: "p",
+            text: "Aqui está a bomba, a maioria faz toda essa análise... e depois engaveta. O segredo é criar um ritual de revisão. Marca na agenda:",
+          },
+          {
+            type: "ul",
+            items: [
+              "Toda segunda: 15 minutos pra ver notícias do setor (análise ambiental)",
+              "Toda quinzena: checar um concorrente novo (benchmarking)",
+              "Todo mês: conversar com 2 clientes (empatia)",
+
+            ]
+          },
+          {
+            type: "p",
+            text: "Parece pouco, mas é assim que se mantém relevante. Lembra da Kodak? Inventou a câmera digital mas não acompanhou as mudanças no ambiente. Não seja a próxima Kodak!",
+          },
+        ],
+      },
+      {
+        id: 9,
+        title: "Design Thinking: Ideação à Implementação",
+        content: [
+          {
+            type: "p",
+            text: "E aí, inovador! 👋 Pronto para transformar aquela ideia maluca num negócio de verdade? Hoje vamos desvendar o coração do Design Thinking, desde o brainstorm até a implementação, passando por ferramentas poderosas que vão te ajudar a não só criar, mas colocar suas ideias no mundo. Pegue seu café e bora nessa jornada criativa! ☕✨"
+          },
+          {
+            type: "h2",
+            text: "Divergência: A Tempestade de Ideias Perfeita ⚡",
+          },
+          {
+            type: "p",
+            text: "Aqui vale TUDO, até aquela ideia que parece absurda! O segredo é:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Criar um ambiente seguro onde ninguém tem medo de falar besteira",
+              "Usar gatilhos criativos como: 'E se dinheiro não existisse?' ou 'Como resolveríamos isso em 2050'",
+              "Limitar o tempo para manter a energia alta (15-20 minutos costuma ser ideal)",
+            ]
+          },
+          {
+            type: "p",
+            text: "Técnicas que amamos:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Pior ideia possível - ajuda a quebrar o gelo e depois inverter pra algo bom",
+              "Brainwriting - todos escrevem ideias em silêncio antes de compartilhar",
+              "Analogias - 'Como a Amazon resolveria esse problema?'",
+            ]
+          },
+          {
+            type: "h2",
+            text: "Convergência: Das 100 Ideias para as 3 Melhores 🎯",
+          },
+          {
+            type: "p",
+            text: "Agora é hora de filtrar. Mas como?"
+          },
+          {
+            type: "ul",
+            items: [
+              "Agrupe ideias semelhantes",
+              "Vote com adesivos ou pontos (cada pessoa tem 3 votos)",
+              "Discuta as mais votadas - qual resolveria melhor o problema do usuário?",
+            ]
+          },
+          {
+            type: "p",
+            text: "Dica quente: Não descarte totalmente as perdedoras, guarde num 'parking lot' para futuras iterações!"
+          },
+          {
+            type: "h2",
+            text: "📊 Matriz de Priorização: Escolhendo as Campeãs",
+          },
+          {
+            type: "p",
+            text: "Tá, temos várias ideias legais... mas qual vamos prototipar primeiro? A matriz de priorização é nossa bússola. Vamos usar dois critérios principais:"
+          },
+          {
+            type: "p",
+            text: "Impacto x Viabilidade"
+          },
+          {
+            type: "ul",
+            items: [
+              "Alto impacto + Alta viabilidade = FAÇA JÁ! 🚀",
+              "Alto impacto + Baixa viabilidade = Vale investir tempo para tornar viável",
+              "Baixo impacto + Alta viabilidade = Talvez depois",
+              "Baixo impacto + Baixa viabilidade = Descarte (por enquanto)",
+            ]
+          },
+          {
+            type: "p",
+            text: "Exemplo Prático, se você está criando um app de saúde mental:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Chatbot 24h com psicólogos (alto impacto, baixa viabilidade)",
+              "Playlist de meditação guiada (alto impacto, alta viabilidade)",
+              "Calculadora de IMC (baixo impacto, alta viabilidade)",
+            ]
+          },
+          {
+            type: "p",
+            text: "Qual você implementaria primeiro? Exatamente - a playlist! 😉"
+          },
+          {
+            type: "h2",
+            text: "🛠️ Implementação: Mão na Massa com Propósito",
+          },
+          {
+            type: "p",
+            text: "Hora de colocar as ideias no mundo real! E adivinha? Aqui também temos divergência e convergência:"
+          },
+          {
+            type: "h3",
+            text: "Divergência na Construção 🔨",
+          },
+          {
+            type: "ul",
+            items: [
+              "Crie múltiplos protótipos rápidos da mesma ideia",
+              "Teste formatos diferentes (app, site, atendimento presencial)",
+              "Experimente materiais diversos (papel, digital, físico)",
+            ]
+          },
+          {
+            type: "h3",
+            text: "Convergência na Construção ✅",
+          },
+          {
+            type: "ul",
+            items: [
+              "Identifique qual versão teve melhor recepção nos testes",
+              "Combine elementos de diferentes protótipos",
+              "Defina os 'must have' para a versão inicial",
+            ]
+          },
+          {
+            type: "p",
+            text: "Case Real: A Dropbox começou com um vídeo mostrando o conceito antes mesmo de construir o produto pra validar a demanda!:"
+          },
+          {
+            type: "h2",
+            text: "🎯 Value Proposition Canvas: Seu Produto na Língua do Cliente",
+          },
+          {
+            type: "p",
+            text: "Essa ferramenta é o segredo para criar ofertas que as pessoas AMAM. São dois lados:"
+          },
+          {
+            type: "p",
+            text: "Perfil do Cliente:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Dores (o que os frustra)",
+              "Ganhos (o que os deixaria felizes)",
+              "Tarefas (o que precisam fazer)",
+            ]
+          },
+          {
+            type: "p",
+            text: "Oferta de Valor:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Dores (o que os frustra)",
+              "Criadores de ganho (como você supera expectativas)",
+              "Produtos/serviços (o que você oferece)",
+            ]
+          },
+          {
+            type: "h2",
+            text: "📋 Business Model Canvas: Seu Negócio em Um Quadro",
+          },
+          {
+            type: "p",
+            text: "O famoso 'quadrão' que resume tudo em 9 blocos:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Segmentos de clientes: Quem vai pagar por isso?",
+              "Proposta de valor: Por que escolheriam você?",
+              "Canais: Como vão conhecer/comprar?",
+              "Relacionamento: Como você os fideliza?",
+              "Fontes de receita: Como o dinheiro entra?",
+              "Recursos principais: O que você PRECISA ter?",
+              "Atividades-chave: O que você faz diariamente?",
+              "Parcerias: Quem pode te ajudar?",
+              "Estrutura de custos: Por onde o dinheiro sai?",
+            ]
+          },
+          {
+            type: "h2",
+            text: "🔧 Service Blueprint: A Máquina Por Trás da Experiência",
+          },
+          {
+            type: "p",
+            text: "Enquanto o BMC mostra o 'o quê', o Service Blueprint mostra o 'como'. Ele mapeia:"
+          },
+          {
+            type: "p",
+            text: "Linha da Visibilidade:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Acima: O que o cliente vê",
+              "Abaixo: O que acontece nos bastidores",
+            ]
+          },
+          {
+            type: "p",
+            text: "Componentes:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Evidências físicas (o que o cliente vê/toca)",
+              "Ações do cliente (passos que ele dá)",
+              "Ações da linha de frente (atendimento)",
+              "Ações de bastidores (cozinha, TI)",
+              "Processos de suporte (RH, financeiro)",
+            ]
+          },
+          {
+            type: "h2",
+            text: "🚀 Do Papel ao Mundo Real",
+          },
+          {
+            type: "p",
+            text: "Lembra: Design Thinking não é sobre documentos bonitos, é sobre ação! O caminho é:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Gere MUITAS ideias (divergência) ➡️",
+              "Selecione as melhores (convergência) ➡️",
+              "Priorize com critério (matriz) ➡️",
+              "Construa rápido (implementação) ➡️",
+              "Valide com clientes reais ➡️",
+              "Ajuste e repita!",
+            ]
+          },
+        ],
+      },
+      {
+        id: 10,
+        title: "Lean Startup",
+        content: [
+          {
+            type: "p",
+            text: "E aí, futuro unicórnio 🦄 Se você tá cansado de ver empreendedores queimando rios de dinheiro em ideias que nunca decolam, prepare-se: o Lean Startup veio pra acabar com esse sofrimento! Vamos desvendar juntos esse método que revolucionou o jeito de criar negócios, e o melhor: sem termos complicados ou blá-blá-blá corporativo. Bora? 👇"
+          },
+          {
+            type: "h2",
+            text: "🌱 O Que é Lean Startup?",
+          },
+          {
+            type: "p",
+            text: "Imagine isso: você passa 1 ano desenvolvendo um app incrível, gasta suas economias todas, lança... e ninguém baixa. Desesperador, né? 😱 Foi exatamente pra evitar esse pesadelo que Eric Ries criou o Lean Startup em 2008. A ideia central é simples (e genial):"
+          },
+          {
+            type: "p",
+            text: "'Não adianta criar produtos perfeitos se ninguém quer comprar!'"
+          },
+          {
+            type: "ul",
+            items: [
+              "Ao invés do modelo tradicional de: Planejar tudo → Desenvolver por meses → Torcer pra dar certo",
+              "O Lean Startup propõe: Testar hipóteses → Aprender rápido → Pivotar ou escalar",
+            ]
+          },
+          {
+            type: "h2",
+            text: "📌 Os 3 Pilares Essenciais:",
+          },
+          {
+            type: "ul",
+            items: [
+              "Build (Construa) - MVP em vez de produto completo",
+              "Measure (Meça) - Dados reais em vez de opiniões",
+              "Learn (Aprenda) - Adapte-se rápido ou morra!",
+            ]
+          },
+          {
+            type: "h2",
+            text: "🎯 O MVP - Seu Novo Melhor Amigo",
+          },
+          {
+            type: "p",
+            text: "MVP = Minimum Viable Product (Produto Mínimo Viável) - e é aqui que a mágica acontece! ✨"
+          },
+          {
+            type: "p",
+            text: "Não é:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Um protótipo feio",
+              "Um produto pela metade",
+              "Uma versão 'lite'",
+            ]
+          },
+          {
+            type: "p",
+            text: "É sim:"
+          },
+          {
+            type: "ul",
+            items: [
+              "A versão MAIS SIMPLES que testa sua hipótese principal",
+              "O caminho mais rápido para aprender com clientes reais",
+              "Sua arma secreta contra o desperdício de tempo e dinheiro",
+            ]
+          },
+          {
+            type: "h3",
+            text: "Exemplos que inspiram:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Dropbox → Começou com um vídeo explicando o conceito",
+              "Zappos → O fundador fotografou sapatos de lojas físicas pra testar se vendiam online",
+              "Buffer → Tinha só uma landing page explicando a ideia antes de codar",
+            ]
+          },
+          {
+            type: "h2",
+            text: "Como Fazer Seu MVP em 3 Passos:",
+          },
+          {
+            type: "ul",
+            items: [
+              "1️⃣ Identifique sua hipótese de risco principal (ex.: 'Pessoas pagariam por delivery de comida saudável')",
+              "2️⃣ Crie o experimento mais barato possível para testá-la (cardápio no WhatsApp, por exemplo)",
+              "3️⃣ Meça comportamento real (não apenas pergunte 'você compraria?')",
+            ]
+          },
+          {
+            type: "h2",
+            text: "📊 Métricas que Importam (Pare de Se Enganar!)",
+          },
+          {
+            type: "p",
+            text: "Aqui está onde 90% dos empreendedores erram feio! Você não pode confiar em:"
+          },
+          {
+            type: "ul",
+            items: [
+              "❌ 'Número de downloads' (se ninguém usa, não vale nada)",
+              "❌ 'Nossas pesquisas mostram que 90% amariam o produto' (viés de afirmação)",
+              "❌ 'Tivemos 1.000 visitas no site' (e quantas compraram?)",
+            ]
+          },
+          {
+            type: "p",
+            text: "Foque nas métricas de crescimento real:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Taxa de ativação (% que usa de verdade após se cadastrar)",
+              "Retenção (voltam após a primeira experiência?)",
+              "Receita por cliente (CAC vs LTV - o santo graal!)",
+            ]
+          },
+          {
+            type: "p",
+            text: "Case Real: A Slack mediu obsessivamente quantas equipes estavam realmente usando o produto diariamente - não apenas quantas contas foram criadas. Isso os levou ao sucesso!"
+          },
+          {
+            type: "h2",
+            text: "🔄 Pivotar ou Perseverar? A Hora da Verdade",
+          },
+          {
+            type: "p",
+            text: "Sinais de que você deve PIVOTAR (mudar de estratégia):"
+          },
+          {
+            type: "ul",
+            items: [
+              "Seus early adopters não estão evangelizando seu produto",
+              "As métricas principais estão estagnadas",
+              "Você está adicionando features pra tentar 'consertar' o produto",
+            ]
+          },
+          {
+            type: "p",
+            text: "Quando PERSEVERAR (continuar no caminho):"
+          },
+          {
+            type: "ul",
+            items: [
+              "Você tem crescimento orgânico (sem marketing pesado)",
+              "Clientes estão dispostos a pagar mais pela próxima versão",
+              "O engajamento está aumentando naturalmente",
+            ]
+          },
+          {
+            type: "p",
+            text: "Exemplo Clássico: O Pinterest começou como um app de catálogo de compras chamado Tote. Ao perceber que as pessoas preferiam salvar itens do que comprar, pivotaram para o modelo atual e voilà!"
+          },
+          {
+            type: "h2",
+            text: "🧰 Toolkit do Empreendedor Lean",
+          },
+          {
+            type: "p",
+            text: "Quer colocar a mão na massa? Anota essas ferramentas essenciais:"
+          },
+          {
+            type: "h3",
+            text: "1. Canvas de Hipóteses"
+          },
+          {
+            type: "p",
+            text: "Antes de construir, escreva claramente:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Quem é o cliente",
+              "Qual problema você resolve",
+              "Como seu produto resolve melhor que alternativas",
+            ]
+          },
+          {
+            type: "h3",
+            text: "2. Experiment Board"
+          },
+          {
+            type: "ul",
+            items: [
+              "Hipótese: Mães trabalham pagariam por kits de lanches saudáveis",
+              "Experimento: Cardápio no Instagram Stories",
+              "O que medir: % que clica no link",
+              "Critério de Sucesso: >15% conversion",
+            ]
+          },
+          {
+            type: "h3",
+            text: "3. Pirâmide de Tração"
+          },
+          {
+            type: "p",
+            text: "Comece com tração orgânica antes de investir em ads:"
+          },
+          {
+            type: "ul",
+            items: [
+              "Produto excepcional (que as pessoas AMAM recomendar)",
+              "Growth hacking criativo",
+              "Só então marketing pago",
+            ]
+          },
+          {
+            type: "h2",
+            text: "💣 Os 7 Pecados do Lean Startup (Evite!)"
+          },
+          {
+            type: "ul",
+            items: [
+              "MVP Complexo - Querer incluir tudo na primeira versão",
+              "Opiniões > Dados - Confiar no 'eu acho' em vez de métricas",
+              "Medo de Pivotar - Apego emocional à ideia original",
+              "Escalar Antes da Hora - Contratar equipe grande cedo demais",
+              "Ignorar o CAC - Custo de Aquisição de Cliente alto demais",
+              "Feedback de Amigos - Eles vão mentir pra não te magoar",
+              "Falta de Paciência - Desistir antes do pivot certo",
+            ]
+          },
+          {
+            type: "h2",
+            text: "🚀 Sua Vez!"
+          },
+          {
+            type: "p",
+            text: "Que tal começar HOJE mesmo?"
+          },
+          {
+            type: "ul",
+            items: [
+              "Escolha uma ideia (aquela que tá na sua cabeça há meses)",
+              "Identifique a hipótese principal (o que PRECISA ser verdade pro negócio funcionar)",
+              "Desenhe um MVP super simples (pode ser até um perfil no Instagram)",
+              "Teste com 10 pessoas reais (não familiares!)",
+              "Meça o comportamento (não pergunte, observe)",
+            ]
+          },
+          {
+            type: "p",
+            text: "Lembre-se: cada 'fracasso' controlado é um degrau mais perto do produto que vai mudar o jogo! 💪"
           },
         ],
       },
